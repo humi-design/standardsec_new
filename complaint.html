@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Complaint Form | Standard Securities</title>
+</head>
+<body>
+<main id="main-content">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+>
+<h1>Register a Complaint</h1>
+<form method="post" action="complaint.php">
+    <label for="customer_name">Customer Name:</label><br>
+    <input aria-required="true" type="text" id="customer_name" name="customer_name" required><br>
+    
+    <label for="customer_email">Customer Email:</label><br>
+    <input aria-required="true" type="email" id="customer_email" name="customer_email" required><br>
+    
+    <label for="complaint">Complaint:</label><br>
+    <textarea id="complaint" name="complaint" rows="4" required></textarea><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</main>
+</body>
+</html>

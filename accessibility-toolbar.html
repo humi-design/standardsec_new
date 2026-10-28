@@ -1,0 +1,26 @@
+<html lang="en">
+<!-- accessibility-toolbar.html -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<title>Accessibility Tools | Standard Securities</title>
+<!-- accessibility-toolbar.html -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<h1 class="sr-only">Accessibility Tools</h1>
+<div class="accessibility-menu main-content-section" id="main-content" aria-label="Accessibility Tools">
+    <!-- Floating Toggle Button -->
+    <button id="accessibilityToggle_accessibility-toolbar" class="fab" aria-expanded="false" aria-controls="accessibilityPanel_accessibility-toolbar">
+      ♿
+    </button>
+  
+    <!-- Hidden Panel -->
+    <div id="accessibilityPanel_accessibility-toolbar" class="accessibility-panel" hidden>
+      <button onclick="changeFontSize(1)" aria-label="Increase text size">A+</button>
+      <button onclick="changeFontSize(-1)" aria-label="Decrease text size">A-</button>
+      <button onclick="toggleDarkMode()" aria-label="Toggle dark mode">🌙 Dark Mode</button>
+      <button onclick="readContent()" aria-label="Read page aloud">🔊 Read</button>
+      <a href="accessibility.html" aria-label="Accessibility Statement">♿ Accessibility</a>
+    </div>
+  </div>
+  
+  <link rel="stylesheet" href="accessibility-toolbar.css">
+  <script src="accessibility-toolbar.js"></script>
+  

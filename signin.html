@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta name="description" content="Sign in to your Standard Securities trading account to access online trading, fund transfers, and back office services.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#4184dd" />
+    <!-- Site Properties -->
+    <title>Sign In | Standard Securities</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibility-fixes.css">
+</head>
+
+<body>
+    <!-- Skip to Main Content Link -->
+    <a href="#login-form" class="skip-link">Skip to login form</a>
+    
+    <main id="main-content" role="main">
+        <!-- section content begin -->
+        <div class="uk-section uk-padding-remove-vertical">
+            <div class="uk-container uk-container-expand">
+                <div class="uk-grid" data-uk-height-viewport="expand: true">
+                    <div class="uk-width-3-5@m uk-background-secondary uk-background-cover uk-background-center-right uk-visible@m uk-box-shadow-xlarge" style="background-image: url(img/in-img-signin1.jpg);">
+
+                    </div>
+                    <div class="uk-width-expand@m uk-flex uk-flex-middle">
+                        <div class="uk-width-1-1 uk-flex uk-flex-center">
+                            <div class="uk-width-3-5@m">
+                                <div class="uk-text-center in-padding-horizontal@s">
+                                    <a class="uk-logo uk-align-center uk-margin-remove-bottom" href="index.html" aria-label="Go to homepage">
+                                        <img src="img/logo.svg" data-src="img/logo.svg" width="120" height="54" alt="Standard Securities logo" data-uk-img>
+                                    </a>
+                                    <h1 class="uk-text-lead uk-margin-small-top uk-margin-medium-bottom">Log into your account</h1>
+                                    <!-- login form begin -->
+                                    <form id="login-form" class="uk-grid uk-form toggle-class" aria-label="Login form">
+                                        <div class="uk-margin-small uk-width-1-1 uk-inline">
+                                            <label for="username" class="sr-only">Username</label>
+                                            <span class="uk-form-icon uk-form-icon-flip fas fa-user fa-sm" aria-hidden="true"></span>
+                                            <input aria-required="true" class="uk-input" id="username" value="" type="text" placeholder="Username" autocomplete="username" required aria-required="true">
+                                        </div>
+                                        <div class="uk-margin-small uk-width-1-1 uk-inline">
+                                            <label for="password" class="sr-only">Password</label>
+                                            <span class="uk-form-icon uk-form-icon-flip fas fa-lock fa-sm" aria-hidden="true"></span>
+                                            <input aria-required="true" class="uk-input" id="password" value="" type="password" placeholder="Password" autocomplete="current-password" required aria-required="true">
+                                        </div>
+                                        <div class="uk-margin-small uk-width-auto uk-text-small">
+                                            <label><input class="uk-checkbox" type="checkbox" id="remember"> Remember me</label>
+                                        </div>
+                                        <div class="uk-margin-small uk-width-expand uk-text-small">
+                                            <span class="uk-align-right"><a class="uk-link-reset" href="#">Forgot password?</a></span>
+                                        </div>
+                                        <div class="uk-margin-small uk-width-1-1">
+                                            <button class="uk-button uk-width-1-1 uk-button-primary uk-border-rounded uk-float-left" id="buttonsignin" type="submit" name="submit" aria-label="Sign in to your account">
+                                                <span aria-hidden="true">Login</span>
+                                                <span class="sr-only">Sign in to your account</span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <!-- login form end -->
+                                    <div class="in-signin-method uk-margin-top">
+                                        <p class="uk-heading-line"><span>Or login with</span></p>
+                                        <div class="uk-margin-medium-bottom">
+                                            <a class="uk-button uk-button-primary uk-button-small uk-border-rounded brand-facebook" href="#"><i class="fab fa-facebook-f uk-margin-small-right"></i>Facebook</a>
+                                            <a class="uk-button uk-button-primary uk-button-small uk-border-rounded brand-twitter" href="#"><i class="fab fa-twitter uk-margin-small-right"></i>Twitter</a>
+                                        </div>
+                                        <span class="uk-text-small">Don't have an account? <a href="#">Register here</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section content end -->
+    </main>
+
+    <!-- Javascript -->
+    <script src="js/vendor/uikit.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/in-core.js"></script>
+    <script src="js/config.js"></script>
+
+     <!-- Container where toolbar will be inserted -->
+
+    <!-- Accessibility Floating Menu - Unique IDs for signin page -->
+    <div class="accessibility-menu" aria-label="Accessibility Tools" role="complementary">
+        <!-- Floating Toggle Button -->
+        <button id="accessibilityToggle_signin" class="fab" aria-expanded="false" aria-controls="accessibilityPanel_signin" aria-label="Open accessibility tools">
+            <span aria-hidden="true">♿</span>
+            <span class="sr-only">Accessibility Options</span>
+        </button>
+        
+        <!-- Hidden Panel -->
+        <div id="accessibilityPanel_signin" class="accessibility-panel" hidden aria-label="Accessibility options">
+            <button onclick="changeFontSize(1)" aria-label="Increase text size" class="accessibility-btn">A+</button>
+            <button onclick="changeFontSize(-1)" aria-label="Decrease text size" class="accessibility-btn">A-</button>
+            <button onclick="toggleDarkMode()" aria-label="Toggle dark mode" class="accessibility-btn">🌙 Dark Mode</button>
+            <button onclick="readContent()" aria-label="Read page aloud" class="accessibility-btn">🔊 Read</button>
+            <a href="accessibility.html" aria-label="View accessibility statement" class="accessibility-link">♿ Accessibility Statement</a>
+        </div>
+    </div>
+    
+    <!-- CSS -->
+    <style>
+    /* Floating button (FAB) */
+    /* Floating button (circular) */
+    .fab {
+    position: fixed;
+    bottom: 200px;
+    right: 15px;
+    width: 60px; /* same width */
+    height: 60px; /* same height */
+    border-radius: 10%; /* makes it a circle */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    overflow: hidden; /* ensures image/icons don’t overflow */
+    padding: 0; /* removes extra space */
+    }
+    .fab img, 
+    .fab svg {
+    width: 50%; /* make icon fit nicely inside circle */
+    height: 50%;
+    object-fit: contain;
+    }
+    
+    .fab:hover, .fab:focus {
+    background-color: #0056b3;
+    outline: 2px solid white;
+    outline-offset: 2px;
+    }
+    
+    /* Hidden menu */
+    .fab-menu {
+    position: fixed;
+    bottom: 250px;
+    right: 40px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    }
+    
+    .fab-menu button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+    }
+    
+    .fab-menu button:hover,
+    .fab-menu button:focus {
+    background-color: #0056b3;
+    outline: 2px solid white;
+    outline-offset: 2px;
+    }
+    
+    /* Panel (initially hidden) */
+    .accessibility-panel {
+    position:fixed;
+    bottom: 120px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+    }
+    
+    /* Buttons inside panel */
+    .accessibility-panel button,
+    .accessibility-panel a {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    }
+    
+    .accessibility-panel button:hover,
+    .accessibility-panel a:hover {
+    background: #0056b3;
+    }
+    
+    .accessibility-panel button:focus,
+    .accessibility-panel a:focus {
+    outline: 3px solid yellow; /* WCAG focus visible */
+    }
+    
+    /* Dark mode */
+    body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+    }
+    
+    /* Override headings, paragraphs, lists */
+    body.dark-mode h1,
+    body.dark-mode h2,
+    body.dark-mode h3,
+    body.dark-mode h4,
+    body.dark-mode h5,
+    body.dark-mode h6,
+    body.dark-mode p,
+    body.dark-mode li,
+    body.dark-mode a,
+    body.dark-mode span,
+    body.dark-mode strong {
+    color: #ffffff !important;
+    }
+    
+    /* Links */
+    body.dark-mode a {
+    color: #4da6ff !important;
+    }
+    
+    /* Inputs & labels */
+    body.dark-mode button,
+    body.dark-mode input,
+    body.dark-mode label {
+    color: #ffffff !important;
+    }
+    
+    /* Footer */
+    body.dark-mode footer {
+    color: #ffffff !important;
+    }
+    
+    /* Tables */
+    body.dark-mode table, 
+    body.dark-mode th, 
+    body.dark-mode td {
+    color: #ffffff !important;
+    border-color: #666 !important;
+    }
+    </style>
+    
+    <!-- JS -->
+    <script>
+    // Accessibility toggle - signin page specific
+    (function() {
+        const toggleBtn = document.getElementById("accessibilityToggle_signin");
+        const panel = document.getElementById("accessibilityPanel_signin");
+        
+        if (toggleBtn && panel) {
+            toggleBtn.addEventListener("click", function() {
+                const expanded = toggleBtn.getAttribute("aria-expanded") === "true";
+                toggleBtn.setAttribute("aria-expanded", !expanded);
+                panel.hidden = expanded;
+                
+                if (!expanded) {
+                    const firstButton = panel.querySelector('button, a');
+                    if (firstButton) firstButton.focus();
+                }
+            });
+            
+            document.addEventListener("keydown", function(e) {
+                if (e.key === "Escape" && !panel.hidden) {
+                    panel.hidden = true;
+                    toggleBtn.setAttribute("aria-expanded", "false");
+                    toggleBtn.focus();
+                }
+            });
+            
+            document.addEventListener("click", function(e) {
+                if (!panel.contains(e.target) && !toggleBtn.contains(e.target) && !panel.hidden) {
+                    panel.hidden = true;
+                    toggleBtn.setAttribute("aria-expanded", "false");
+                }
+            });
+        }
+    })();
+    
+    // Font resize
+    function changeFontSize(delta) {
+        const html = document.documentElement;
+        const current = parseFloat(window.getComputedStyle(html).getPropertyValue('font-size')) || 16;
+        const newSize = Math.max(12, Math.min(24, current + (delta * 2)));
+        html.style.fontSize = newSize + 'px';
+        localStorage.setItem('fontSize', newSize);
+    }
+    
+    // Dark mode toggle
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+        localStorage.setItem('darkMode', isDark);
+    }
+    
+    // Text-to-speech
+    function readContent() {
+        const content = document.getElementById("main-content") || document.querySelector("main") || document.body;
+        const text = content.innerText;
+        if (window.speechSynthesis) {
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = "en-IN";
+            utterance.rate = 1;
+            utterance.pitch = 1;
+            window.speechSynthesis.speak(utterance);
+        }
+    }
+    
+    // Load saved preferences
+    window.addEventListener('DOMContentLoaded', function() {
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            document.documentElement.style.fontSize = savedFontSize + 'px';
+        }
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    });
+    </script>
+
+    <!-- Google Translate Script -->
+    <div id="google_translate_element_signin" style="display:none;" aria-hidden="true"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit_signin() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en', includedLanguages: 'hi,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false},
+            'google_translate_element_signin'
+        );
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit_signin"></script>
+
+
+</body>
+
+</html>

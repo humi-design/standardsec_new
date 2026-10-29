@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Home",
+      "url": "index.html",
+      "content": "Welcome to our official website. We provide financial and investment services."
+    },
+    {
+      "title": "About Us",
+      "url": "about.html",
+      "content": "Learn more about our company, mission, vision, and leadership team."
+    },
+    {
+      "title": "Services",
+      "url": "services.html",
+      "content": "Explore the range of services including investments, trading, and portfolio management."
+    },
+    {
+      "title": "Contact",
+      "url": "contact.html",
+      "content": "Reach out to us via email, phone, or our office locations."
+    }
+  ]
+  

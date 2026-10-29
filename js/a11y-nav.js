@@ -45,6 +45,59 @@
             sync();
         }
 
+        // ---- Extreme text-enlargement fallback (1.4.4) -------------------
+        // The horizontal bar fits on one row down to its 960px breakpoint at
+        // normal text sizes. Under heavy text enlargement the links can grow
+        // past the container again; instead of clipping them or letting them
+        // wrap onto unordered rows, collapse the bar into the same accessible
+        // hamburger menu used at narrow viewports. No effect at normal sizes.
+        var navBar = document.querySelector('header nav.uk-navbar-container');
+        var navList = navBar ? navBar.querySelector('.uk-navbar-nav') : null;
+        var mobileBar = document.querySelector('.in-mobile-nav');
+        if (navBar && navList && mobileBar) {
+            var collapsed = false;
+            var apply = function () {
+                if (window.innerWidth < 960) { // base stylesheets already do this
+                    navBar.style.removeProperty('display');
+                    mobileBar.style.removeProperty('display');
+                    collapsed = false;
+                    return;
+                }
+                if (collapsed) navBar.style.removeProperty('display');
+                var overflowing = navList.scrollWidth > navBar.clientWidth + 1;
+                if (overflowing) {
+                    navBar.style.display = 'none';
+                    // The bar is a flex container (uk-flex uk-flex-right); keep
+                    // that, but beat uikit's `.uk-hidden\@m { display:none !important }`.
+                    mobileBar.style.setProperty('display', 'flex', 'important');
+                } else {
+                    navBar.style.removeProperty('display');
+                    mobileBar.style.removeProperty('display');
+                }
+                collapsed = overflowing;
+            };
+            var pending = false;
+            var schedule = function () {
+                if (pending) return;
+                pending = true;
+                requestAnimationFrame(function () { pending = false; apply(); });
+            };
+            apply();
+            window.addEventListener('resize', schedule);
+            // The in-page A+/A- control changes the root font size without
+            // firing resize; observe that style attribute instead. This cannot
+            // feed back into apply(), which only touches the nav elements.
+            if (window.MutationObserver) {
+                var mo = new MutationObserver(schedule);
+                [document.documentElement, document.body].forEach(function (el) {
+                    if (el) mo.observe(el, { attributes: true, attributeFilter: ['style', 'class'] });
+                });
+            }
+            if (document.fonts && document.fonts.ready) {
+                document.fonts.ready.then(schedule);
+            }
+        }
+
         // Embeds must carry an accessible name (4.1.2). Google Translate and
         // the reCAPTCHA helper inject their own frames; only author iframes
         // without a title are labelled here.

@@ -1,34 +1,40 @@
 /* ========================================================================
-   ACCESSIBILITY FIXES - ZERO DESIGN IMPACT
-   All styles are invisible except on keyboard focus
+   ACCESSIBILITY FIXES - WCAG 2.2 LEVEL AA
+   Loaded last so these rules win the cascade. Contrast values were chosen
+   against the measured backgrounds and verified with a ratio calculator.
    ======================================================================== */
 
-/* ========== SKIP LINK ========== */
+/* ========== SKIP LINK (2.4.1, 2.5.8) ========== */
+/* Kept off-screen (not 1x1 clipped) so its target area stays usable and
+   it becomes fully visible the moment it receives keyboard focus. */
 .skip-link {
     position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    top: -80px;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 12px 20px;
+    background: #0B4C8C;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 0 0 4px 4px;
+    z-index: 999999;
+    /* The base stylesheet clips the link to 0x0; reset it so the box is a
+       real 24x24+ target and becomes visible as soon as it takes focus. */
+    clip: auto !important;
+    clip-path: none !important;
+    overflow: visible !important;
+    white-space: normal !important;
 }
 
 .skip-link:focus {
     position: fixed;
-    left: 10px;
     top: 10px;
-    width: auto;
-    height: auto;
-    padding: 8px 16px;
-    background: #146CE0;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 0 0 4px 4px;
-    z-index: 999999;
-    clip: auto;
+    left: 10px;
+    outline: 3px solid #FFD400;
+    outline-offset: 2px;
 }
 
 /* ========== SCREEN READER ONLY ========== */
@@ -44,18 +50,138 @@
     border: 0 !important;
 }
 
-/* ========== FOCUS INDICATORS ========== */
+/* ========== FOCUS INDICATORS (2.4.7) ========== */
+/* :focus (not only :focus-visible) so the indicator is reliable in every
+   browser, including those that do not implement :focus-visible. */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus,
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
 [tabindex]:focus-visible {
-    outline: 3px solid #146CE0 !important;
-    outline-offset: 2px;
+    outline: 3px solid #0B4C8C !important;
+    outline-offset: 2px !important;
 }
 
-/* ========== TARGET SIZE (24x24px minimum) ========== */
+/* ========== CONTRAST: 1.4.3 TEXT / 1.4.11 NON-TEXT ========== */
+
+/* Hero overlay and icon-button backgrounds (#11CCF1 = 1.92:1 with white). */
+.uk-background-primary {
+    background-color: #0B4C8C !important;
+}
+
+/* White "Open an Account" button inside the hero (.uk-light override). */
+.uk-light .uk-button-primary,
+.uk-overlay-primary .uk-button-primary,
+.uk-section-primary:not(.uk-preserve-color) .uk-button-primary,
+.uk-section-secondary:not(.uk-preserve-color) .uk-button-primary,
+.uk-card-primary.uk-card-body .uk-button-primary,
+.uk-card-primary> :not([class*='uk-card-media']) .uk-button-primary,
+.uk-tile-primary:not(.uk-preserve-color) .uk-button-primary,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-button-primary,
+.uk-offcanvas-bar .uk-button-primary {
+    background-color: #fff !important;
+    color: #0B4C8C !important;
+}
+
+.uk-light .uk-button-primary:hover,
+.uk-light .uk-button-primary:focus {
+    background-color: #e8eef7 !important;
+    color: #083a6b !important;
+}
+
+/* Accent text on light backgrounds (#11CCF1 = 1.7:1). */
+.uk-text-primary,
+.uk-light .uk-text-primary,
+.uk-overlay-primary .uk-text-primary {
+    color: #0B4C8C !important;
+}
+
+/* Price-ticker badges (green 2.1:1, red already compliant). */
+.monee-price-ticker .uk-label-success {
+    background-color: #157A3D !important;
+    color: #fff !important;
+}
+
+.monee-price-ticker .uk-label-danger {
+    background-color: #B00020 !important;
+    color: #fff !important;
+}
+
+/* Chatbox header gradient drops to 3.09:1 at its lightest stop. */
+.chatbox__header {
+    background: #0B4C8C !important;
+}
+
+.chatbox__heading--header,
+.chatbox__description--header {
+    color: #fff !important;
+}
+
+/* Accessibility toolbar buttons (#007bff = 3.98:1 with white). */
+.accessibility-panel button,
+.accessibility-panel a,
+.accessibility-btn,
+.accessibility-link {
+    background: #0B4C8C !important;
+    color: #fff !important;
+}
+
+.accessibility-panel button:hover,
+.accessibility-panel a:hover,
+.accessibility-panel button:focus,
+.accessibility-panel a:focus {
+    background: #083a6b !important;
+}
+
+/* Form field boundaries (1.4.11): #e5e5e5 = 1.26:1 on white. */
+.uk-input,
+.uk-textarea,
+.uk-select {
+    border-color: #767676 !important;
+}
+
+/* Footer "Need help?" / muted text and icon links (#8f8f8f = 3.23:1). */
+.in-footer-info,
+.in-footer-info .uk-subnav>*> :first-child,
+footer .uk-subnav>*> :first-child {
+    color: #595959 !important;
+}
+
+footer .uk-icon-link,
+.uk-icon-link {
+    color: #6b6b6b !important;
+}
+
+footer .uk-icon-link:hover,
+footer .uk-icon-link:focus,
+.uk-icon-link:hover,
+.uk-icon-link:focus {
+    color: #0B4C8C !important;
+}
+
+/* ========== TARGET SIZE (2.5.8 - 24x24 minimum) ========== */
+footer .uk-list a,
+footer .in-footer-info a,
+footer .uk-subnav a,
+footer .in-footer-address a {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 24px;
+}
+
+footer .uk-icon-link,
+.uk-icon-link {
+    min-width: 24px;
+    min-height: 24px;
+}
+
 @media (max-width: 767px) {
     button,
     a.btn,
@@ -64,25 +190,22 @@ textarea:focus-visible,
     input[type="button"] {
         min-height: 44px;
         min-width: 44px;
-        padding: 10px 16px;
     }
 }
 
-/* ========== TEXT RESIZE SUPPORT (200%) ========== */
-@media (min-width: 1200px) {
-    body {
-        font-size: 16px;
-    }
+/* ========== REFLOW / RESIZE (1.4.4, 1.4.10) ========== */
+/* The autoplaying price ticker is wider than the viewport at 320 CSS px
+   and is the only element that forces horizontal scrolling. */
+.monee-price-ticker {
+    overflow-x: hidden;
 }
 
-/* Allow text to reflow without horizontal scrolling at 200% */
 p, li, td, th, label, span, a, div {
     max-width: 100%;
     overflow-wrap: break-word;
 }
 
-/* ========== TEXT SPACING SUPPORT (WCAG 1.4.12) ========== */
-/* These overrides allow WCAG text spacing without breaking layout */
+/* ========== TEXT SPACING SUPPORT (1.4.12) ========== */
 p, li, td, th, label {
     line-height: 1.5 !important;
     letter-spacing: 0.12em !important;
@@ -93,28 +216,39 @@ p {
     margin-bottom: 1em !important;
 }
 
+/* Service tiles must be free to grow once spacing overrides are applied. */
+.monee-custom-tile .uk-tile,
+.monee-custom-tile .uk-tile-default {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
 /* ========== FORM ERROR STATES ========== */
 input[aria-invalid="true"],
 textarea[aria-invalid="true"],
 select[aria-invalid="true"] {
-    border-color: #c00 !important;
+    border-color: #B00020 !important;
 }
 
 input[aria-invalid="true"]:focus,
-textarea[aria-invalid="true"]:focus {
-    outline-color: #c00 !important;
+textarea[aria-invalid="true"]:focus,
+select[aria-invalid="true"]:focus {
+    outline-color: #B00020 !important;
 }
 
-.form-error {
-    color: #c00 !important;
-    font-size: 12px !important;
-    margin-top: 2px !important;
+.form-error,
+.error-summary {
+    color: #B00020 !important;
+    font-size: 14px !important;
+    margin-top: 4px !important;
+    font-weight: 600;
 }
 
 /* ========== REQUIRED FIELD INDICATOR ========== */
 label .required,
-.required-star {
-    color: #c00 !important;
+.required-star,
+.required-indicator {
+    color: #B00020 !important;
     margin-left: 2px;
 }
 
@@ -137,7 +271,7 @@ label .required,
     input:focus-visible {
         outline: 3px solid CanvasText !important;
     }
-    
+
     .skip-link {
         background: Canvas !important;
         color: CanvasText !important;
@@ -152,4 +286,517 @@ label .required,
     .accessibility-panel {
         display: none !important;
     }
+}
+
+/* ========== AUTO-MOVING CONTENT CONTROLS (2.2.2) ========== */
+/* Small, unobtrusive control rendered next to an auto-advancing carousel
+   or ticker. Kept visually quiet so it does not disturb the layout. */
+.moving-content-toggle {
+    display: inline-block;
+    vertical-align: middle;
+    justify-content: center;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 4px 8px;
+    margin-top: 6px;
+    background: #0B4C8C;
+    color: #fff;
+    border: 1px solid #0B4C8C;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.moving-content-toggle:hover,
+.moving-content-toggle:focus {
+    background: #083a6b;
+}
+
+.monee-price-ticker .moving-content-toggle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+/* ========== RESPONSIVE TABLES (1.4.10 Reflow) ========== */
+/* Data tables scroll inside their own container rather than forcing the
+   whole page to scroll horizontally on narrow viewports. */
+.table-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.table-scroll table {
+    width: auto;
+    min-width: 50%;
+}
+
+.scrolling-text.scrolling-text-paused ol {
+    animation-play-state: paused !important;
+}
+
+
+/* ========================================================================
+   CONTRAST FIXES - SITE-WIDE (1.4.3 / 1.4.11)
+   The template uses a light grey (#8f8f8f / #999) as its default body and
+   muted text colour, and a bright cyan (#11CCF1) as its accent. Both fail
+   the 4.5:1 minimum on the light page backgrounds used across the site, so
+   the palette is darkened here to the nearest compliant shades. These
+   overrides are loaded last and therefore win the cascade.
+   ======================================================================== */
+
+/* Muted body / lead text (#8f8f8f = 3.23:1, #999 = 2.85:1 on white). */
+.uk-text-lead,
+.uk-text-muted,
+.uk-text-meta,
+p,
+li,
+dd,
+dt,
+figcaption,
+small,
+cite,
+.uk-card-default,
+.uk-card-secondary,
+.uk-card-body {
+    color: #595959;
+}
+
+.uk-text-muted,
+.uk-text-meta {
+    color: #595959 !important;
+}
+
+/* Headings and body copy inside default (light) cards. */
+.uk-card-default h1, .uk-card-default h2, .uk-card-default h3,
+.uk-card-default h4, .uk-card-default h5, .uk-card-default h6,
+.uk-card-secondary h1, .uk-card-secondary h2, .uk-card-secondary h3,
+.uk-card-secondary h4, .uk-card-secondary h5, .uk-card-secondary h6 {
+    color: #1a1a1a;
+}
+
+/* Breadcrumb links (#8f8f8f 3.23:1, active #11CCF1 1.92:1). */
+.uk-breadcrumb>*>* {
+    color: #595959;
+}
+
+.uk-breadcrumb> :last-child>span,
+.uk-breadcrumb> :last-child>a:not([href]) {
+    color: #0B4C8C;
+}
+
+.in-breadcrumb .uk-breadcrumb li {
+    color: #0B4C8C;
+}
+
+/* Accent links and list markers. */
+.uk-link-muted,
+.uk-link-muted a,
+a.uk-link-muted,
+.in-breadcrumb a {
+    color: #0B4C8C;
+}
+
+/* Form help text under fields. */
+.uk-form-label,
+.uk-form-help,
+label,
+legend {
+    color: #3a3a3a;
+}
+
+/* ========== SOLID BACKGROUND BANDS WITH WHITE TEXT ========== */
+/* These template bands use a bright cyan (#11CCF1) background which only
+   reaches 1.92:1 against white text. Darkened to the brand blue. */
+.uk-label,
+.uk-label-primary,
+.uk-background-primary,
+.uk-section-primary,
+.uk-tile-primary,
+.uk-card-primary,
+.uk-card-primary> :not([class*='uk-card-media']) {
+    background-color: #0B4C8C !important;
+}
+
+/* Coloured feature cards: white body copy must be solid, not 80% white. */
+.in-colored-card p,
+.in-colored-card p.uk-text-small,
+.in-colored-card .uk-card-body {
+    color: #fff !important;
+}
+
+.in-colored-card h1, .in-colored-card h2, .in-colored-card h3,
+.in-colored-card h4, .in-colored-card h5, .in-colored-card h6,
+.in-colored-card h1 a, .in-colored-card h2 a, .in-colored-card h3 a,
+.in-colored-card h4 a, .in-colored-card h5 a, .in-colored-card h6 a {
+    color: #fff !important;
+}
+
+.in-colored-card.green .uk-card { background-color: #0B6B56 !important; }
+.in-colored-card.blue .uk-card { background-color: #1B5AA8 !important; }
+.in-colored-card.grey .uk-card { background-color: #4F5F60 !important; }
+.in-colored-card.orange .uk-card { background-color: #9E4E16 !important; }
+.in-colored-card.purple .uk-card { background-color: #6F3887 !important; }
+.in-colored-card.navy .uk-card { background-color: #35495d !important; }
+
+/* Hover state of the primary card (#2b76d9 = 4.47:1). */
+.uk-card-primary.uk-card-hover:hover {
+    background-color: #1B5AA8 !important;
+}
+
+/* Buttons that carry white text on the light brand blue. */
+.uk-button-primary {
+    background-color: #146CE0 !important;
+}
+
+.uk-button-primary:hover,
+.uk-button-primary:focus {
+    background-color: #0F5AC0 !important;
+}
+
+/* Secondary / default buttons on coloured card backgrounds. */
+.in-colored-card .uk-button-default,
+.uk-light .uk-button-default {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+/* ========== CHAT WIDGET ========== */
+.chatbox__send--footer,
+.chatbox__send--footer button,
+.send__button {
+    background-color: #0B4C8C !important;
+    color: #fff !important;
+}
+
+/* ========== TESTIMONIAL / QUOTE TEXT ========== */
+.in-quote-post blockquote footer cite,
+cite {
+    color: #595959;
+}
+
+
+/* ========================================================================
+   CONTRAST FIXES - COMPONENTS (1.4.3)
+   ======================================================================== */
+
+/* Current-page and hovered navigation links (#11CCF1 = 1.7:1). */
+.uk-navbar-nav>li>a:focus,
+.uk-navbar-nav>li>a.uk-open,
+.uk-navbar-nav>li.uk-active>a,
+.uk-nav-primary>li>a:hover,
+.uk-nav-primary>li>a:focus,
+.uk-nav-primary>li.uk-active>a,
+.uk-link-heading a:hover,
+.uk-link-toggle:hover .uk-link-heading,
+.uk-link-toggle:focus .uk-link-heading {
+    color: #0B4C8C !important;
+}
+
+/* Article meta and author bylines (#999 = 2.85:1). */
+.uk-article-meta,
+.uk-article-meta a {
+    color: #595959 !important;
+}
+
+.uk-article-meta a:hover {
+    color: #0B4C8C !important;
+}
+
+/* Pull-quote attribution on the grey quote band (#b5b5b5 = 2.4:1). */
+.in-quote-post blockquote footer cite,
+.in-quote-post blockquote footer::before {
+    color: #fff !important;
+}
+
+/* Content inside primary (dark blue) cards, sections and overlays. */
+.uk-card-primary.uk-card-body,
+.uk-card-primary> :not([class*='uk-card-media']),
+.uk-overlay-primary,
+.uk-offcanvas-bar,
+.uk-card-primary.uk-card-body p,
+.uk-card-primary.uk-card-body span,
+.uk-card-primary.uk-card-body li,
+.uk-card-primary.uk-card-body small,
+.uk-card-primary.uk-card-body cite,
+.uk-card-primary.uk-card-body h1,
+.uk-card-primary.uk-card-body h2,
+.uk-card-primary.uk-card-body h3,
+.uk-card-primary.uk-card-body h4,
+.uk-card-primary.uk-card-body h5,
+.uk-card-primary.uk-card-body h6,
+.uk-card-primary.uk-card-body .uk-text-meta,
+.uk-card-primary.uk-card-body .uk-text-muted,
+.uk-card-primary.uk-card-body .uk-article-meta,
+.uk-card-primary.uk-card-body .uk-text-lead {
+    color: #fff !important;
+}
+
+/* Alert with a tinted background. */
+.uk-alert-primary {
+    color: #0B4C8C !important;
+}
+
+/* Media player overlay controls (#00b3ff at 80% = 2.36:1 with white). */
+.plyr__control,
+.plyr__control--overlaid {
+    background-color: #0B4C8C !important;
+}
+
+/* ========== LABEL / BADGE COLOURS (re-stated last so they win) ========== */
+.uk-label,
+.uk-label-primary {
+    background-color: #0B4C8C !important;
+    color: #fff !important;
+}
+
+.uk-label-success {
+    background-color: #157A3D !important;
+    color: #fff !important;
+}
+
+.uk-label-danger {
+    background-color: #B00020 !important;
+    color: #fff !important;
+}
+
+.uk-label-warning {
+    background-color: #8a5a00 !important;
+    color: #fff !important;
+}
+
+
+/* ========================================================================
+   CONTRAST FIXES - FINAL PASS (1.4.3 / 1.4.11)
+   ======================================================================== */
+
+/* Pagination controls (#8f8f8f = 3.23:1). */
+.uk-pagination>*>*,
+.uk-pagination>*>* i {
+    color: #595959 !important;
+}
+
+/* Comment byline and reply links (#999 = 2.85:1, #11CCF1 = 1.92:1). */
+.uk-comment-meta,
+.uk-comment-meta a,
+.uk-comment-meta a.uk-link-reset,
+a.uk-link-reset {
+    color: #595959 !important;
+}
+
+a.uk-link-muted,
+.uk-link-muted a,
+.uk-link-muted {
+    color: #0B4C8C !important;
+}
+
+/* Testimonial attribution inside the light customer cards (#aeaeae = 2.07:1). */
+.in-customer-card footer cite,
+.in-customer-card blockquote footer cite {
+    color: #595959 !important;
+}
+
+/* Primary (dark blue) cards: body copy must be solid white. The template
+   nests the content in .uk-card-primary > .uk-card-body, so the compound
+   selector used earlier does not always match. */
+.uk-card-primary {
+    background-color: #0B4C8C !important;
+    color: #fff !important;
+}
+
+.uk-card-primary .uk-card-body,
+.uk-card-primary .uk-card-body p,
+.uk-card-primary .uk-card-body span,
+.uk-card-primary .uk-card-body li,
+.uk-card-primary .uk-card-body small,
+.uk-card-primary .uk-card-body cite,
+.uk-card-primary .uk-card-body h1,
+.uk-card-primary .uk-card-body h2,
+.uk-card-primary .uk-card-body h3,
+.uk-card-primary .uk-card-body h4,
+.uk-card-primary .uk-card-body h5,
+.uk-card-primary .uk-card-body h6,
+.uk-card-primary .uk-card-body .uk-text-meta,
+.uk-card-primary .uk-card-body .uk-text-muted,
+.uk-card-primary .uk-card-body .uk-text-lead,
+.uk-card-primary .uk-card-body .uk-article-meta,
+.uk-card-primary .uk-card-body .uk-label {
+    color: #fff !important;
+}
+
+/* The pull-quote band uses #84817a, which is too light for white text. */
+.in-quote-post {
+    background-color: #5f5d59 !important;
+}
+
+.in-quote-post blockquote h3,
+.in-quote-post blockquote footer cite,
+.in-quote-post blockquote footer::before {
+    color: #fff !important;
+}
+
+/* Yellow "link post" band: the global primary-background override must not
+   repaint it. Restored here with a dark, readable link colour. */
+.in-link-post .uk-background-primary {
+    background-color: #ffeaa7 !important;
+}
+
+.in-link-post .uk-background-primary a,
+.in-link-post .uk-background-primary h1 a,
+.in-link-post .uk-background-primary h2 a,
+.in-link-post .uk-background-primary h3 a {
+    color: #0B4C8C !important;
+}
+
+/* Active pagination item keeps white text on its dark background. */
+.uk-pagination>.uk-active>*,
+.uk-pagination>.uk-active>*:hover,
+.uk-pagination>.uk-active>*:focus {
+    color: #fff !important;
+    background-color: #0B4C8C !important;
+}
+
+
+/* ========================================================================
+   TARGET SIZE - ADDITIONAL COMPONENTS (2.5.8)
+   The footer links are handled above; these are the remaining standalone
+   controls (breadcrumbs, article meta, widget lists, text buttons) that
+   measured under 24x24 CSS px. The inline-in-a-sentence exception is left
+   untouched, so body-copy links keep their natural flow.
+   ======================================================================== */
+.uk-breadcrumb>*>a,
+.uk-article-meta a,
+.uk-button-text,
+.uk-list>li>a,
+.in-widget-category a,
+.in-widget-archive a,
+.in-widget-tag a,
+.uk-comment-meta a,
+p.uk-text-small>a,
+.in-footer-disclaimer p.uk-text-small a {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 24px;
+    min-width: 24px;
+}
+
+/* The reply control is a narrow, right-aligned link. */
+.uk-position-top-right>a.uk-link-muted,
+a.uk-link-muted,
+a.uk-link-reset {
+    min-height: 24px;
+    min-width: 24px;
+}
+
+
+/* Standalone links that occupy their own line or cell are treated as
+   controls, not inline links within a sentence, so they need a 24x24 target.
+   `:only-child` keeps links embedded in flowing text (the WCAG exception)
+   untouched. */
+p>a:only-child,
+td>a:only-child,
+li>a:only-child,
+span>a:only-child,
+div>a:only-child,
+.in-footer-address a,
+.in-footer-info a {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 24px !important;
+    min-width: 24px !important;
+}
+
+/* Standalone contact links that sit beside a decorative icon. */
+p.uk-margin-small-left>a,
+p.uk-margin-small-left>a.uk-link-reset {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 24px;
+}
+
+/* ========== RESPONSIVE TABLES - WIDTH-LIMITED (1.4.10) ========== */
+/* Wide data tables are allowed to scroll inside their own box on narrow
+   viewports instead of forcing the whole page to scroll sideways. */
+@media (max-width: 767px) {
+    table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* reCAPTCHA renders a fixed-width (304px) widget that is wider than a
+   320 CSS px viewport once the form padding is applied, forcing horizontal
+   scrolling. Let it scale down instead. */
+.g-recaptcha,
+.g-recaptcha>div,
+.g-recaptcha iframe {
+    max-width: 100% !important;
+}
+
+.g-recaptcha iframe {
+    width: 100% !important;
+}
+
+/* ========== RESIZE TEXT / ENLARGED-TEXT ROBUSTNESS (1.4.4) ========== */
+/* When the user enlarges text (or browser zoom lands mid-breakpoint), the
+   horizontal menu can become wider than its container. Letting the wrapper
+   shrink and the items wrap keeps the content reachable without introducing
+   sideways scrolling. No effect at the default text size. */
+header .in-navbar-wrapper,
+header .uk-navbar-container,
+header .uk-navbar-nav {
+    min-width: 0;
+}
+
+header .uk-navbar-nav {
+    flex-wrap: wrap;
+}
+
+/* Data tables that sit directly inside a layout column get their own scroll
+   container, so an enlarged table never widens the whole page. */
+div:has(> table) {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    max-width: 100%;
+}
+
+/* Containers that already scroll should never let their wide content widen
+   the page, and grid children must be allowed to shrink below their
+   content's intrinsic width. */
+.uk-overflow-auto {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.uk-grid>* {
+    min-width: 0;
+}
+
+/* Any grid-style flex container (Uikit also emits .uk-grid-divider and
+   .uk-child-width-* without .uk-grid) must allow its columns to shrink so a
+   wide child scrolls internally instead of widening the page. */
+[class*="uk-grid"]>*,
+[class*="uk-child-width"]>* {
+    min-width: 0;
+}
+
+/* Remaining standalone controls below the 24x24 minimum. */
+.in-colored-card h1>a, .in-colored-card h2>a, .in-colored-card h3>a,
+.in-colored-card h4>a, .in-colored-card h5>a, .in-colored-card h6>a {
+    display: inline-block;
+    min-height: 24px;
+}
+
+.uk-button,
+.fab,
+.accessibility-menu button,
+.accessibility-menu .fab {
+    min-height: 24px;
+    min-width: 24px;
 }

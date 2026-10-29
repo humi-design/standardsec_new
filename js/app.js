@@ -256,7 +256,7 @@
                 let firstInvalid = null;
 
                 // Validate name
-                const nameField = self.form.querySelector('#full-name');
+                const nameField = self.form.querySelector('#signup-name');
                 if (nameField && nameField.required && !nameField.value.trim()) {
                     isValid = false;
                     nameField.setAttribute('aria-invalid', 'true');
@@ -264,7 +264,7 @@
                 }
 
                 // Validate email
-                const emailField = self.form.querySelector('#email');
+                const emailField = self.form.querySelector('#signup-email');
                 if (emailField && emailField.required) {
                     const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
                     if (!emailRegex.test(emailField.value.trim())) {
@@ -320,6 +320,92 @@
     };
 
     // =========================================================================
+    // Auto-Moving Content: Pause / Stop Controls (WCAG 2.2.2)
+    // Adds a visible, labelled control for each auto-advancing UIkit slider
+    // (price ticker) and slideshow (hero carousel) on the page.
+    // =========================================================================
+    const MovingContentControls = {
+        init: function() {
+            var self = this;
+            var reduceMotion = window.matchMedia &&
+                window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            document.querySelectorAll('[data-uk-slider][data-uk-slider*="autoplay"], [data-uk-slideshow][data-uk-slideshow*="autoplay"]').forEach(function(el) {
+                var isSlider = el.hasAttribute('data-uk-slider');
+                var component = isSlider ? 'slider' : 'slideshow';
+                var label = isSlider ? 'price ticker' : 'slideshow';
+                if (typeof UIkit === 'undefined' || !UIkit[component]) return;
+
+                var instance = UIkit[component](el);
+                if (!instance) return;
+
+                var btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'moving-content-toggle';
+                btn.setAttribute('aria-pressed', 'false');
+                btn.innerHTML = '<span class="sr-only">Pause ' + label + '</span><span aria-hidden="true">❙❙</span>';
+
+                var paused = false;
+
+                var setState = function (nowPaused) {
+                    paused = nowPaused;
+                    btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+                    btn.innerHTML = paused
+                        ? '<span class="sr-only">Play ' + label + '</span><span aria-hidden="true">▶</span>'
+                        : '<span class="sr-only">Pause ' + label + '</span><span aria-hidden="true">❙❙</span>';
+                };
+
+                btn.addEventListener('click', function () {
+                    if (paused) {
+                        if (typeof instance.startAutoplay === 'function') instance.startAutoplay();
+                        setState(false);
+                    } else {
+                        if (typeof instance.stopAutoplay === 'function') instance.stopAutoplay();
+                        setState(true);
+                    }
+                });
+
+                el.parentNode.insertBefore(btn, el.nextSibling);
+
+                // Honour the user's reduced-motion preference by starting paused.
+                if (reduceMotion && typeof instance.stopAutoplay === 'function') {
+                    instance.stopAutoplay();
+                    setState(true);
+                }
+            });
+
+            // CSS-animated marquees (footer investor ticker) are also
+            // auto-moving content and need the same user control.
+            document.querySelectorAll('.scrolling-text').forEach(function (el) {
+                var btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'moving-content-toggle';
+                btn.setAttribute('aria-pressed', 'false');
+                btn.innerHTML = '<span class="sr-only">Pause scrolling notices</span><span aria-hidden="true">❙❙</span>';
+
+                var paused = false;
+                btn.addEventListener('click', function () {
+                    paused = !paused;
+                    el.classList.toggle('scrolling-text-paused', paused);
+                    btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
+                    btn.innerHTML = paused
+                        ? '<span class="sr-only">Play scrolling notices</span><span aria-hidden="true">▶</span>'
+                        : '<span class="sr-only">Pause scrolling notices</span><span aria-hidden="true">❙❙</span>';
+                });
+
+                el.parentNode.insertBefore(btn, el.nextSibling);
+
+                if (reduceMotion) {
+                    el.classList.add('scrolling-text-paused');
+                    paused = true;
+                    btn.setAttribute('aria-pressed', 'true');
+                    btn.innerHTML = '<span class="sr-only">Play scrolling notices</span><span aria-hidden="true">▶</span>';
+                }
+            });
+        }
+    };
+
+    // =========================================================================
     // Initialize All Modules
     // =========================================================================
     document.addEventListener('DOMContentLoaded', function() {
@@ -332,6 +418,9 @@
 
         // Initialize home form validation
         HomeFormValidation.init();
+
+        // Add pause/stop controls for auto-moving content (2.2.2)
+        MovingContentControls.init();
 
         // Initialize mobile navigation accessibility
         if (typeof MobileNavA11y !== 'undefined') {
@@ -442,7 +531,13 @@
     }
 
     function initMobileNavARIA() {
-        var navToggles = document.querySelectorAll('[class*="hamburger"], [class*="uk-navbar-toggle"], button[class*="toggle"], a[href*="menu"]');
+        // Scoped to the real navigation toggles: a generic [class*="toggle"]
+    // selector also matched unrelated controls (e.g. the pause buttons).
+    var navToggles = document.querySelectorAll(
+        '[class*="hamburger"], [class*="uk-navbar-toggle"], ' +
+        'button[data-uk-toggle][aria-controls*="nav"], ' +
+        'button[aria-controls*="nav"][aria-controls*="modal"]'
+    );
         navToggles.forEach(function(toggle) {
             if (!toggle.getAttribute('aria-expanded')) {
                 toggle.setAttribute('aria-expanded', 'false');

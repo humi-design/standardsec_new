@@ -780,10 +780,12 @@ a.uk-link-reset {
 /* Standalone links that occupy their own line or cell are treated as
    controls, not inline links within a sentence, so they need a 24x24 target.
    `:only-child` keeps links embedded in flowing text (the WCAG exception)
-   untouched. */
+   untouched. Navbar links are excluded: they are already 80px tall, and
+   shrinking them to an inline-block box mis-aligns their text against the
+   dropdown items (uikit centres those with flex). */
 p>a:only-child,
 td>a:only-child,
-li>a:only-child,
+li>a:only-child:not(.uk-navbar-nav>li>a),
 span>a:only-child,
 div>a:only-child,
 .in-footer-address a,

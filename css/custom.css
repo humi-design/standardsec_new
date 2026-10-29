@@ -1,0 +1,1021 @@
+/**
+ * Standard Securities - Custom Styles
+ * Proprietary custom styling for the Standard Securities website
+ * 
+ * These styles override framework defaults and provide
+ * site-specific customization while maintaining design consistency
+ */
+
+/* ========================================================================
+   CSS CUSTOM PROPERTIES (OVERRIDES)
+   ======================================================================== */
+
+:root {
+    /* Brand-specific colors */
+    --ss-primary: #146CE0;
+    --ss-primary-dark: #0D47A1;
+    --ss-primary-light: #4184DD;
+    --ss-secondary: #012c6d;
+    --ss-accent: #0052a3;
+    
+    /* Financial color palette */
+    --ss-success: #2ecc71;
+    --ss-warning: #ff9800;
+    --ss-danger: #f44336;
+    --ss-info: #11CCF1;
+    
+    /* Neutral palette */
+    --ss-white: #ffffff;
+    --ss-black: #000000;
+    --ss-gray-50: #fafafa;
+    --ss-gray-100: #f5f5f5;
+    --ss-gray-200: #eeeeee;
+    --ss-gray-300: #e0e0e0;
+    --ss-gray-400: #bdbdbd;
+    --ss-gray-500: #9e9e9e;
+    --ss-gray-600: #757575;
+    --ss-gray-700: #616161;
+    --ss-gray-800: #424242;
+    --ss-gray-900: #212121;
+    
+    /* Custom shadows */
+    --ss-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --ss-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --ss-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --ss-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --ss-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    
+    /* Custom border radius */
+    --ss-radius-sm: 4px;
+    --ss-radius: 8px;
+    --ss-radius-lg: 12px;
+    --ss-radius-xl: 16px;
+    --ss-radius-2xl: 24px;
+    
+    /* Custom transitions */
+    --ss-transition-fast: 150ms ease;
+    --ss-transition: 200ms ease;
+    --ss-transition-slow: 300ms ease;
+}
+
+/* ========================================================================
+   HEADER CUSTOMIZATIONS
+   ======================================================================== */
+
+/* Header container refinements */
+header {
+    background-color: var(--ss-white);
+    box-shadow: var(--ss-shadow-sm);
+    position: relative;
+    z-index: 100;
+}
+
+header.in-sticky {
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: var(--ss-shadow-md);
+}
+
+/* Logo refinements */
+header .in-header-logo {
+    display: flex;
+    align-items: center;
+    transition: all var(--ss-transition);
+}
+
+header .in-header-logo img {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+header.in-sticky .in-header-logo img {
+    max-width: 170px;
+}
+
+/* Header action buttons */
+header .in-header-links {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+header .in-header-links .uk-button {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: all var(--ss-transition);
+}
+
+header .in-header-links .uk-button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--ss-shadow-md);
+}
+
+/* Navigation refinements */
+header .uk-navbar-nav > li > a {
+    color: var(--ss-secondary);
+    font-weight: 500;
+    font-size: 0.9375rem;
+    letter-spacing: 0.01em;
+    padding: 1.25rem 1rem;
+    position: relative;
+}
+
+header .uk-navbar-nav > li > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--ss-primary);
+    transition: all var(--ss-transition);
+    transform: translateX(-50%);
+}
+
+header .uk-navbar-nav > li > a:hover::after,
+header .uk-navbar-nav > li > a:focus::after {
+    width: calc(100% - 2rem);
+}
+
+header .uk-navbar-nav > li > a:hover,
+header .uk-navbar-nav > li > a:focus {
+    color: var(--ss-primary);
+    background-color: transparent;
+}
+
+/* Dropdown refinements */
+.uk-navbar-dropdown {
+    border-radius: var(--ss-radius-lg);
+    box-shadow: var(--ss-shadow-xl);
+    border: 1px solid var(--ss-gray-200);
+    padding: 0.75rem;
+    min-width: 220px;
+    animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.uk-navbar-dropdown a {
+    border-radius: var(--ss-radius);
+    padding: 0.75rem 1rem;
+    color: var(--ss-gray-800);
+    font-size: 0.9375rem;
+    transition: all var(--ss-transition-fast);
+}
+
+.uk-navbar-dropdown a:hover,
+.uk-navbar-dropdown a:focus {
+    background-color: var(--ss-gray-100);
+    color: var(--ss-primary);
+}
+
+/* ========================================================================
+   HERO / SLIDESHOW CUSTOMIZATIONS
+   ======================================================================== */
+
+.in-slideshow {
+    border-radius: var(--ss-radius-2xl);
+    overflow: visible;
+    box-shadow: var(--ss-shadow-xl);
+    margin: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.in-slideshow .uk-overlay {
+    background: linear-gradient(135deg, rgba(1, 44, 109, 0.9) 0%, rgba(20, 108, 224, 0.7) 100%);
+    padding: 2rem;
+}
+
+/* Slide text styling */
+.monee-slide1-text h2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+}
+
+.monee-slide1-text p {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--ss-white);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.monee-slide2-text h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--ss-white);
+    margin-bottom: 1rem;
+}
+
+.monee-slide2-text p {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+/* Slideshow navigation dots */
+.uk-dotnav > li > a {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all var(--ss-transition);
+}
+
+.uk-dotnav > li:hover > a,
+.uk-dotnav > li > a:focus {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.uk-dotnav > li.uk-active > a {
+    background-color: var(--ss-white);
+    transform: scale(1.2);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================================================
+   CARD CUSTOMIZATIONS
+   ======================================================================== */
+
+.uk-card {
+    border-radius: var(--ss-radius-lg);
+    border: 1px solid var(--ss-gray-200);
+    transition: all var(--ss-transition);
+    overflow: hidden;
+}
+
+.uk-card:hover {
+    box-shadow: var(--ss-shadow-lg);
+    transform: translateY(-2px);
+    border-color: var(--ss-primary-light);
+}
+
+.uk-card-body {
+    padding: 1.5rem;
+}
+
+.uk-card-media-top img,
+.uk-card-media-bottom img {
+    border-radius: var(--ss-radius-lg) var(--ss-radius-lg) 0 0;
+}
+
+/* Custom card variants */
+.uk-card-primary {
+    background-color: var(--ss-primary);
+    border-color: var(--ss-primary);
+}
+
+.uk-card-secondary {
+    background-color: var(--ss-secondary);
+    border-color: var(--ss-secondary);
+    color: var(--ss-white);
+}
+
+.uk-card-secondary .uk-card-title,
+.uk-card-secondary p,
+.uk-card-secondary li,
+.uk-card-secondary span {
+    color: var(--ss-white);
+}
+
+/* Service cards */
+.service-card {
+    background: var(--ss-white);
+    border-radius: var(--ss-radius-lg);
+    padding: 2rem;
+    text-align: center;
+    transition: all var(--ss-transition);
+    border: 1px solid var(--ss-gray-200);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--ss-shadow-xl);
+    border-color: var(--ss-primary-light);
+}
+
+.service-card .uk-icon {
+    width: 64px;
+    height: 64px;
+    color: var(--ss-primary);
+    margin-bottom: 1rem;
+}
+
+/* Feature cards */
+.feature-card {
+    background: var(--ss-white);
+    border-radius: var(--ss-radius-lg);
+    padding: 1.5rem;
+    transition: all var(--ss-transition);
+    border: 1px solid var(--ss-gray-200);
+}
+
+.feature-card:hover {
+    box-shadow: var(--ss-shadow-lg);
+}
+
+/* ========================================================================
+   BUTTON CUSTOMIZATIONS
+   ======================================================================== */
+
+.uk-button {
+    font-weight: 500;
+    border-radius: var(--ss-radius);
+    padding: 0.75rem 1.5rem;
+    transition: all var(--ss-transition);
+    letter-spacing: 0.01em;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uk-button:hover {
+    transform: translateY(-1px);
+}
+
+.uk-button:active {
+    transform: translateY(0);
+}
+
+/* Primary button */
+.uk-button-primary {
+    background-color: var(--ss-primary);
+    border-color: var(--ss-primary);
+    color: var(--ss-white);
+}
+
+.uk-button-primary:hover {
+    background-color: var(--ss-primary-dark);
+    border-color: var(--ss-primary-dark);
+    box-shadow: var(--ss-shadow-md);
+}
+
+/* Secondary button */
+.uk-button-secondary {
+    background-color: var(--ss-secondary);
+    border-color: var(--ss-secondary);
+    color: var(--ss-white);
+}
+
+.uk-button-secondary:hover {
+    background-color: var(--ss-secondary);
+    opacity: 0.9;
+}
+
+/* Default button */
+.uk-button-default {
+    background-color: transparent;
+    border-color: var(--ss-primary);
+    color: var(--ss-primary);
+}
+
+.uk-button-default:hover {
+    background-color: var(--ss-primary);
+    color: var(--ss-white);
+}
+
+/* Button sizes */
+.uk-button-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    min-height: 36px;
+}
+
+.uk-button-large {
+    padding: 1rem 2rem;
+    font-size: 1.0625rem;
+    min-height: 52px;
+}
+
+/* ========================================================================
+   FORM CUSTOMIZATIONS
+   ======================================================================== */
+
+.uk-form-label {
+    font-weight: 500;
+    color: var(--ss-gray-700);
+    margin-bottom: 0.5rem;
+    font-size: 0.9375rem;
+}
+
+.uk-input,
+.uk-select,
+.uk-textarea {
+    border-radius: var(--ss-radius);
+    border: 1px solid var(--ss-gray-300);
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: all var(--ss-transition-fast);
+    min-height: 44px;
+}
+
+.uk-input:hover,
+.uk-select:hover,
+.uk-textarea:hover {
+    border-color: var(--ss-gray-400);
+}
+
+.uk-input:focus,
+.uk-select:focus,
+.uk-textarea:focus {
+    border-color: var(--ss-primary);
+    box-shadow: 0 0 0 3px rgba(20, 108, 224, 0.15);
+    outline: none;
+}
+
+.uk-input::placeholder {
+    color: var(--ss-gray-500);
+}
+
+/* Form group spacing */
+.uk-form-group {
+    margin-bottom: 1.25rem;
+}
+
+/* ========================================================================
+   SECTION CUSTOMIZATIONS
+   ======================================================================== */
+
+.uk-section {
+    padding: 4rem 0;
+}
+
+.uk-section-default {
+    background-color: var(--ss-white);
+}
+
+.uk-section-muted {
+    background-color: var(--ss-gray-50);
+}
+
+.uk-section-primary {
+    background-color: var(--ss-secondary);
+    color: var(--ss-white);
+}
+
+.uk-section-secondary {
+    background-color: var(--ss-gray-100);
+    color: var(--ss-gray-800);
+}
+
+/* Section titles */
+.uk-section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--ss-secondary);
+    margin-bottom: 1rem;
+}
+
+.uk-section-subtitle {
+    font-size: 1.125rem;
+    color: var(--ss-gray-600);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+/* ========================================================================
+   FOOTER CUSTOMIZATIONS
+   ======================================================================== */
+
+footer {
+    background-color: var(--ss-secondary);
+    color: var(--ss-white);
+    padding: 4rem 0 2rem;
+}
+
+footer h4 {
+    color: var(--ss-white);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+footer h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--ss-primary);
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all var(--ss-transition-fast);
+    display: inline-block;
+    padding: 0.25rem 0;
+}
+
+footer a:hover,
+footer a:focus {
+    color: var(--ss-white);
+    text-decoration: none;
+    padding-left: 4px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer social icons */
+footer .uk-icon-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--ss-white);
+    border-radius: var(--ss-radius;
+    transition: all var(--ss-transition);
+}
+
+footer .uk-icon-button:hover,
+footer .uk-icon-button:focus {
+    background-color: var(--ss-primary);
+    color: var(--ss-white);
+}
+
+/* Footer bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    margin-top: 3rem;
+}
+
+/* Footer layout improvements */
+footer .uk-child-width-1-4\@m > div {
+    margin-bottom: 1.5rem;
+}
+
+footer .uk-child-width-1-4\@m > div:last-child {
+    margin-bottom: 0;
+}
+
+footer .in-footer-address p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    line-height: 1.8;
+}
+
+footer .in-footer-copyright {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+footer .in-footer-copyright p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    margin: 0;
+}
+
+footer .in-footer-disclaimer {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+footer .in-footer-info i {
+    color: var(--ss-primary-light);
+}
+
+/* Footer icon buttons - white icons */
+footer .uk-icon-button {
+    color: var(--ss-white) !important;
+}
+
+footer .uk-icon-button:hover,
+footer .uk-icon-button:focus {
+    background-color: var(--ss-primary) !important;
+    color: var(--ss-white) !important;
+}
+
+/* Fix footer copyright card on dark background */
+footer .uk-card-secondary {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: none;
+}
+
+footer .uk-card-secondary .uk-card-body {
+    background-color: transparent !important;
+}
+
+/* Footer disclaimer text */
+footer .in-footer-disclaimer, 
+footer .in-footer-disclaimer p {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+/* ========================================================================
+   TYPOGRAPHY CUSTOMIZATIONS
+   ======================================================================== */
+
+h1, h2, h3, h4, h5, h6,
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6 {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--ss-secondary);
+    line-height: 1.2;
+}
+
+h1, .uk-h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2, .uk-h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+h3, .uk-h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h4, .uk-h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+h5, .uk-h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+h6, .uk-h6 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.7;
+    color: var(--ss-gray-700);
+}
+
+.uk-text-lead {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--ss-gray-600);
+}
+
+/* ========================================================================
+   TABLE CUSTOMIZATIONS
+   ======================================================================== */
+
+.uk-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.uk-table th {
+    background-color: var(--ss-gray-100);
+    color: var(--ss-secondary);
+    font-weight: 600;
+    padding: 1rem;
+    border-bottom: 2px solid var(--ss-primary);
+}
+
+.uk-table td {
+    padding: 0.875rem 1rem;
+    border-bottom: 1px solid var(--ss-gray-200);
+    vertical-align: middle;
+}
+
+.uk-table tbody tr {
+    transition: background-color var(--ss-transition-fast);
+}
+
+.uk-table tbody tr:hover {
+    background-color: var(--ss-gray-50);
+}
+
+/* ========================================================================
+   BREADCRUMB CUSTOMIZATIONS
+   ======================================================================== */
+
+.uk-breadcrumb {
+    font-size: 0.875rem;
+}
+
+.uk-breadcrumb > * > * {
+    color: var(--ss-gray-600);
+    transition: color var(--ss-transition-fast);
+}
+
+.uk-breadcrumb > * > *:hover,
+.uk-breadcrumb > * > a:hover {
+    color: var(--ss-primary);
+}
+
+.uk-breadcrumb > :last-child > * {
+    color: var(--ss-secondary);
+    font-weight: 500;
+}
+
+/* ========================================================================
+   ALERT CUSTOMIZATIONS
+   ======================================================================== */
+
+.uk-alert {
+    border-radius: var(--ss-radius);
+    padding: 1rem 1.25rem;
+    border: none;
+}
+
+.uk-alert-success {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #27ae60;
+}
+
+.uk-alert-warning {
+    background-color: rgba(255, 152, 0, 0.1);
+    color: #e67e00;
+}
+
+.uk-alert-danger {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #e74c3c;
+}
+
+.uk-alert-primary {
+    background-color: rgba(20, 108, 224, 0.1);
+    color: var(--ss-primary);
+}
+
+/* ========================================================================
+   BADGE / LABEL CUSTOMIZATIONS
+   ======================================================================== */
+
+.uk-label {
+    border-radius: var(--ss-radius-sm);
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.uk-label-success {
+    background-color: var(--ss-success);
+}
+
+.uk-label-warning {
+    background-color: var(--ss-warning);
+}
+
+.uk-label-danger {
+    background-color: var(--ss-danger);
+}
+
+.uk-label-primary {
+    background-color: var(--ss-primary);
+}
+
+/* ========================================================================
+   LIST CUSTOMIZATIONS
+   ======================================================================== */
+
+.uk-list > li {
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.uk-list > li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    background-color: var(--ss-primary);
+    border-radius: 50%;
+}
+
+.uk-list-striped > li:nth-child(odd) {
+    background-color: var(--ss-gray-50);
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    border-radius: var(--ss-radius-sm);
+}
+
+/* ========================================================================
+   ICON CUSTOMIZATIONS
+   ======================================================================== */
+
+.uk-icon {
+    color: var(--ss-primary);
+}
+
+.uk-icon-button {
+    border-radius: var(--ss-radius);
+    transition: all var(--ss-transition);
+}
+
+.uk-icon-button:hover,
+.uk-icon-button:focus {
+    background-color: var(--ss-primary);
+    color: var(--ss-white);
+}
+
+/* ========================================================================
+   ANIMATION CUSTOMIZATIONS
+   ======================================================================== */
+
+/* Fade in up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Scale in animation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.3s ease forwards;
+}
+
+/* Pulse animation for attention */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* ========================================================================
+   SCROLLING TEXT CUSTOMIZATIONS
+   ======================================================================== */
+
+.scrolling-text {
+    background-color: var(--ss-secondary);
+    padding: 0.75rem 0;
+    overflow: hidden;
+}
+
+.scrolling-text ol {
+    display: flex;
+    gap: 3rem;
+    animation: scroll-left 40s linear infinite;
+    padding: 0;
+    margin: 0;
+}
+
+.scrolling-text li {
+    white-space: nowrap;
+    color: var(--ss-white);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ========================================================================
+   SPECIAL COMPONENTS
+   ======================================================================== */
+
+/* Investor attention banner */
+.investor-attention {
+    background: linear-gradient(135deg, var(--ss-primary) 0%, var(--ss-secondary) 100%);
+    color: var(--ss-white);
+    padding: 1rem 2rem;
+    border-radius: var(--ss-radius-lg);
+    margin: 1rem;
+}
+
+.investor-attention h4 {
+    color: var(--ss-white);
+    margin-bottom: 0.5rem;
+}
+
+/* Stats counter */
+.stat-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--ss-primary);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--ss-gray-600);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* CTA section */
+.cta-section {
+    background: linear-gradient(135deg, var(--ss-secondary) 0%, var(--ss-primary) 100%);
+    padding: 4rem 0;
+    border-radius: var(--ss-radius-2xl);
+    margin: 2rem;
+    text-align: center;
+}
+
+.cta-section h2,
+.cta-section p {
+    color: var(--ss-white);
+}
+
+.cta-section .uk-button-primary {
+    background-color: var(--ss-white);
+    color: var(--ss-secondary);
+    border-color: var(--ss-white);
+}
+
+.cta-section .uk-button-primary:hover {
+    background-color: var(--ss-gray-100);
+}
+
+/* ========================================================================
+   ACCESSIBILITY OVERRIDES (MAINTAIN WCAG 2.2 AA)
+   ======================================================================== */
+
+/* Ensure focus indicators are visible */
+*:focus {
+    outline: 3px solid var(--ss-primary) !important;
+    outline-offset: 2px !important;
+}
+
+/* High visibility focus for critical elements */
+.uk-button:focus,
+.skip-link:focus,
+button:focus {
+    outline: 3px solid #fbbf24 !important;
+    outline-offset: 3px !important;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Ensure minimum touch targets (WCAG 2.5.5) */
+a, button, 
+.uk-icon-button,
+.uk-button,
+.uk-toggler {
+    min-height: 44px;
+    min-width: 44px;
+}

@@ -1,0 +1,857 @@
+/**
+ * Standard Securities - Responsive Styles
+ * Modern enterprise financial platform responsive design
+ * 
+ * Breakpoints:
+ * - 320px: Small mobile
+ * - 375px: Mobile landscape
+ * - 480px: Large mobile
+ * - 640px: Small tablet
+ * - 768px: Tablet portrait
+ * - 960px: Tablet landscape
+ * - 1024px: Small desktop
+ * - 1280px: Desktop
+ * - 1440px: Large desktop
+ * - 1920px: Extra large desktop
+ */
+
+/* ========================================================================
+   BASE RESPONSIVE SETTINGS
+   ======================================================================== */
+
+:root {
+    /* Responsive container widths */
+    --container-padding-mobile: 1rem;
+    --container-padding-tablet: 1.5rem;
+    --container-padding-desktop: 2rem;
+}
+
+/* ========================================================================
+   320PX - SMALL MOBILE
+   ======================================================================== */
+
+@media (max-width: 320px) {
+    /* Base typography */
+    html {
+        font-size: 14px;
+    }
+    
+    /* Container adjustments */
+    .uk-container {
+        padding-left: var(--container-padding-mobile);
+        padding-right: var(--container-padding-mobile);
+    }
+    
+    /* Header adjustments */
+    header .in-header-logo img {
+        max-width: 140px;
+        height: auto;
+    }
+    
+    header .in-header-button .uk-button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Navigation */
+    header .uk-navbar-nav > li > a {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    /* Slideshow */
+    .in-slideshow {
+        margin: 0.5rem;
+        border-radius: 0.5rem;
+        min-height: 250px;
+    }
+    
+    /* Cards */
+    .uk-card {
+        padding: 1rem;
+    }
+    
+    /* Grid adjustments */
+    .uk-grid {
+        margin-left: -0.5rem;
+    }
+    
+    .uk-grid > * {
+        padding-left: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Typography */
+    h1, .uk-h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2, .uk-h2 {
+        font-size: 1.25rem;
+    }
+    
+    h3, .uk-h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Buttons */
+    .uk-button {
+        padding: 0.6rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    /* Footer */
+    footer .uk-grid > * {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* ========================================================================
+   375PX - MOBILE LANDSCAPE
+   ======================================================================== */
+
+@media (min-width: 321px) and (max-width: 375px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .uk-container {
+        padding-left: var(--container-padding-mobile);
+        padding-right: var(--container-padding-mobile);
+    }
+    
+    header .in-header-logo img {
+        max-width: 160px;
+    }
+    
+    .in-slideshow {
+        margin: 0.75rem;
+        min-height: 280px;
+    }
+    
+    h1, .uk-h1 {
+        font-size: 1.6rem;
+    }
+    
+    h2, .uk-h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ========================================================================
+   480PX - LARGE MOBILE
+   ======================================================================== */
+
+@media (min-width: 376px) and (max-width: 480px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .uk-container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    
+    header .in-header-logo img {
+        max-width: 170px;
+    }
+    
+    .in-slideshow {
+        margin: 1rem;
+        min-height: 320px;
+    }
+    
+    /* Form adjustments */
+    .uk-form-label {
+        font-size: 0.875rem;
+    }
+    
+    .uk-input,
+    .uk-select,
+    .uk-textarea {
+        padding: 0.625rem 0.875rem;
+    }
+}
+
+/* ========================================================================
+   640PX - SMALL TABLET
+   ======================================================================== */
+
+@media (min-width: 481px) and (max-width: 640px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .uk-container {
+        max-width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
+    header .in-header-logo img {
+        max-width: 180px;
+    }
+    
+    .in-slideshow {
+        margin: 1rem;
+        min-height: 360px;
+    }
+    
+    /* Grid 2 columns */
+    .uk-child-width-1-2\@s {
+        width: calc(50% - 0.5rem);
+    }
+    
+    /* Cards in grid */
+    .services-grid,
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ========================================================================
+   768PX - TABLET PORTRAIT
+   ======================================================================== */
+
+@media (min-width: 641px) and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    
+    .uk-container {
+        max-width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    header .in-header-logo img {
+        max-width: 190px;
+    }
+    
+    .in-slideshow {
+        margin: 1.25rem;
+        min-height: 400px;
+    }
+    
+    /* Grid 3 columns on tablet */
+    .uk-child-width-1-3\@m {
+        width: calc(33.333% - 1rem);
+    }
+    
+    /* Two column layouts */
+    .two-column-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Hero text */
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    /* Footer 2 columns */
+    footer .uk-child-width-1-4\@m > * {
+        width: calc(50% - 1.5rem);
+    }
+}
+
+/* ========================================================================
+   960PX - TABLET LANDSCAPE / SMALL DESKTOP
+   ======================================================================== */
+
+@media (min-width: 769px) and (max-width: 960px) {
+    html {
+        font-size: 16px;
+    }
+    
+    .uk-container {
+        max-width: 960px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    header .in-header-logo img {
+        max-width: 200px;
+    }
+    
+    .in-slideshow {
+        margin: 1.5rem;
+        min-height: 450px;
+    }
+    
+    /* Grid 4 columns */
+    .uk-child-width-1-4\@m {
+        width: calc(25% - 1.5rem);
+    }
+    
+    /* Three column grids */
+    .services-grid,
+    .products-grid,
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    /* Sidebar layout */
+    .sidebar-layout {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* ========================================================================
+   1024PX - SMALL DESKTOP
+   ======================================================================== */
+
+@media (min-width: 961px) and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+    
+    .uk-container {
+        max-width: 1024px;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    
+    .in-slideshow {
+        margin: 2rem;
+    }
+    
+    /* Four column grids */
+    .uk-child-width-1-5\@l {
+        width: calc(20% - 1.5rem);
+    }
+    
+    .services-grid,
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 2.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+/* ========================================================================
+   1280PX - DESKTOP
+   ======================================================================== */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    html {
+        font-size: 16px;
+    }
+    
+    .uk-container {
+        max-width: 1200px;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    
+    .in-slideshow {
+        margin: 2rem;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.35rem;
+    }
+    
+    /* Six column grids */
+    .features-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/* ========================================================================
+   1440PX - LARGE DESKTOP
+   ======================================================================== */
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    html {
+        font-size: 16px;
+    }
+    
+    .uk-container {
+        max-width: 1320px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    .in-slideshow {
+        margin: 2.5rem;
+        border-radius: 1rem;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 3.25rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========================================================================
+   1920PX - EXTRA LARGE DESKTOP
+   ======================================================================== */
+
+@media (min-width: 1441px) {
+    html {
+        font-size: 17px;
+    }
+    
+    .uk-container {
+        max-width: 1400px;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    
+    .in-slideshow {
+        margin: 3rem;
+        border-radius: 1.5rem;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.65rem;
+    }
+    
+    /* Increased spacing for large screens */
+    .section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+/* ========================================================================
+   CONTAINER MAX-WIDTHS
+   ======================================================================== */
+
+@media (max-width: 640px) {
+    .uk-container {
+        max-width: calc(100% - 2rem);
+    }
+}
+
+@media (min-width: 640px) {
+    .uk-container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .uk-container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 960px) {
+    .uk-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .uk-container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .uk-container {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .uk-container {
+        max-width: 1536px;
+    }
+}
+
+/* ========================================================================
+   FLEXBOX LAYOUT ADJUSTMENTS
+   ======================================================================== */
+
+@media (max-width: 768px) {
+    .uk-flex {
+        flex-wrap: wrap;
+    }
+    
+    .header-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .in-header-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-actions {
+        flex-direction: row;
+    }
+}
+
+/* ========================================================================
+   GRID SYSTEM ADJUSTMENTS
+   ======================================================================== */
+
+@media (max-width: 480px) {
+    .uk-grid {
+        margin-left: -0.75rem;
+    }
+    
+    .uk-grid > * {
+        padding-left: 0.75rem;
+    }
+    
+    .uk-grid-collapse {
+        margin-left: 0;
+    }
+    
+    .uk-grid-collapse > * {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .uk-grid {
+        margin-left: -1.5rem;
+    }
+    
+    .uk-grid > * {
+        padding-left: 1.5rem;
+    }
+}
+
+/* ========================================================================
+   SLIDESHOW RESPONSIVE
+   ======================================================================== */
+
+@media (max-width: 640px) {
+    .in-slideshow {
+        min-height: 280px;
+    }
+    
+    .in-slideshow .uk-overlay {
+        padding: 1rem;
+    }
+    
+    .monee-custom-slideshow {
+        min-height: 300px;
+    }
+    
+    .monee-slide1-text {
+        padding: 1.5rem;
+    }
+    
+    .monee-slide1-text h2 {
+        font-size: 1rem;
+    }
+    
+    .monee-slide1-text p {
+        font-size: 1.75rem;
+    }
+    
+    .monee-slide2-text {
+        padding: 1.5rem;
+    }
+    
+    .monee-slide2-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .monee-slide2-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+    .in-slideshow {
+        min-height: 380px;
+    }
+    
+    .monee-custom-slideshow {
+        min-height: 420px;
+    }
+    
+    .monee-slide1-text p {
+        font-size: 2.5rem;
+    }
+    
+    .monee-slide2-text h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 961px) {
+    .in-slideshow {
+        min-height: 500px;
+    }
+    
+    .monee-custom-slideshow {
+        min-height: 550px;
+    }
+}
+
+/* ========================================================================
+   CARD RESPONSIVE
+   ======================================================================== */
+
+@media (max-width: 640px) {
+    .uk-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .uk-card-body {
+        padding: 1rem;
+    }
+    
+    .uk-card-media-top img,
+    .uk-card-media-bottom img {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .uk-card {
+        padding: 1.5rem;
+    }
+    
+    .uk-card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* ========================================================================
+   FORM RESPONSIVE
+   ======================================================================== */
+
+@media (max-width: 480px) {
+    .uk-form-label {
+        font-size: 0.8125rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .uk-input,
+    .uk-select,
+    .uk-textarea {
+        font-size: 0.875rem;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .monee-register-form form {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .monee-register-form form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 769px) {
+    .monee-register-form form {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ========================================================================
+   FOOTER RESPONSIVE
+   ======================================================================== */
+
+@media (max-width: 480px) {
+    footer {
+        padding: 2rem 0;
+    }
+    
+    footer .uk-grid > * {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    footer h4 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    footer ul {
+        padding-left: 0;
+        list-style: none;
+    }
+    
+    footer a {
+        font-size: 0.875rem;
+        padding: 0.25rem 0;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    footer .uk-child-width-1-4\@m > * {
+        width: calc(50% - 1.5rem);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    footer .uk-child-width-1-4\@m > * {
+        width: calc(25% - 1.5rem);
+    }
+}
+
+@media (min-width: 1025px) {
+    footer .uk-child-width-1-4\@m > * {
+        width: auto;
+    }
+}
+
+/* ========================================================================
+   NAVIGATION RESPONSIVE
+   ======================================================================== */
+
+@media (max-width: 960px) {
+    /* Hide desktop navigation */
+    header .uk-navbar-container.uk-visible\@m {
+        display: none;
+    }
+    
+    /* Show mobile navigation */
+    header .in-mobile-nav {
+        display: block;
+    }
+    
+    /* Mobile menu button */
+    .mobile-nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    /* Dropdown adjustments */
+    .uk-navbar-dropdown {
+        position: static;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        background: transparent;
+    }
+    
+    .uk-navbar-dropdown a {
+        padding-left: 1rem;
+    }
+}
+
+@media (min-width: 961px) {
+    /* Hide mobile toggle on desktop */
+    .mobile-nav-toggle {
+        display: none;
+    }
+    
+    /* Always show desktop nav */
+    header .uk-navbar-container.uk-visible\@m {
+        display: flex;
+    }
+}
+
+/* ========================================================================
+   TABLE RESPONSIVE
+   ======================================================================== */
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.875rem;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+    }
+    
+    /* Horizontal scroll for tables */
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* ========================================================================
+   UTILITY CLASSES
+   ======================================================================== */
+
+@media (max-width: 768px) {
+    .uk-visible\@m,
+    .uk-visible\@l,
+    .uk-visible\@xl {
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .uk-hidden\@m {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .uk-hidden\@l,
+    .uk-hidden\@xl {
+        display: none !important;
+    }
+}
+
+@media (min-width: 961px) {
+    .uk-hidden\@s {
+        display: none !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .uk-hidden\@s,
+    .uk-hidden\@m {
+        display: none !important;
+    }
+}
+
+/* ========================================================================
+   PREFERS REDUCED MOTION
+   ======================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

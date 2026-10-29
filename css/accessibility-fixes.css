@@ -1,0 +1,155 @@
+/* ========================================================================
+   ACCESSIBILITY FIXES - ZERO DESIGN IMPACT
+   All styles are invisible except on keyboard focus
+   ======================================================================== */
+
+/* ========== SKIP LINK ========== */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.skip-link:focus {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    padding: 8px 16px;
+    background: #146CE0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 0 0 4px 4px;
+    z-index: 999999;
+    clip: auto;
+}
+
+/* ========== SCREEN READER ONLY ========== */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* ========== FOCUS INDICATORS ========== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+    outline: 3px solid #146CE0 !important;
+    outline-offset: 2px;
+}
+
+/* ========== TARGET SIZE (24x24px minimum) ========== */
+@media (max-width: 767px) {
+    button,
+    a.btn,
+    .btn,
+    input[type="submit"],
+    input[type="button"] {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 10px 16px;
+    }
+}
+
+/* ========== TEXT RESIZE SUPPORT (200%) ========== */
+@media (min-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Allow text to reflow without horizontal scrolling at 200% */
+p, li, td, th, label, span, a, div {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+/* ========== TEXT SPACING SUPPORT (WCAG 1.4.12) ========== */
+/* These overrides allow WCAG text spacing without breaking layout */
+p, li, td, th, label {
+    line-height: 1.5 !important;
+    letter-spacing: 0.12em !important;
+    word-spacing: 0.16em !important;
+}
+
+p {
+    margin-bottom: 1em !important;
+}
+
+/* ========== FORM ERROR STATES ========== */
+input[aria-invalid="true"],
+textarea[aria-invalid="true"],
+select[aria-invalid="true"] {
+    border-color: #c00 !important;
+}
+
+input[aria-invalid="true"]:focus,
+textarea[aria-invalid="true"]:focus {
+    outline-color: #c00 !important;
+}
+
+.form-error {
+    color: #c00 !important;
+    font-size: 12px !important;
+    margin-top: 2px !important;
+}
+
+/* ========== REQUIRED FIELD INDICATOR ========== */
+label .required,
+.required-star {
+    color: #c00 !important;
+    margin-left: 2px;
+}
+
+/* ========== REDUCED MOTION ========== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ========== HIGH CONTRAST MODE ========== */
+@media (forced-colors: active) {
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible {
+        outline: 3px solid CanvasText !important;
+    }
+    
+    .skip-link {
+        background: Canvas !important;
+        color: CanvasText !important;
+    }
+}
+
+/* ========== PRINT ========== */
+@media print {
+    .skip-link,
+    .accessibility-menu,
+    .fab,
+    .accessibility-panel {
+        display: none !important;
+    }
+}

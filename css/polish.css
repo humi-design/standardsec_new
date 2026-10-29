@@ -1,0 +1,1422 @@
+/**
+ * Standard Securities - Visual Polish & Refinement
+ * Premium enterprise styling refinements
+ * 
+ * This file contains refined visual improvements applied after all other styles.
+ * Focus: Professional, premium, modern, trustworthy, clean, elegant, spacious.
+ */
+
+ /* ========================================================================
+   POLISH CSS CUSTOM PROPERTIES
+   ======================================================================== */
+
+ :root {
+    /* Refined spacing scale for better consistency */
+    --polish-space-xs: 0.25rem;
+    --polish-space-sm: 0.5rem;
+    --polish-space-md: 1rem;
+    --polish-space-lg: 1.5rem;
+    --polish-space-xl: 2rem;
+    --polish-space-2xl: 3rem;
+    --polish-space-3xl: 4rem;
+    
+    /* Refined shadows for depth */
+    --polish-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --polish-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
+    --polish-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.06);
+    --polish-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.06), 0 20px 40px rgba(0, 0, 0, 0.08);
+    --polish-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.08), 0 40px 60px rgba(0, 0, 0, 0.1);
+    
+    /* Refined border radius */
+    --polish-radius-sm: 4px;
+    --polish-radius: 6px;
+    --polish-radius-md: 8px;
+    --polish-radius-lg: 12px;
+    --polish-radius-xl: 16px;
+    --polish-radius-2xl: 24px;
+    
+    /* Refined transitions */
+    --polish-transition-fast: 150ms ease;
+    --polish-transition: 200ms ease;
+    --polish-transition-slow: 300ms ease;
+}
+
+ /* ========================================================================
+   GLOBAL REFINEMENTS
+   ======================================================================== */
+
+ /* Smooth scroll behavior */
+ html {
+    scroll-behavior: smooth;
+}
+
+/* Refined body styling */
+body {
+    font-family: 'Work Sans', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #374151;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Selection styling */
+::selection {
+    background-color: rgba(20, 108, 224, 0.2);
+    color: #012c6d;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+    outline: 2px solid #146CE0;
+    outline-offset: 2px;
+}
+
+/* ========================================================================
+   HEADER POLISH
+   ======================================================================== */
+
+ /* Header container refinements */
+header {
+    background-color: #ffffff;
+    box-shadow: var(--polish-shadow-sm);
+    position: relative;
+    z-index: 100;
+    transition: box-shadow var(--polish-transition);
+}
+
+header:hover {
+    box-shadow: var(--polish-shadow);
+}
+
+/* Sticky header polish */
+header.in-sticky {
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--polish-shadow-md);
+}
+
+/* Logo refinements */
+header .in-header-logo {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    transition: all var(--polish-transition);
+}
+
+header .in-header-logo img {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    transition: max-width var(--polish-transition);
+}
+
+header.in-sticky .in-header-logo img {
+    max-width: 170px;
+}
+
+/* Header button container */
+header .in-header-links {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Navigation refinements */
+header .uk-navbar-nav > li > a {
+    color: #012c6d;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    letter-spacing: 0.01em;
+    padding: 1.25rem 1rem;
+    position: relative;
+    transition: all var(--polish-transition);
+}
+
+/* Navigation underline animation */
+header .uk-navbar-nav > li > a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #146CE0, #4184DD);
+    transition: all var(--polish-transition);
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+header .uk-navbar-nav > li > a:hover::after,
+header .uk-navbar-nav > li > a:focus::after,
+header .uk-navbar-nav > li.uk-active > a::after {
+    width: calc(100% - 2rem);
+}
+
+header .uk-navbar-nav > li > a:hover,
+header .uk-navbar-nav > li > a:focus {
+    color: #146CE0;
+    background-color: transparent;
+}
+
+/* Dropdown refinements */
+.uk-navbar-dropdown {
+    border-radius: var(--polish-radius-lg);
+    box-shadow: var(--polish-shadow-lg);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0.5rem;
+    min-width: 220px;
+    animation: dropdownReveal 0.2s ease forwards;
+}
+
+@keyframes dropdownReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.uk-navbar-dropdown a {
+    border-radius: var(--polish-radius);
+    padding: 0.625rem 0.875rem;
+    color: #374151;
+    font-size: 0.9375rem;
+    transition: all var(--polish-transition-fast);
+}
+
+.uk-navbar-dropdown a:hover,
+.uk-navbar-dropdown a:focus {
+    background-color: #f1f4f6;
+    color: #146CE0;
+}
+
+/* ========================================================================
+   BUTTON POLISH
+   ======================================================================== */
+
+ /* Button base refinements */
+.uk-button {
+    font-weight: 500;
+    border-radius: var(--polish-radius);
+    padding: 0.75rem 1.5rem;
+    transition: all var(--polish-transition);
+    letter-spacing: 0.01em;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button hover lift effect */
+.uk-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+    opacity: 0;
+    transition: opacity var(--polish-transition);
+}
+
+.uk-button:hover::before {
+    opacity: 1;
+}
+
+.uk-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(20, 108, 224, 0.25);
+}
+
+.uk-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Primary button polish */
+.uk-button-primary {
+    background-color: #146CE0;
+    border-color: #146CE0;
+    color: #ffffff;
+}
+
+.uk-button-primary:hover {
+    background-color: #1157c0;
+    border-color: #1157c0;
+    box-shadow: 0 6px 16px rgba(20, 108, 224, 0.3);
+}
+
+/* Small button refinements */
+.uk-button-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+    min-height: 36px;
+    border-radius: var(--polish-radius-sm);
+}
+
+/* Large button refinements */
+.uk-button-large {
+    padding: 1rem 2rem;
+    font-size: 1.0625rem;
+    min-height: 52px;
+    border-radius: var(--polish-radius-md);
+}
+
+/* Default button polish */
+.uk-button-default {
+    background-color: transparent;
+    border-color: #146CE0;
+    color: #146CE0;
+}
+
+.uk-button-default:hover {
+    background-color: #146CE0;
+    color: #ffffff;
+}
+
+/* Focus state polish */
+.uk-button:focus {
+    outline: 2px solid #146CE0;
+    outline-offset: 2px;
+}
+
+/* ========================================================================
+   CARD POLISH
+   ======================================================================== */
+
+ /* Card refinements */
+.uk-card {
+    border-radius: var(--polish-radius-lg);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: all var(--polish-transition);
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.uk-card:hover {
+    box-shadow: var(--polish-shadow-md);
+    transform: translateY(-2px);
+    border-color: rgba(20, 108, 224, 0.2);
+}
+
+.uk-card-body {
+    padding: 1.5rem;
+}
+
+/* Card title polish */
+.uk-card-title {
+    color: #012c6d;
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Service cards refinements */
+.service-card {
+    background: #ffffff;
+    border-radius: var(--polish-radius-lg);
+    padding: 2rem;
+    text-align: center;
+    transition: all var(--polish-transition);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #146CE0, #4184DD);
+    transform: scaleX(0);
+    transition: transform var(--polish-transition);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--polish-shadow-lg);
+    border-color: rgba(20, 108, 224, 0.15);
+}
+
+.service-card .uk-icon {
+    width: 56px;
+    height: 56px;
+    color: #146CE0;
+    margin-bottom: 1rem;
+    transition: transform var(--polish-transition);
+}
+
+.service-card:hover .uk-icon {
+    transform: scale(1.1);
+}
+
+/* Feature cards refinements */
+.feature-card {
+    background: #ffffff;
+    border-radius: var(--polish-radius-lg);
+    padding: 1.5rem;
+    transition: all var(--polish-transition);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.feature-card:hover {
+    box-shadow: var(--polish-shadow-md);
+    border-color: rgba(20, 108, 224, 0.15);
+}
+
+/* ========================================================================
+   FORM POLISH
+   ======================================================================== */
+
+ /* Form label refinements */
+.uk-form-label {
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+    font-size: 0.9375rem;
+}
+
+/* Input refinements */
+.uk-input,
+.uk-select,
+.uk-textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+textarea {
+    border-radius: var(--polish-radius);
+    border: 1.5px solid #e4e9ed;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: all var(--polish-transition-fast);
+    min-height: 48px;
+    background-color: #ffffff;
+    color: #374151;
+}
+
+.uk-input:hover,
+.uk-select:hover,
+.uk-textarea:hover {
+    border-color: #cbd3db;
+}
+
+.uk-input:focus,
+.uk-select:focus,
+.uk-textarea:focus {
+    border-color: #146CE0;
+    box-shadow: 0 0 0 3px rgba(20, 108, 224, 0.12);
+    outline: none;
+}
+
+.uk-input::placeholder {
+    color: #9aa8b4;
+}
+
+/* Input with icon */
+.uk-input:not(:last-child) {
+    padding-right: 2.5rem;
+}
+
+/* ========================================================================
+   TYPOGRAPHY POLISH
+   ======================================================================== */
+
+/* Heading refinements */
+h1, h2, h3, h4, h5, h6,
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6 {
+    font-family: 'Work Sans', sans-serif;
+    color: #012c6d;
+    line-height: 1.25;
+}
+
+h1, .uk-h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2, .uk-h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+h3, .uk-h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h4, .uk-h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+h5, .uk-h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+h6, .uk-h6 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.7;
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+/* Lead text polish */
+.uk-text-lead {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #6b7a8a;
+}
+
+/* ========================================================================
+   SECTION POLISH
+   ======================================================================== */
+
+.uk-section {
+    padding: 4rem 0;
+}
+
+.uk-section-default {
+    background-color: #ffffff;
+}
+
+.uk-section-muted {
+    background-color: #f8fafb;
+}
+
+/* Section title polish */
+.uk-section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #012c6d;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.uk-section-subtitle {
+    font-size: 1.125rem;
+    color: #6b7a8a;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.7;
+}
+
+/* ========================================================================
+   SLIDESHOW POLISH
+   ======================================================================== */
+
+.in-slideshow {
+    border-radius: var(--polish-radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--polish-shadow-xl);
+    margin: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.uk-slideshow-items {
+    border-radius: var(--polish-radius-2xl);
+}
+
+.uk-overlay-panel {
+    padding: 2.5rem;
+}
+
+/* Slide navigation dots polish */
+.uk-dotnav > li > a {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all var(--polish-transition);
+    border-radius: 50%;
+}
+
+.uk-dotnav > li:hover > a,
+.uk-dotnav > li > a:focus {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.uk-dotnav > li.uk-active > a {
+    background-color: #ffffff;
+    transform: scale(1.2);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================================================
+   TABLE POLISH
+   ======================================================================== */
+
+.uk-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.uk-table th {
+    background-color: #f8fafb;
+    color: #012c6d;
+    font-weight: 600;
+    padding: 1rem;
+    border-bottom: 2px solid #146CE0;
+    text-align: left;
+}
+
+.uk-table td {
+    padding: 0.875rem 1rem;
+    border-bottom: 1px solid #e4e9ed;
+    vertical-align: middle;
+}
+
+.uk-table tbody tr {
+    transition: background-color var(--polish-transition-fast);
+}
+
+.uk-table tbody tr:hover {
+    background-color: #f8fafb;
+}
+
+/* ========================================================================
+   FOOTER POLISH
+   ======================================================================== */
+
+footer {
+    background-color: #012c6d;
+    color: #ffffff;
+    padding: 4rem 0 2rem;
+}
+
+footer h4 {
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+footer h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #146CE0, #4184DD);
+    border-radius: 2px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all var(--polish-transition-fast);
+    display: inline-block;
+    padding: 0.25rem 0;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 4px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer icon buttons polish */
+footer .uk-icon-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: var(--polish-radius);
+    transition: all var(--polish-transition);
+}
+
+footer .uk-icon-button:hover,
+footer .uk-icon-button:focus {
+    background-color: #146CE0;
+    color: #ffffff;
+}
+
+/* Footer bottom polish */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    margin-top: 3rem;
+}
+
+/* Footer layout improvements */
+footer .uk-child-width-1-4\@m > div {
+    margin-bottom: 1.5rem;
+}
+
+footer .in-footer-address p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    line-height: 1.8;
+}
+
+footer .in-footer-copyright {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+footer .in-footer-copyright p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    margin: 0;
+}
+
+footer .in-footer-disclaimer {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+/* ========================================================================
+   ACCESSIBILITY POLISH
+   ======================================================================== */
+
+/* Floating accessibility button polish */
+.fab {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #146CE0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--polish-shadow-lg);
+    transition: all var(--polish-transition);
+    z-index: 9999;
+}
+
+.fab:hover,
+.fab:focus {
+    background-color: #1157c0;
+    transform: scale(1.05);
+    box-shadow: var(--polish-shadow-xl);
+    outline: none;
+}
+
+.fab:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* Accessibility panel polish */
+.accessibility-panel {
+    position: fixed;
+    bottom: 190px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: var(--polish-radius-lg);
+    box-shadow: var(--polish-shadow-xl);
+    z-index: 9998;
+    animation: panelReveal 0.2s ease forwards;
+}
+
+@keyframes panelReveal {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.accessibility-panel button,
+.accessibility-panel a {
+    background: #f1f4f6;
+    color: #012c6d;
+    border: none;
+    padding: 0.625rem 1rem;
+    border-radius: var(--polish-radius);
+    font-size: 0.875rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all var(--polish-transition-fast);
+    font-weight: 500;
+}
+
+.accessibility-panel button:hover,
+.accessibility-panel a:hover {
+    background: #146CE0;
+    color: #ffffff;
+}
+
+.accessibility-panel button:focus,
+.accessibility-panel a:focus {
+    outline: 2px solid #146CE0;
+    outline-offset: 2px;
+}
+
+/* ========================================================================
+   TICKER POLISH
+   ======================================================================== */
+
+.uk-ticker-item {
+    padding: 0.75rem 1.25rem;
+    background-color: #f8fafb;
+    border-radius: var(--polish-radius);
+    transition: all var(--polish-transition-fast);
+}
+
+.uk-ticker-item:hover {
+    background-color: #f1f4f6;
+    box-shadow: var(--polish-shadow-sm);
+}
+
+/* ========================================================================
+   BREADCRUMB POLISH
+   ======================================================================== */
+
+.uk-breadcrumb {
+    font-size: 0.875rem;
+}
+
+.uk-breadcrumb > * > * {
+    color: #6b7a8a;
+    transition: color var(--polish-transition-fast);
+}
+
+.uk-breadcrumb > * > *:hover,
+.uk-breadcrumb > * > a:hover {
+    color: #146CE0;
+}
+
+.uk-breadcrumb > :last-child > * {
+    color: #012c6d;
+    font-weight: 500;
+}
+
+/* ========================================================================
+   ALERT POLISH
+   ======================================================================== */
+
+.uk-alert {
+    border-radius: var(--polish-radius);
+    padding: 1rem 1.25rem;
+    border: none;
+    border-left: 4px solid;
+}
+
+.uk-alert-success {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #27ae60;
+    border-left-color: #2ecc71;
+}
+
+.uk-alert-warning {
+    background-color: rgba(255, 152, 0, 0.1);
+    color: #e67e00;
+    border-left-color: #ff9800;
+}
+
+.uk-alert-danger {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #e74c3c;
+    border-left-color: #f44336;
+}
+
+.uk-alert-primary {
+    background-color: rgba(20, 108, 224, 0.1);
+    color: #146CE0;
+    border-left-color: #146CE0;
+}
+
+/* ========================================================================
+   BADGE POLISH
+   ======================================================================== */
+
+.uk-label {
+    border-radius: var(--polish-radius-sm);
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+/* ========================================================================
+   LIST POLISH
+   ======================================================================== */
+
+.uk-list > li {
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+.uk-list > li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    background-color: #146CE0;
+    border-radius: 50%;
+}
+
+.uk-list-striped > li:nth-child(odd) {
+    background-color: #f8fafb;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    border-radius: var(--polish-radius-sm);
+}
+
+/* ========================================================================
+   CTA SECTION POLISH
+   ======================================================================== */
+
+.cta-section {
+    background: linear-gradient(135deg, #012c6d 0%, #146CE0 100%);
+    padding: 4rem 0;
+    border-radius: var(--polish-radius-2xl);
+    margin: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+}
+
+.cta-section h2,
+.cta-section p {
+    color: #ffffff;
+    position: relative;
+}
+
+/* ========================================================================
+   STATS POLISH
+   ======================================================================== */
+
+.stat-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #146CE0;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #6b7a8a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================================================
+   SCROLL TO TOP POLISH
+   ======================================================================== */
+
+.in-totop {
+    width: 44px;
+    height: 44px;
+    background-color: #146CE0;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--polish-transition);
+    box-shadow: var(--polish-shadow-md);
+}
+
+.in-totop:hover,
+.in-totop:focus {
+    background-color: #1157c0;
+    transform: translateY(-4px);
+    box-shadow: var(--polish-shadow-lg);
+}
+
+/* ========================================================================
+   CONTAINER POLISH
+   ======================================================================== */
+
+.uk-container {
+    max-width: 1200px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* ========================================================================
+   GRID POLISH
+   ======================================================================== */
+
+.uk-grid {
+    margin-left: -1.5rem;
+}
+
+.uk-grid > * {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ========================================================================
+   CHAT SUPPORT POLISH
+   ======================================================================== */
+
+.in-chat-support {
+    background: #ffffff;
+    border-radius: var(--polish-radius-xl);
+    box-shadow: var(--polish-shadow-lg);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.in-chat-header {
+    background: linear-gradient(135deg, #012c6d 0%, #146CE0 100%);
+    color: #ffffff;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.in-chat-header h5 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.in-chat-body {
+    padding: 1.25rem;
+    min-height: 200px;
+    background: #f8fafb;
+}
+
+/* ========================================================================
+   CURRENCY TICKER POLISH
+   ======================================================================== */
+
+.monee-custom-card {
+    background: #ffffff;
+    border-radius: var(--polish-radius-lg);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    box-shadow: var(--polish-shadow-sm);
+}
+
+.monee-custom-card .uk-grid-collapse > div {
+    padding: 1.25rem;
+    border-right: 2px solid #f1f4f6;
+    transition: background-color var(--polish-transition-fast);
+}
+
+.monee-custom-card .uk-grid-collapse > div:hover {
+    background-color: #f8fafb;
+}
+
+.monee-custom-card .uk-grid-collapse > div:last-child {
+    border-right: none;
+}
+
+.monee-price-ticker {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    padding: 0.625rem 1.25rem;
+    background-color: #146CE0;
+    color: #ffffff;
+    border-bottom-right-radius: var(--polish-radius);
+    border-bottom-left-radius: var(--polish-radius);
+}
+
+/* ========================================================================
+   PRODUCT/SERVICE TILES POLISH
+   ======================================================================== */
+
+.monee-custom-tile .uk-tile {
+    border-right: 1px solid #f1f4f6;
+    border-bottom: 1px solid #f1f4f6;
+    background: #ffffff;
+    transition: all var(--polish-transition);
+}
+
+.monee-custom-tile .uk-tile:hover {
+    background: #f8fafb;
+    box-shadow: var(--polish-shadow-sm);
+}
+
+.monee-custom-tile .uk-tile-default {
+    padding: 2rem 1.5rem;
+}
+
+.monee-custom-tile .uk-tile:nth-child(3),
+.monee-custom-tile .uk-tile:last-child {
+    border-right: none;
+}
+
+.monee-custom-tile .uk-tile:nth-child(n+4) {
+    border-bottom: none;
+}
+
+.monee-custom-tile .uk-label {
+    background-color: #f1f4f6;
+    color: #6b7a8a;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.625rem;
+}
+
+/* ========================================================================
+   RISK DISCLOSURE POLISH
+   ======================================================================== */
+
+.uk-alert-warning,
+.uk-alert-danger {
+    border-radius: var(--polish-radius-lg);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.uk-alert-warning ul,
+.uk-alert-danger ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.uk-alert-warning li,
+.uk-alert-danger li {
+    color: inherit;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* ========================================================================
+   CTA BUTTON POLISH
+   ======================================================================== */
+
+.cta-section .uk-button-large {
+    background: #ffffff;
+    color: #012c6d;
+    border: none;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    box-shadow: var(--polish-shadow-md);
+}
+
+.cta-section .uk-button-large:hover {
+    background: #f8fafb;
+    transform: translateY(-2px);
+    box-shadow: var(--polish-shadow-lg);
+}
+
+/* ========================================================================
+   PARTNER LOGOS POLISH
+   ======================================================================== */
+
+.uk-partner-logos img,
+.partner-logo img {
+    max-height: 50px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all var(--polish-transition);
+}
+
+.uk-partner-logos img:hover,
+.partner-logo img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* ========================================================================
+   CONTENT CARDS POLISH
+   ======================================================================== */
+
+.uk-content-card {
+    background: #ffffff;
+    border-radius: var(--polish-radius-lg);
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: all var(--polish-transition);
+}
+
+.uk-content-card:hover {
+    box-shadow: var(--polish-shadow-md);
+    border-color: rgba(20, 108, 224, 0.15);
+}
+
+/* ========================================================================
+   STATS GRID POLISH
+   ======================================================================== */
+
+.stat-grid .uk-grid-collapse > div {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border-right: 1px solid #f1f4f6;
+}
+
+.stat-grid .uk-grid-collapse > div:last-child {
+    border-right: none;
+}
+
+.stat-grid .stat-value {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #146CE0;
+    margin-bottom: 0.5rem;
+}
+
+.stat-grid .stat-label {
+    font-size: 0.875rem;
+    color: #6b7a8a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ========================================================================
+   CONTACT INFO POLISH
+   ======================================================================== */
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.contact-info-item .uk-icon {
+    color: #146CE0;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.contact-info-item h6 {
+    margin-bottom: 0.25rem;
+    color: #012c6d;
+}
+
+.contact-info-item p {
+    margin: 0;
+    color: #6b7a8a;
+}
+
+/* ========================================================================
+   CONTENT CONTAINER POLISH
+   ======================================================================== */
+
+.in-content-wrapper {
+    background: #ffffff;
+    border-radius: var(--polish-radius-xl);
+    padding: 2rem;
+    box-shadow: var(--polish-shadow-sm);
+    margin: 1.5rem 0;
+}
+
+.in-content-wrapper .uk-section-title {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f1f4f6;
+}
+
+/* ========================================================================
+   MOBILE NAVIGATION POLISH
+   ======================================================================== */
+
+.uk-navbar-toggle {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--polish-radius);
+    transition: background-color var(--polish-transition-fast);
+}
+
+.uk-navbar-toggle:hover,
+.uk-navbar-toggle:focus {
+    background-color: rgba(20, 108, 224, 0.1);
+}
+
+.uk-navbar-toggle .uk-hamburger {
+    width: 24px;
+    height: 2px;
+    background: #012c6d;
+    position: relative;
+}
+
+/* ========================================================================
+   REDUCED MOTION
+   ======================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ========================================================================
+   RESPONSIVE POLISH (Mobile refinements)
+   ======================================================================== */
+
+@media (max-width: 768px) {
+    /* Body polish */
+    body {
+        font-size: 15px;
+    }
+    
+    /* Container polish */
+    .uk-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Section polish */
+    .uk-section {
+        padding: 3rem 0;
+    }
+    
+    /* Heading polish */
+    h1, .uk-h1 {
+        font-size: 1.875rem;
+    }
+    
+    h2, .uk-h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3, .uk-h3 {
+        font-size: 1.25rem;
+    }
+    
+    /* Card polish */
+    .uk-card-body {
+        padding: 1.25rem;
+    }
+    
+    /* Button polish */
+    .uk-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .uk-button-small {
+        width: auto;
+    }
+    
+    /* Slideshow polish */
+    .in-slideshow {
+        margin: 1rem;
+        border-radius: var(--polish-radius-lg);
+    }
+    
+    .uk-overlay-panel {
+        padding: 1.5rem;
+    }
+    
+    /* Footer polish */
+    footer {
+        padding: 3rem 0 2rem;
+    }
+    
+    footer .uk-child-width-1-4\@m > div {
+        margin-bottom: 2rem;
+    }
+    
+    /* Accessibility panel polish */
+    .accessibility-panel {
+        bottom: 180px;
+        right: 10px;
+        left: 10px;
+        width: auto;
+    }
+    
+    .fab {
+        bottom: 100px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small mobile polish */
+    .uk-container {
+        padding-left: 0.875rem;
+        padding-right: 0.875rem;
+    }
+    
+    .uk-section {
+        padding: 2rem 0;
+    }
+    
+    h1, .uk-h1 {
+        font-size: 1.625rem;
+    }
+    
+    h2, .uk-h2 {
+        font-size: 1.375rem;
+    }
+    
+    /* Button adjustments */
+    header .in-header-links {
+        gap: 0.25rem;
+    }
+    
+    header .in-header-links .uk-button-small {
+        padding: 0.375rem 0.625rem;
+        font-size: 0.75rem;
+    }
+}

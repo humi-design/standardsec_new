@@ -1,0 +1,319 @@
+body {
+    background-color: #fdfbfb4a;
+}
+
+#hImg {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 56px;
+    /*40px;*/
+    height: 42px;
+    /*40px;*/
+    margin-top: -30px;
+    object-fit: none;
+}
+
+.btn {
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 9px 35px;
+    text-transform: uppercase;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out
+}
+
+#btnAdd,
+#btnReset,
+#btnAdd1,
+#btnReset1,
+#btnAdd2,
+#btnReset2,
+#btnAdd3,
+#btnReset3,
+.mBtn {
+    color: #fff;
+    background-image: linear-gradient(to right, #3F51B5 0%, #241c50 50%, #180f46 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-position: left center;
+}
+
+.btn:hover,
+.df-bth-white:hover {
+    color: #fff !important;
+    background-position: right center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+    ;
+}
+
+.mBtn2 {
+    background-color: #6c757dd9;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    text-transform: capitalize;
+}
+
+a {
+    color: black;
+}
+
+#GvData th:nth-child(11),
+#GvData td:nth-child(11) {
+    display: none;
+}
+
+#GvData td:first-child {
+    text-align: center;
+}
+
+#GvData td a {
+    color: #e91e63;
+}
+
+#GvEqData th:nth-child(4),
+#GvEqData td:nth-child(4),
+#GvGreekDat th:nth-child(4),
+#GvGreekDat td:nth-child(4) {
+    display: none;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+#GvData>tbody>tr:nth-child(even),
+#GvEqData>tbody>tr:nth-child(even),
+#GvGreekDat>tbody>tr:nth-child(even) {
+    background-color: #007bff24;
+}
+
+#GvData>thead>tr,
+#GvEqData>thead>tr,
+#GvGreekDat>thead>tr {
+    background-color: #100b65;
+    color: #fff;
+}
+
+.table-curved {
+    border-collapse: separate;
+    border: solid #ddd 1px;
+    border-radius: 6px;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+.table-curved>thead:first-child>tr:first-child>th {
+    border-bottom: 0px;
+    border-top: solid #ddd 1px;
+}
+
+.table-curved td,
+.table-curved th {
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.table-curved> :first-child> :first-child> :first-child {
+    border-top-left-radius: 6px;
+}
+
+.table-curved> :first-child> :first-child> :last-child {
+    border-top-right-radius: 6px;
+}
+
+.table-curved> :last-child> :last-child> :first-child {
+    border-bottom-left-radius: 6px;
+}
+
+.table-curved> :last-child> :last-child> :last-child {
+    border-bottom-right-radius: 6px;
+}
+
+td {
+    font-weight: 600;
+    color: #3F51B5;
+}
+
+#GvData,
+#GvEqData,
+#GvGreekDat {
+    font-size: 12px;
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+.site-footer {
+    background-color: #120f25;
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.widget_nav_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.widget_nav_menu li {
+    list-style: none;
+}
+
+.widget_nav_menu li a {
+    color: #acaeaf;
+    text-decoration: none;
+}
+
+.widget_nav_menu li a:hover {
+    color: #fff;
+}
+
+.footer-logo {
+    width: 280px;
+}
+
+.textwidget {
+    margin-bottom: 1px;
+}
+
+.important-info {
+    margin-top: 10px;
+}
+
+.important-info p {
+    color: #808080;
+}
+
+.widget_nav_menu {
+    margin-bottom: 10px;
+}
+
+.header-bg {
+    background: #180f46;
+}
+
+.bg-secondary {
+    background-color: #004085 !important;
+}
+
+.close {
+    color: #fff;
+}
+
+.mbox {
+    background-color: #fff;
+    border-radius: .25rem;
+    padding: 1rem;
+    -webkit-box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, .15);
+    margin-bottom: 24px;
+    border: 1px solid #f1f1f1;
+}
+
+.mbox-heading {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.nav-pills .nav-item .nav-link {
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 500;
+    min-width: 100px;
+    color: #000;
+    transition: all .3s;
+    border-radius: 30px;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.nav-pills:not(.flex-column) .nav-item+.nav-item:not(:first-child) {
+    margin-left: 5px;
+}
+
+.nav-pills .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #0e73f8;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(12, 82, 233, 0.6);
+}
+
+.nav-pills.nav-pills-info .nav-item .nav-link.active,
+.nav-pills.nav-pills-info .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-info .nav-item .nav-link.active:hover {
+    background-color: #00bcd4;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(0, 188, 212, .6);
+    color: #fff;
+}
+
+.nav-pills.nav-pills-success .nav-item .nav-link.active,
+.nav-pills.nav-pills-success .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-success .nav-item .nav-link.active:hover {
+    background-color: #4caf50;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(76, 175, 80, .6);
+    color: #fff;
+}
+
+.nav-pills.nav-pills-warning .nav-item .nav-link.active,
+.nav-pills.nav-pills-warning .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-warning .nav-item .nav-link.active:hover {
+    background-color: #ff9800;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(255, 152, 0, .6);
+    color: #fff;
+}
+
+.nav-pills.nav-pills-danger .nav-item .nav-link.active,
+.nav-pills.nav-pills-danger .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-danger .nav-item .nav-link.active:hover {
+    background-color: #f44336;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(244, 67, 54, .6);
+    color: #fff;
+}
+
+.nav-pills.nav-pills-rose .nav-item .nav-link.active,
+.nav-pills.nav-pills-rose .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-rose .nav-item .nav-link.active:hover {
+    background-color: #e91e63;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(233, 30, 99, .6);
+    color: #fff;
+}
+
+.nav-pills .nav-item .nav-link:not(.active):hover {
+    background-color: rgba(200, 200, 200, .2);
+}
+
+.table-sm td,
+.table-sm th {
+    padding: .9rem;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.copy p,
+.copy a {
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    color: paleturquoise;
+    font-family: Verdana;
+    font-size: 0.75rem;
+}
+
+.copy {
+    text-align: center;
+}

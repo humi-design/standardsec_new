@@ -1,0 +1,84 @@
+/* accessibility.css - Overrides for accessibility improvements */
+
+/* Base text resizing */
+html {
+    font-size: 100%;
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+/* General focus outlines for links, buttons, inputs */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid #11CCF1;
+    outline-offset: 2px;
+}
+
+/* Links hover and focus style */
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* Buttons styling for better contrast and focus */
+.uk-button-primary {
+    background-color: #005bbb !important;
+    color: #ffffff !important;
+}
+
+/* Form input focus */
+.uk-input:focus,
+.uk-textarea:focus {
+    border-color: #11CCF1 !important;
+}
+
+/* Headings contrast */
+h1, h2, h3, h4, h5, h6 {
+    color: #012c6d !important;
+}
+
+/* Body text color contrast */
+body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+/* Chatbox adjustments */
+.chatbox__header {
+    background-color: #005bbb !important;
+    color: #ffffff !important;
+}
+
+.chatbox__send--footer {
+    color: #000000 !important;
+}
+
+/* Focus state for chatbox buttons */
+.chatbox__button button:focus {
+    outline: 3px solid #11CCF1 !important;
+    outline-offset: 2px !important;
+}
+
+/* Form inputs focus inside chatbox */
+.chatbox__footer input:focus {
+    outline: 3px solid #11CCF1 !important;
+    outline-offset: 2px !important;
+}
+
+/* Accessible hidden styles for better screen reader handling if needed */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}

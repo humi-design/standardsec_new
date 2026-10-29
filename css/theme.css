@@ -1,0 +1,706 @@
+/**
+ * Standard Securities - Theme Styles
+ * Enterprise financial platform theming
+ * 
+ * This file contains theme-specific styles and variations
+ * for different sections and components of the website
+ */
+
+/* ========================================================================
+   THEME VARIABLES
+   ======================================================================== */
+
+:root {
+    /* Theme colors */
+    --theme-primary: #146CE0;
+    --theme-primary-dark: #0D47A1;
+    --theme-primary-light: #4184DD;
+    --theme-secondary: #012c6d;
+    --theme-accent: #0052a3;
+    
+    /* Light theme (default) */
+    --theme-bg: #ffffff;
+    --theme-bg-secondary: #f8f9fa;
+    --theme-bg-tertiary: #f1f3f5;
+    --theme-surface: #ffffff;
+    --theme-border: #e2e8f0;
+    --theme-text: #0f172a;
+    --theme-text-secondary: #475569;
+    --theme-text-muted: #64748b;
+    
+    /* Shadows */
+    --theme-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --theme-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --theme-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --theme-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --theme-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    
+    /* Border radius */
+    --theme-radius-sm: 4px;
+    --theme-radius: 8px;
+    --theme-radius-lg: 12px;
+    --theme-radius-xl: 16px;
+    --theme-radius-2xl: 24px;
+    
+    /* Transitions */
+    --theme-transition-fast: 150ms ease;
+    --theme-transition: 200ms ease;
+    --theme-transition-slow: 300ms ease;
+}
+
+/* ========================================================================
+   THEME: LIGHT (DEFAULT)
+   ======================================================================== */
+
+.theme-light {
+    --theme-bg: #ffffff;
+    --theme-bg-secondary: #f8f9fa;
+    --theme-surface: #ffffff;
+    --theme-border: #e2e8f0;
+    --theme-text: #0f172a;
+    --theme-text-secondary: #475569;
+}
+
+/* ========================================================================
+   THEME: DARK
+   ======================================================================== */
+
+.theme-dark {
+    --theme-bg: #0f172a;
+    --theme-bg-secondary: #1e293b;
+    --theme-surface: #334155;
+    --theme-border: #475569;
+    --theme-text: #f8fafc;
+    --theme-text-secondary: #cbd5e1;
+    --theme-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --theme-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+    --theme-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+    --theme-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+}
+
+.theme-dark body,
+.theme-dark {
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+}
+
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4,
+.theme-dark h5, .theme-dark h6 {
+    color: var(--theme-text);
+}
+
+/* ========================================================================
+   THEME: BLUE FINANCIAL
+   ======================================================================== */
+
+.theme-blue {
+    --theme-primary: #146CE0;
+    --theme-primary-dark: #0D47A1;
+    --theme-primary-light: #4184DD;
+    --theme-secondary: #012c6d;
+    --theme-accent: #0052a3;
+}
+
+/* ========================================================================
+   THEME: GREEN GROWTH
+   ======================================================================== */
+
+.theme-green {
+    --theme-primary: #10b981;
+    --theme-primary-dark: #059669;
+    --theme-primary-light: #34d399;
+    --theme-secondary: #064e3b;
+    --theme-accent: #047857;
+}
+
+/* ========================================================================
+   SECTION THEMES
+   ======================================================================== */
+
+/* Primary theme section */
+.section-theme-primary {
+    background: linear-gradient(135deg, var(--theme-secondary) 0%, var(--theme-primary) 100%);
+    color: #ffffff;
+}
+
+.section-theme-primary h1,
+.section-theme-primary h2,
+.section-theme-primary h3,
+.section-theme-primary h4,
+.section-theme-primary h5,
+.section-theme-primary h6 {
+    color: #ffffff;
+}
+
+.section-theme-primary p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Secondary theme section */
+.section-theme-secondary {
+    background-color: var(--theme-bg-secondary);
+}
+
+/* Accent theme section */
+.section-theme-accent {
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-primary-light) 100%);
+    color: #ffffff;
+}
+
+/* ========================================================================
+   CARD THEMES
+   ======================================================================== */
+
+/* Card theme: elevated */
+.card-theme-elevated {
+    box-shadow: var(--theme-shadow-lg);
+    border: none;
+}
+
+.card-theme-elevated:hover {
+    box-shadow: var(--theme-shadow-xl);
+    transform: translateY(-4px);
+}
+
+/* Card theme: outlined */
+.card-theme-outlined {
+    box-shadow: none;
+    border: 2px solid var(--theme-border);
+}
+
+.card-theme-outlined:hover {
+    border-color: var(--theme-primary);
+}
+
+/* Card theme: filled */
+.card-theme-filled {
+    background-color: var(--theme-bg-secondary);
+    box-shadow: none;
+}
+
+/* Card theme: gradient */
+.card-theme-gradient {
+    background: linear-gradient(135deg, var(--theme-secondary) 0%, var(--theme-primary) 100%);
+    color: #ffffff;
+    border: none;
+}
+
+.card-theme-gradient h1,
+.card-theme-gradient h2,
+.card-theme-gradient h3,
+.card-theme-gradient h4,
+.card-theme-gradient h5,
+.card-theme-gradient h6 {
+    color: #ffffff;
+}
+
+/* ========================================================================
+   BUTTON THEMES
+   ======================================================================== */
+
+/* Button theme: rounded */
+.button-theme-rounded {
+    border-radius: var(--theme-radius-2xl);
+}
+
+/* Button theme: square */
+.button-theme-square {
+    border-radius: 0;
+}
+
+/* Button theme: pill */
+.button-theme-pill {
+    border-radius: 50px;
+}
+
+/* Button theme: gradient */
+.button-theme-gradient {
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-primary-light) 100%);
+    border: none;
+    color: #ffffff;
+}
+
+.button-theme-gradient:hover {
+    background: linear-gradient(135deg, var(--theme-primary-dark) 0%, var(--theme-primary) 100%);
+}
+
+/* Button theme: outline gradient */
+.button-theme-outline-gradient {
+    background: transparent;
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), linear-gradient(135deg, var(--theme-primary), var(--theme-primary-light));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.button-theme-outline-gradient:hover {
+    background-image: linear-gradient(var(--theme-primary), var(--theme-primary-light)), linear-gradient(135deg, var(--theme-primary), var(--theme-primary-light));
+    color: #ffffff;
+}
+
+/* ========================================================================
+   INPUT THEMES
+   ======================================================================== */
+
+/* Input theme: filled */
+.input-theme-filled {
+    background-color: var(--theme-bg-secondary);
+    border-color: transparent;
+}
+
+.input-theme-filled:focus {
+    background-color: var(--theme-surface);
+    border-color: var(--theme-primary);
+}
+
+/* Input theme: outline */
+.input-theme-outline {
+    background-color: transparent;
+    border: 2px solid var(--theme-border);
+}
+
+.input-theme-outline:focus {
+    border-color: var(--theme-primary);
+    box-shadow: 0 0 0 4px rgba(20, 108, 224, 0.1);
+}
+
+/* ========================================================================
+   NAVIGATION THEMES
+   ======================================================================== */
+
+/* Nav theme: transparent */
+.nav-theme-transparent {
+    background-color: transparent;
+}
+
+.nav-theme-transparent.in-sticky {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Nav theme: solid */
+.nav-theme-solid {
+    background-color: var(--theme-secondary);
+}
+
+.nav-theme-solid .uk-navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.nav-theme-solid.in-sticky {
+    background-color: var(--theme-secondary);
+}
+
+/* ========================================================================
+   FOOTER THEMES
+   ======================================================================== */
+
+/* Footer theme: dark */
+.footer-theme-dark {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
+.footer-theme-dark h4 {
+    color: #ffffff;
+}
+
+.footer-theme-dark a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-theme-dark a:hover {
+    color: #ffffff;
+}
+
+/* Footer theme: light */
+.footer-theme-light {
+    background-color: #ffffff;
+    color: #0f172a;
+    border-top: 1px solid var(--theme-border);
+}
+
+/* Footer theme: gradient */
+.footer-theme-gradient {
+    background: linear-gradient(180deg, var(--theme-secondary) 0%, #000000 100%);
+    color: #ffffff;
+}
+
+/* ========================================================================
+   HERO THEMES
+   ======================================================================== */
+
+/* Hero theme: centered */
+.hero-theme-centered {
+    text-align: center;
+}
+
+.hero-theme-centered .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Hero theme: split */
+.hero-theme-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Hero theme: video background */
+.hero-theme-video {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-theme-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(1, 44, 109, 0.9) 0%, rgba(20, 108, 224, 0.7) 100%);
+    z-index: 1;
+}
+
+.hero-theme-video > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* ========================================================================
+   GRADIENT BACKGROUNDS
+   ======================================================================== */
+
+.gradient-primary {
+    background: linear-gradient(135deg, var(--theme-secondary) 0%, var(--theme-primary) 100%);
+}
+
+.gradient-primary-light {
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-primary-light) 100%);
+}
+
+.gradient-dark {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.gradient-radial {
+    background: radial-gradient(circle at top right, var(--theme-primary-light), var(--theme-primary));
+}
+
+/* ========================================================================
+   DECORATIVE ELEMENTS
+   ======================================================================== */
+
+/* Decorative blob */
+.decorative-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.decorative-blob-primary {
+    background: var(--theme-primary-light);
+}
+
+.decorative-blob-secondary {
+    background: var(--theme-secondary);
+}
+
+/* Decorative circles */
+.decorative-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--theme-border);
+}
+
+.decorative-circle-solid {
+    background: var(--theme-primary);
+    opacity: 0.1;
+}
+
+/* Decorative lines */
+.decorative-line {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--theme-primary), transparent);
+}
+
+.decorative-line-vertical {
+    position: absolute;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, var(--theme-primary), transparent);
+}
+
+/* ========================================================================
+   IMAGE OVERLAYS
+   ======================================================================== */
+
+.image-overlay-dark::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.image-overlay-light::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+/* ========================================================================
+   DIVIDERS
+   ======================================================================== */
+
+.divider-wave {
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+}
+
+.divider-wave::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.11,136.81,88.57,321.39,56.44Z' fill='%23ffffff'/%3E%3C/svg%3E") no-repeat;
+    background-size: cover;
+}
+
+.divider-slash {
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+}
+
+.divider-slash::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M1200,120 L1200,0 L0,120 Z' fill='%23ffffff'/%3E%3C/svg%3E") no-repeat;
+    background-size: cover;
+}
+
+/* ========================================================================
+   BADGE THEMES
+   ======================================================================== */
+
+.badge-theme-new {
+    background-color: #10b981;
+    color: #ffffff;
+}
+
+.badge-theme-hot {
+    background-color: #f59e0b;
+    color: #ffffff;
+}
+
+.badge-theme-sale {
+    background-color: #ef4444;
+    color: #ffffff;
+}
+
+.badge-theme-premium {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #000000;
+}
+
+/* ========================================================================
+   LIST THEMES
+   ======================================================================== */
+
+.list-theme-check li::before {
+    content: '✓';
+    color: var(--theme-primary);
+    font-weight: bold;
+}
+
+.list-theme-arrow li::before {
+    content: '→';
+    color: var(--theme-primary);
+}
+
+.list-theme-numbered {
+    counter-reset: list-counter;
+}
+
+.list-theme-numbered li {
+    counter-increment: list-counter;
+}
+
+.list-theme-numbered li::before {
+    content: counter(list-counter);
+    background-color: var(--theme-primary);
+    color: #ffffff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+/* ========================================================================
+   TIMELINE THEMES
+   ======================================================================== */
+
+.timeline-theme-default {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline-theme-default::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--theme-border);
+}
+
+.timeline-theme-default li {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.timeline-theme-default li::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--theme-primary);
+    border: 2px solid var(--theme-bg);
+    transform: translateX(-5px);
+}
+
+/* ========================================================================
+   PRICING TABLE THEMES
+   ======================================================================== */
+
+.pricing-theme-featured {
+    position: relative;
+    z-index: 1;
+    transform: scale(1.05);
+    border: 2px solid var(--theme-primary);
+}
+
+.pricing-theme-featured::before {
+    content: 'Recommended';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--theme-primary);
+    color: #ffffff;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ========================================================================
+   TESTIMONIAL THEMES
+   ======================================================================== */
+
+.testimonial-theme-card {
+    background-color: var(--theme-surface);
+    border-radius: var(--theme-radius-xl);
+    padding: 2rem;
+    box-shadow: var(--theme-shadow-md);
+}
+
+.testimonial-theme-border {
+    border: 2px solid var(--theme-border);
+    border-radius: var(--theme-radius-lg);
+}
+
+.testimonial-theme-gradient {
+    background: linear-gradient(135deg, var(--theme-secondary) 0%, var(--theme-primary) 100%);
+    color: #ffffff;
+}
+
+/* ========================================================================
+   CTA BANNER THEMES
+   ======================================================================== */
+
+.cta-theme-gradient {
+    background: linear-gradient(135deg, var(--theme-secondary) 0%, var(--theme-primary) 100%);
+    padding: 4rem 2rem;
+    border-radius: var(--theme-radius-2xl);
+}
+
+.cta-theme-solid {
+    background-color: var(--theme-primary);
+    padding: 3rem 2rem;
+}
+
+.cta-theme-outline {
+    border: 2px solid var(--theme-primary);
+    padding: 3rem 2rem;
+    border-radius: var(--theme-radius-lg);
+}
+
+/* ========================================================================
+   RESPONSIVE THEME ADJUSTMENTS
+   ======================================================================== */
+
+@media (max-width: 768px) {
+    .hero-theme-split {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .pricing-theme-featured {
+        transform: none;
+    }
+}
+
+/* ========================================================================
+   PRINT THEME
+   ======================================================================== */
+
+@media print {
+    .section-theme-primary,
+    .section-theme-accent,
+    .cta-theme-gradient,
+    .cta-theme-solid {
+        background: #ffffff !important;
+        color: #000000 !important;
+    }
+    
+    .section-theme-primary h1,
+    .section-theme-primary h2,
+    .section-theme-primary h3,
+    .cta-theme-gradient h2 {
+        color: #000000 !important;
+    }
+    
+    .decorative-blob,
+    .decorative-circle,
+    .decorative-line {
+        display: none !important;
+    }
+}

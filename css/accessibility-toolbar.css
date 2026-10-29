@@ -1,0 +1,106 @@
+/* Floating button (FAB) */
+.fab {
+    position: fixed;
+    bottom: 120px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;      /* perfect circle */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 0;
+  }
+  
+  .fab:hover, .fab:focus {
+    background-color: #0056b3;
+    outline: 2px solid white;
+    outline-offset: 2px;
+  }
+  
+  /* Panel */
+  .accessibility-panel {
+    position: fixed;
+    bottom: 120px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  /* Panel buttons */
+  .accessibility-panel button,
+  .accessibility-panel a {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .accessibility-panel button:hover,
+  .accessibility-panel a:hover {
+    background: #0056b3;
+  }
+  
+  .accessibility-panel button:focus,
+  .accessibility-panel a:focus {
+    outline: 3px solid yellow;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+  }
+  
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode h4,
+  body.dark-mode h5,
+  body.dark-mode h6,
+  body.dark-mode p,
+  body.dark-mode li,
+  body.dark-mode a,
+  body.dark-mode span,
+  body.dark-mode strong {
+    color: #ffffff !important;
+  }
+  
+  body.dark-mode a {
+    color: #4da6ff !important;
+  }
+  
+  body.dark-mode button,
+  body.dark-mode input,
+  body.dark-mode label {
+    color: #ffffff !important;
+  }
+  
+  body.dark-mode footer {
+    color: #ffffff !important;
+  }
+  
+  body.dark-mode table, 
+  body.dark-mode th, 
+  body.dark-mode td {
+    color: #ffffff !important;
+    border-color: #666 !important;
+  }
+  

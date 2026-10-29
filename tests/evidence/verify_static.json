@@ -95,6 +95,11 @@
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
           "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
         }
       ],
       "undersized": [],
@@ -589,6 +594,11 @@
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
           "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
         }
       ],
       "undersized": [],
@@ -707,6 +717,16 @@
         {
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": "Language Translate Widget",
           "byScript": null
         }
       ],
@@ -827,6 +847,11 @@
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
           "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
         }
       ],
       "undersized": [],
@@ -925,6 +950,11 @@
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
           "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
         }
       ],
       "undersized": [],
@@ -1022,6 +1052,11 @@
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
           "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
         }
       ],
       "undersized": [],
@@ -1057,6 +1092,36 @@
           "name": "customer_email",
           "type": "email",
           "autocomplete": "email"
+        },
+        {
+          "id": "goog-gt-votingInputSrcLang",
+          "name": "sl",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputTrgLang",
+          "name": "tl",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputSrcText",
+          "name": "query",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputTrgText",
+          "name": "gtrans",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputVote",
+          "name": "vote",
+          "type": "text",
+          "autocomplete": null
         }
       ]
     },
@@ -1147,6 +1212,16 @@
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
           "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": "Language Translate Widget",
+          "byScript": null
         }
       ],
       "undersized": [
@@ -1219,6 +1294,36 @@
           "name": "email",
           "type": "email",
           "autocomplete": "email"
+        },
+        {
+          "id": "goog-gt-votingInputSrcLang",
+          "name": "sl",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputTrgLang",
+          "name": "tl",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputSrcText",
+          "name": "query",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputTrgText",
+          "name": "gtrans",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputVote",
+          "name": "vote",
+          "type": "text",
+          "autocomplete": null
         }
       ]
     },
@@ -1273,6 +1378,11 @@
         {
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
           "byScript": null
         }
       ],
@@ -1337,6 +1447,11 @@
         {
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
           "byScript": null
         }
       ],
@@ -1536,6 +1651,11 @@
         {
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
           "byScript": null
         }
       ],
@@ -1892,6 +2012,11 @@
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
           "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
         }
       ],
       "undersized": [],
@@ -1980,11 +2105,6 @@
         {
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
-          "byScript": null
-        },
-        {
-          "src": "",
-          "title": null,
           "byScript": null
         }
       ],
@@ -2317,6 +2437,11 @@
         {
           "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
           "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
           "byScript": null
         }
       ],

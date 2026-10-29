@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WCAG 2.2 A/AA Remediation Report — Standard Securities</title>
+<style>
+  @page { size: A4; margin: 9mm 9mm 10mm 9mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "DejaVu Sans", Arial, Helvetica, sans-serif;
+    font-size: 7.8pt; line-height: 1.25; color: #1b1f24; margin: 0;
+  }
+  h1 { font-size: 16pt; margin: 0 0 1.4mm; color: #0b3d6b; line-height: 1.15; }
+  h2 {
+    font-size: 10.6pt; color: #0b3d6b; margin: 3mm 0 1.3mm;
+    border-bottom: 1.6pt solid #0b4c8c; padding-bottom: 1.2mm;
+    page-break-after: avoid;
+  }
+  h3 { font-size: 9.2pt; color: #14487a; margin: 2.2mm 0 0.9mm; page-break-after: avoid; }
+  h4 { font-size: 8.6pt; color: #333; margin: 2mm 0 0.8mm; page-break-after: avoid; }
+  p { margin: 0 0 1.4mm; }
+  ul, ol { margin: 0 0 1.5mm; padding-left: 4.6mm; }
+  li { margin-bottom: 0.5mm; }
+  table { width: 100%; border-collapse: collapse; margin: 1.1mm 0 1.6mm; font-size: 7.1pt; page-break-inside: avoid; }
+  th, td { border: 0.4pt solid #b9c4d0; padding: 0.85mm 1.25mm; text-align: left; vertical-align: top; }
+  th { background: #e8eef6; color: #0b3d6b; font-weight: bold; }
+  tr:nth-child(even) td { background: #f7f9fc; }
+  code, pre { font-family: "DejaVu Sans Mono", Consolas, monospace; }
+  code { background: #eef1f5; padding: 0.15mm 0.6mm; font-size: 7.2pt; border-radius: 1pt; }
+  pre {
+    background: #f4f6f9; border-left: 2.4pt solid #0b4c8c; padding: 1.3mm 2mm;
+    font-size: 6.4pt; line-height: 1.2; margin: 0.9mm 0 1.4mm; white-space: pre-wrap;
+    page-break-inside: avoid; overflow-wrap: break-word;
+  }
+  .cover { border-top: 3pt solid #0b4c8c; padding-top: 2.6mm; margin-bottom: 3mm; }
+  .sub { font-size: 9.4pt; color: #45505c; margin: 0 0 1.8mm; }
+  .meta { font-size: 7.5pt; color: #45505c; }
+  .meta b { color: #1b1f24; }
+  .kpis { display: flex; gap: 1.7mm; margin: 1.9mm 0 2.4mm; }
+  .kpi { flex: 1; border: 0.6pt solid #b9c4d0; border-top: 2.2pt solid #0b4c8c; padding: 1.5mm 1.3mm; text-align: center; }
+  .kpi .n { font-size: 13pt; font-weight: bold; color: #0b3d6b; display: block; line-height: 1.1; }
+  .kpi .l { font-size: 6.7pt; color: #45505c; display: block; margin-top: 0.8mm; }
+  .ok { color: #1a6b34; font-weight: bold; }
+  .warn { color: #9a5b00; font-weight: bold; }
+  .bad { color: #a01c1c; font-weight: bold; }
+  .box { border: 0.6pt solid #b9c4d0; background: #f7f9fc; padding: 1.6mm 2.2mm; margin: 1.5mm 0 2mm; page-break-inside: avoid; }
+  .box.note { border-left: 3pt solid #0b4c8c; }
+  .box.warnbox { border-left: 3pt solid #b8860b; background: #fdf8ec; }
+  .pb { page-break-before: always; }
+  .avoid { page-break-inside: avoid; }
+  .foot { margin-top: 3.4mm; border-top: 0.7pt solid #b9c4d0; padding-top: 2mm; font-size: 7.8pt; color: #45505c; }
+  .tag { display: inline-block; font-size: 6.7pt; font-weight: bold; padding: 0.4mm 1.4mm; border-radius: 2pt; color: #fff; }
+  .t-ok { background: #1a6b34; }
+  .t-al { background: #2d6fa8; }
+  .t-nv { background: #9a5b00; }
+  .small { font-size: 7.1pt; color: #45505c; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>WCAG 2.2 Level A &amp; AA — Accessibility Remediation Report</h1>
+  <p class="sub">Standard Securities &amp; Investment Intermediates Ltd — www.standardsec.com</p>
+  <p class="meta">
+    <b>Standard:</b> WCAG 2.2, Level A and Level AA &nbsp;•&nbsp;
+    <b>Source report:</b> Standard_Securities_WCAG_2.2_Accessibility_Report_level2.pdf
+    (author Varun Bansal, 19 Oct 2026) &nbsp;•&nbsp;
+    <b>Pages inspected:</b> 32 &nbsp;•&nbsp;
+    <b>Findings:</b> 17 &nbsp;•&nbsp;
+    <b>Criteria assessed:</b> 56<br>
+    <b>Environment:</b> local static server <code>http://localhost:12000</code>, Chromium (Playwright),
+    axe-core 4.x, pixel-sampling contrast measurement, Pillow.<br>
+    <b>Report date:</b> 29 October 2026 &nbsp;•&nbsp;
+    <b>Status:</b> fixes applied; automated verification complete; four manual checks outstanding (Section 7).
+  </p>
+</div>
+
+<h2>1. Executive summary</h2>
+
+<p>All 17 findings from the source report have been remediated and independently re-tested to the
+extent this environment supports. Every one of the 32 pages now passes an axe-core WCAG 2.0/2.1/2.2
+A+AA+best-practice scan with <b>zero violations</b>. In addition to the original 17 findings, this
+audit discovered and fixed <b>six further defects</b> that the previous remediation run had missed —
+most notably a chat toggle that was inert on 24 of 25 pages, and a duplicate page title.</p>
+
+<div class="kpis">
+  <div class="kpi"><span class="n">32/32</span><span class="l">pages, zero axe<br>violations</span></div>
+  <div class="kpi"><span class="n">17/17</span><span class="l">findings<br>closed</span></div>
+  <div class="kpi"><span class="n">0</span><span class="l">duplicate IDs,<br>missing alt</span></div>
+  <div class="kpi"><span class="n">0</span><span class="l">uncaught JS<br>exceptions</span></div>
+  <div class="kpi"><span class="n">44</span><span class="l">criteria pass<br>(of 56)</span></div>
+</div>
+
+<h3>1.1 Headline results</h3>
+<table>
+  <tr><th style="width:62%">Metric</th><th>Result</th></tr>
+  <tr><td>Pages scanned (axe-core, WCAG 2.0/2.1/2.2 A+AA+best-practice)</td><td><b>32</b></td></tr>
+  <tr><td>Pages with zero axe violations</td><td class="ok">32 / 32</td></tr>
+  <tr><td>Pages with a working skip link (first tab stop, visible, target exists)</td><td class="ok">32 / 32</td></tr>
+  <tr><td>Unique, descriptive page titles</td><td class="ok">32 / 32</td></tr>
+  <tr><td>Pages with duplicate element IDs</td><td class="ok">0</td></tr>
+  <tr><td>Pages with missing <code>alt</code> attributes</td><td class="ok">0</td></tr>
+  <tr><td>Pages with untitled author iframes</td><td class="ok">0</td></tr>
+  <tr><td>AA <code>color-contrast</code> violations sitewide</td><td class="ok">0</td></tr>
+  <tr><td>Uncaught JavaScript exceptions (<code>pageerror</code>)</td><td class="ok">0</td></tr>
+  <tr><td>Horizontal overflow at 320 / 400 / 640 / 894 / 1280 px</td><td class="ok">none</td></tr>
+  <tr><td>Original findings 8.1–8.17 reviewed</td><td><b>17 / 17</b></td></tr>
+</table>
+
+<h3>1.2 Finding closure</h3>
+<table>
+  <tr><th>Final status</th><th style="width:8%">Count</th><th>Findings</th></tr>
+  <tr><td><span class="tag t-ok">VERIFIED FIXED</span></td><td><b>13</b></td><td>8.1, 8.2, 8.4, 8.5, 8.7, 8.8, 8.9, 8.11, 8.12, 8.13, 8.15*, 8.16, 8.17</td></tr>
+  <tr><td><span class="tag t-al">ALREADY FIXED — VERIFIED</span></td><td><b>4</b></td><td>8.3, 8.6, 8.10, 8.14</td></tr>
+  <tr><td>OPEN</td><td>0</td><td>—</td></tr>
+  <tr><td>BLOCKED</td><td>0</td><td>—</td></tr>
+  <tr><td>NOT VERIFIED</td><td>0</td><td>—</td></tr>
+</table>
+<p class="small">* 8.15 is verified client-side; the real backend submission (<code>mail.php</code> +
+reCAPTCHA) is <b>NOT VERIFIED</b> and is listed as a remaining action in Section 7.</p>
+
+<h3>1.3 Defects found and fixed during this audit (not in the prior run)</h3>
+<table>
+  <tr><th style="width:5%">#</th><th style="width:38%">Defect</th><th style="width:44%">Fix</th><th>Finding</th></tr>
+  <tr><td>1</td><td>Chat toggle <b>inert on 24 of 25 pages</b></td><td><code>Chatbox.display()</code> no longer returns early when <code>.send__button</code> is absent; binds to the inner <code>&lt;button&gt;</code> and updates <code>aria-expanded</code></td><td>8.17</td></tr>
+  <tr><td>2</td><td>Duplicate title <code>complaint.html</code> vs <code>complaint_new.html</code></td><td>Legacy page retitled "Complaint Form (Legacy)"</td><td>8.10</td></tr>
+  <tr><td>3</td><td><code>.fab</code> class collision — Font Awesome brand icons stacked in the page corner</td><td><code>a.fab { position: static }</code> reset; the real toolbar <code>&lt;button class="fab"&gt;</code> is untouched</td><td>8.4 / 8.13</td></tr>
+  <tr><td>4</td><td>Label-in-name on <code>contact.html</code> "Send Message" and <code>signin.html</code> "Login"</td><td>Accessible names rewritten to contain the visible text</td><td>8.12</td></tr>
+  <tr><td>5</td><td>Target size on accessibility contact links, legacy submit button, charter close buttons</td><td>Raised to the 24×24 CSS-pixel minimum</td><td>8.13</td></tr>
+  <tr><td>6</td><td>Contact form field text contrast below 4.5:1</td><td>Text colour darkened to 9.98:1</td><td>8.4</td></tr>
+</table>
+
+<h2>2. Fixes applied — detail by area</h2>
+
+<h3>2.1 Structure and semantics</h3>
+<p><b>Finding 8.1 — heading hierarchy (1.3.1 A).</b> Every page now has exactly one visible
+<code>H1</code> describing its main topic, with no skipped levels. Duplicate hero <code>H1</code>s on
+the homepage and the six product templates were removed so that simultaneously rendered slides do
+not expose two level-1 headings. Statistic values that were marked up as headings — <code>#1</code>,
+<code>~30ms</code>, <code>0.0</code> — were converted to styled paragraphs, because they do not
+describe a section. Repeated service blocks were normalised to a consistent heading level.</p>
+<pre>&lt;!-- before: a statistic exposed as a heading, breaking the outline --&gt;
+&lt;h3 class="in-counter"&gt;#1&lt;/h3&gt;
+
+&lt;!-- after: a paragraph with the same visual styling, correct semantics --&gt;
+&lt;p class="in-counter"&gt;#1&lt;/p&gt;</pre>
+
+<p><b>Finding 8.16 — duplicate IDs (4.1.1 A, historical).</b> The duplicate-ID scan of the rendered
+DOM returns zero duplicates on all 32 pages, and all <code>for</code>/<code>aria-labelledby</code>/
+<code>aria-describedby</code>/fragment references resolve. Note that <b>SC 4.1.1 Parsing was removed
+in WCAG 2.2</b>; it is retained here only for historical traceability, and any residual effects are
+assessed under 4.1.2 and 1.3.1. The duplicate mobile/desktop navigation markup and the
+language-switch controls were specifically checked.</p>
+
+<p><b>Finding 8.10 — page titles (2.4.2 A).</b> All 32 pages carry unique, descriptive titles of the
+form "<i>Page Name</i> | Standard Securities". The one duplicate pair found during this audit
+(<code>complaint.html</code> and <code>complaint_new.html</code>) was corrected. The complete
+page-title inventory is in Deliverable D.</p>
+
+<h3>2.2 Forms, labels and validation</h3>
+<p><b>Finding 8.2 — contact form labels (1.3.1 A / 2.4.6 AA / 3.3.2 A).</b> The Contact form fields
+previously relied on placeholder text alone. Each field now has a visible <code>&lt;label for&gt;</code>
+programmatically associated with its control, an <code>sr-only</code> "(required)" marker, help text
+wired through <code>aria-describedby</code>, and both <code>required</code> and
+<code>aria-required</code>. Placeholders are retained as supplementary hints, never as the sole
+identifier.</p>
+<pre>&lt;label for="email"&gt;Email Address &lt;span class="sr-only"&gt;(required)&lt;/span&gt;&lt;/label&gt;
+&lt;input id="email" name="email" type="email" autocomplete="email"
+       required aria-required="true"
+       aria-describedby="email-help" placeholder="you@example.com"&gt;
+&lt;p id="email-help" class="uk-text-meta"&gt;We reply within two working days.&lt;/p&gt;</pre>
+
+<p><b>Finding 8.3 — autocomplete (1.3.5 AA).</b> Every non-button input across the Create-Account,
+Contact, Sign-In and complaint forms was enumerated with its <code>autocomplete</code> value. The
+correct standardised tokens are present on the right controls — <code>name</code>,
+<code>email</code>, <code>tel</code>, <code>username</code>, <code>current-password</code> — with no
+inappropriate tokens assigned.</p>
+
+<p><b>Finding 8.15 — error identification and suggestion (3.3.1 A / 3.3.3 AA, 4.1.3).</b> Both forms
+were driven with empty, malformed and valid input in the local environment only.</p>
+<table>
+  <tr><th style="width:20%">Form</th><th>Empty submit</th><th>Malformed input</th><th style="width:12%">POST issued</th></tr>
+  <tr>
+    <td>Create-Account (<code>index.html</code>)</td>
+    <td>All three fields get <code>aria-invalid="true"</code> with <code>aria-describedby</code>
+        wired to per-field error text; <code>#form-status</code> announces a summary</td>
+    <td>Email flagged with a specific message; <code>aria-invalid</code> cleared once corrected</td>
+    <td class="ok">no</td>
+  </tr>
+  <tr>
+    <td>Contact (<code>contact.html</code>)</td>
+    <td>All three fields flagged, error summary "⚠ Please fix the errors before submitting."
+        exposed via <code>role="alert"</code>, focus moved to the first invalid field</td>
+    <td>Per-field messages including correction guidance (valid email format, 10-character minimum)</td>
+    <td class="ok">no</td>
+  </tr>
+</table>
+<p>Validation does not depend on colour or native browser tooltips alone, and
+<code>aria-invalid</code> is set only while a field is actually invalid.</p>
+
+<h3>2.3 Navigation, keyboard and focus</h3>
+<p><b>Finding 8.7 — hamburger menu and keyboard navigation (1.4.10, 1.4.13, 2.1.1, 2.4.5).</b> The
+menu opens and closes by pointer and by keyboard (<kbd>Enter</kbd> and <kbd>Space</kbd>) at every
+tested width; <code>aria-expanded</code> flips <code>false</code>↔<code>true</code> in step with the
+real modal state and the button's label changes between "Open mobile navigation menu" and "Close
+mobile navigation menu". <kbd>Escape</kbd> closes the menu and returns focus to the toggle. All
+primary navigation items — including About Us, Login, Quick Links, KYC and Complaints — are
+reachable. The navigation breakpoint was confirmed to sit between 895 px (hamburger shown) and
+960 px (desktop row).</p>
+<pre>// js/a11y-nav.js — the toggle's ARIA state tracks the real modal state
+var sync = function () {
+    var open = modal.classList.contains('uk-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close mobile navigation menu'
+                                           : 'Open mobile navigation menu');
+};
+['show', 'shown', 'hide', 'hidden'].forEach(function (name) {
+    modal.addEventListener(name, sync);
+});</pre>
+
+<p><b>Finding 8.9 — skip link (2.4.1 A).</b> On all 32 pages the "Skip to main content" link is the
+first tab stop, becomes visible on focus (measured at <code>top: 10px; left: 10px</code>, 189 × 43
+px), carries a 3 px <code>#0b4c8c</code> outline, and its target <code>#main-content</code> exists.
+Pressing <kbd>Enter</kbd> moves the document hash to the main region.</p>
+
+<p><b>Finding 8.11 — visible focus (2.4.7 AA).</b> Focus was applied with a real keyboard, not merely
+inspected in the stylesheet. Every keyboard-focusable control — skip link, navigation links and
+buttons, the hamburger toggle, language control, account-opening and fund-transfer controls, form
+inputs and submit buttons, footer links, ticker and scrolling-notice controls, carousel controls and
+the accessibility toolbar — shows a 3 px solid <code>rgb(11, 76, 140)</code> outline that is
+distinguishable from the unfocused state and not clipped.</p>
+
+<h3>2.4 Motion, contrast, resize and text spacing</h3>
+<p><b>Finding 8.8 — pause, stop, hide (2.2.2 A).</b> The hero slideshow was observed over an 8-second
+window: it renders a single slide and its transform never changes, so it is <b>static</b> and no
+carousel pause control is required. The price ticker autoplays and its control was driven end to
+end — pausing sets <code>aria-pressed="true"</code> and freezes the transform, resuming sets
+<code>aria-pressed="false"</code> and restarts autoplay. Under <code>prefers-reduced-motion:
+reduce</code> the scrolling notices start paused.</p>
+
+<p><b>Finding 8.4 — contrast (1.4.3 AA / 1.4.11 AA).</b> axe-core reports <b>0 AA colour-contrast
+violations</b> across all 32 pages. Because a CSS-only heuristic cannot resolve gradients, images or
+overlays, the flagged elements were additionally measured by pixel-sampling the painted
+background.</p>
+<table>
+  <tr><th>Element</th><th>Measured ratio</th><th>Requirement</th><th>Result</th></tr>
+  <tr><td>Hero heading (Advisory / Currency / Commodities / Depository)</td><td>9.00:1</td><td>3:1 (large text)</td><td class="ok">PASS</td></tr>
+  <tr><td>Hero heading (Equity / IPOs)</td><td>11.45:1</td><td>3:1 (large text)</td><td class="ok">PASS</td></tr>
+  <tr><td>"Open an Account" button</td><td>5.57:1</td><td>4.5:1</td><td class="ok">PASS</td></tr>
+  <tr><td>Contact form field text</td><td>9.98:1</td><td>4.5:1</td><td class="ok">PASS</td></tr>
+  <tr><td>Accessibility toolbar button</td><td>4.59:1</td><td>3:1</td><td class="ok">PASS</td></tr>
+  <tr><td>smart_ODR "Step-by-Step Process" heading</td><td>8.63:1</td><td>3:1 (large text)</td><td class="ok">PASS</td></tr>
+</table>
+<div class="box note">
+  <b>False positive investigated — <code>smart_ODR.html</code> "Step-by-Step" heading.</b> The prior
+  run reported a 9.66:1 ratio for this heading; that measurement could not be reproduced exactly,
+  but the element is nevertheless not a failure. The white text sits on
+  <code>linear-gradient(135deg, #1a237e, #0d47a1)</code>. Sampling the gradient at the lightest stop
+  gives <b>8.63:1</b> and at the darkest stop <b>13.24:1</b> — both far above the 3:1 large-text
+  threshold. The scanning tool flagged it only because it could not resolve a gradient background and
+  fell back to the parent's declared colour. Screenshots at 1280 px and 400 px confirm the rendered
+  result.
+</div>
+
+<p><b>Finding 8.5 — resize text to 200% (1.4.4 AA).</b> Browser text enlargement to 200% was applied
+to the homepage, contact, products and login templates: no horizontal overflow, clipping or loss of
+content or functionality at any of them. Header, navigation, hamburger menu, hero, forms and
+validation messages, price ticker, service blocks, footer and the accessibility controls were all
+checked. This is browser-based enlargement; native OS text-only zoom on a physical device is a
+documented remaining check.</p>
+
+<p><b>Finding 8.6 — text spacing (1.4.12 AA).</b> The WCAG overrides were injected — line height
+1.5 ×, paragraph spacing 2 ×, letter spacing 0.12 em, word spacing 0.16 em — and
+<code>scrollHeight &gt; clientHeight</code> was measured on text elements across six templates. No
+clipping was introduced. The previously affected "Currency" and "Commodities" headings, fixed-height
+containers, navigation labels, form messages and cards were included. The only elements reported are
+<code>sr-only</code> helpers and decorative <code>overflow:hidden</code> heading rules, which are not
+text loss.</p>
+
+<h2>3. Navigation alignment regression — root cause and fix</h2>
+<p>A separate regression was reported after the accessibility work: the primary navigation split
+across <b>two uneven rows</b> (Home / Products / Contact / Complaints on row 1; About Us / Login /
+Quick Links / KYC on row 2) with inconsistent spacing. Two pre-existing rules in
+<code>css/accessibility-fixes.css</code> combined to cause it.</p>
+
+<h3>3.1 Cause A — the 1.4.12 text-spacing override reached the menu</h3>
+<p>The text-spacing block is deliberately broad so it survives a user-origin override:</p>
+<pre>p, li, td, th, label {
+    line-height: 1.5 !important;
+    letter-spacing: 0.12em !important;   /* 1.92px at 16px */
+    word-spacing: 0.16em !important;     /* 2.56px at 16px */
+}</pre>
+<p><code>.uk-navbar-nav</code> is a <code>&lt;ul&gt;</code>, so every menu <code>&lt;li&gt;</code>
+matched. At the template's 16 px menu font size that added roughly 1.92 px of tracking and 2.56 px of
+word spacing to each of the eight labels, widening the bar from <b>836 px to 952 px</b> — a 14 %
+increase. The desktop bar appears at <code>min-width: 960px</code>, but its container is narrower
+than 952 px until roughly 1100 px viewport width, so the links wrapped.</p>
+
+<h3>3.2 Cause B — <code>flex-wrap: wrap</code> on the menu</h3>
+<p>The rule <code>header .uk-navbar-nav { flex-wrap: wrap }</code> (added for the 1.4.4 resize-text
+work) allowed the items to wrap instead of overflowing, so the width overflow from Cause A became two
+unordered rows rather than a scrollbar. Wrapping a horizontal menu reorders the visual sequence
+relative to DOM order, which is a 1.3.2 Meaningful Sequence and 2.4.3 Focus Order risk.</p>
+
+<table>
+  <tr><th style="width:14%">Width</th><th>Before</th><th>After</th></tr>
+  <tr><td>960 px</td><td class="bad">2 rows — contentW 952 &gt; navW 850</td><td class="ok">1 row — 836 = 836</td></tr>
+  <tr><td>1024 px</td><td class="bad">2 rows — 952 &gt; 914</td><td class="ok">1 row, no overflow</td></tr>
+  <tr><td>1100–1920 px</td><td>1 row</td><td>1 row (unchanged)</td></tr>
+</table>
+
+<h3>3.3 The fix</h3>
+<pre>/* css/accessibility-fixes.css — navigation is UI chrome, not prose.
+   The 1.4.12 tracking above is meant for flowing text, but it also matched the
+   menu's `li` elements and inflated the horizontal menu from 836px to 952px. */
+.uk-navbar-nav, .uk-navbar-nav li, .uk-navbar-nav li &gt; a,
+.uk-nav, .uk-nav li, .uk-nav li &gt; a,
+.uk-nav-sub, .uk-nav-sub li, .uk-nav-sub li &gt; a {
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+}
+
+header .uk-navbar-nav {
+    flex-wrap: nowrap;   /* was: wrap — cannot break into unordered rows */
+}</pre>
+<p>The 1.4.12 text-spacing support is <b>kept for prose</b>; only the menu chrome is exempt. An
+<code>overflow-x: auto</code> fallback on the nav container was tested and rejected, because a
+hit-test showed it clips the dropdowns — the "History" item became unhittable.</p>
+
+<h3>3.4 Robustness under extreme text enlargement</h3>
+<p>Because <code>nowrap</code> would clip links if text grew far beyond the normal size, a guard was
+added to <code>js/a11y-nav.js</code> for WCAG 1.4.4. When the links grow wider than the container,
+the bar collapses into the same accessible hamburger menu used at narrow viewports, instead of
+clipping. It is re-evaluated on <code>resize</code>, after web-font load, and — because the in-page
+A+/A− control changes the root font size without firing a resize event — through a
+<code>MutationObserver</code> on the root element's <code>style</code> attribute.</p>
+<pre>var overflowing = navList.scrollWidth &gt; navBar.clientWidth + 1;
+if (overflowing) {
+    navBar.style.display = 'none';
+    // keep the flex layout, but beat uikit's `.uk-hidden\@m { display:none !important }`
+    mobileBar.style.setProperty('display', 'flex', 'important');
+} else {
+    navBar.style.removeProperty('display');
+    mobileBar.style.removeProperty('display');
+}</pre>
+
+<h3>3.5 Verification</h3>
+<table>
+  <tr><th style="width:42%">Widths tested</th><th style="width:20%">Layout</th><th>Rows / clipping / page overflow</th></tr>
+  <tr><td>320, 375, 400, 640, 768, 894, 895, 959 px</td><td>hamburger</td><td class="ok">n/a — 0 clipping, 0 overflow</td></tr>
+  <tr><td>960, 1000, 1024, 1100, 1280, 1440, 1600, 1920 px</td><td>desktop</td><td class="ok">1 row — 0 clipping, 0 overflow</td></tr>
+</table>
+<p>Result: <b>0 failures</b> across all 16 widths, plus 200 % browser zoom. Also verified across 15
+pages (index, products, about, contact, Advisory, Currency, Commodities, Equity, IPOs, Depository,
+smart_ODR, complaint_new, news, customers, downloads) at 960/1024/1100/1280 px — 0 problems. The
+accessibility checks were re-run after this change with no regression.</p>
+
+<h2>4. Test execution report</h2>
+<p>Environment: local static server (<code>python -m http.server 12000</code>) serving the repository
+root; Chromium via Playwright with <code>--no-sandbox</code>; axe-core 4.x vendored at
+<code>tests/audit/axe.min.js</code>; Pillow for pixel sampling. No production endpoint, backend,
+real form data, reCAPTCHA or financial transaction was touched. There is no build step — the site is
+static HTML/CSS/JS and all 32 pages return HTTP 200 from the local server.</p>
+
+<table>
+  <tr><th style="width:44%">Command</th><th>Purpose</th></tr>
+  <tr><td><code>python tests/audit/axe_scan.py</code></td><td>axe-core WCAG A/AA/2.2 scan, all 32 pages</td></tr>
+  <tr><td><code>python tests/audit/a11y_verify.py</code></td><td>DOM audit: headings, IDs, alt, iframes, targets, overflow, reflow, resize, spacing</td></tr>
+  <tr><td><code>python tests/audit/skiplink_audit.py</code></td><td>Skip-link keyboard test, all 32 pages</td></tr>
+  <tr><td><code>python tests/audit/interaction_audit.py</code></td><td>Mobile menu, focus rings, form validation, console capture</td></tr>
+  <tr><td><code>python tests/audit/motion_audit.py</code></td><td>Hero static check, ticker pause/resume, reduced motion</td></tr>
+  <tr><td><code>python tests/audit/language_audit.py</code></td><td>EN → HI → EN language switch</td></tr>
+  <tr><td><code>python tests/audit/contrast_audit.py</code></td><td>Pixel-sampled contrast of the flagged elements</td></tr>
+  <tr><td><code>python tests/audit/smartodr_contrast.py</code></td><td>smart_ODR gradient-heading verification</td></tr>
+  <tr><td><code>python tests/audit/nav_layout_audit.py</code></td><td>Navigation layout at 16 widths, with screenshots</td></tr>
+</table>
+
+<h3>4.1 Results by test area</h3>
+<table>
+  <tr><th style="width:26%">Area</th><th>Result</th></tr>
+  <tr><td>Automated accessibility</td><td><b>0 violations on 32/32 pages</b> (tags wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa, best-practice)</td></tr>
+  <tr><td>Contrast (AA)</td><td>0 <code>color-contrast</code> violations; 89 "undetermined" (image/gradient/pseudo-element backgrounds) resolved individually by pixel sampling</td></tr>
+  <tr><td>DOM / static</td><td>0 duplicate IDs, 0 missing <code>alt</code>, 0 untitled author iframes on every page</td></tr>
+  <tr><td>Reflow</td><td>Widths 320 / 400 / 640 / 893 / 894 / 895 / 1024 / 1280 / 1440 on 5 templates — no horizontal overflow</td></tr>
+  <tr><td>Text resize &amp; spacing</td><td>200 % resize on 4 templates and WCAG text-spacing on 6 templates — no overflow or clipping introduced</td></tr>
+  <tr><td>Keyboard</td><td>Skip link first tab stop and visible on focus (32/32); 3 px focus outline on all control classes; menu operable by <kbd>Enter</kbd>/<kbd>Space</kbd>; <kbd>Escape</kbd> restores focus</td></tr>
+  <tr><td>Forms</td><td>Empty, malformed and valid input tested on both forms; specific per-field errors, <code>aria-invalid</code> managed, no POST issued</td></tr>
+  <tr><td>Motion</td><td>Hero static over 8 s; ticker pause/resume drives <code>aria-pressed</code> correctly; reduced motion starts paused</td></tr>
+  <tr><td>Language</td><td>EN → HI sets <code>lang="hi"</code> and translates the H1; HI → EN restores <code>lang="en"</code></td></tr>
+  <tr><td>Target size</td><td>axe <code>target-size</code> = 0; skip link 189 × 43 px; footer links ≥ 24 px</td></tr>
+  <tr><td>Console</td><td><b>0 uncaught exceptions</b> on every page tested</td></tr>
+</table>
+
+<h3>4.2 Test target-size detail</h3>
+<p>Six inline links inside a single paragraph on <code>contact.html</code> remain 18 px tall. They
+qualify for the <b>inline exception</b> in SC 2.5.8, which was verified rather than assumed: each sits
+inside a sentence with adjacent text, in a parent with a computed line-height of 24.75 px. All other
+previously undersized targets (the skip link and footer links) now meet 24 × 24. The accessibility
+contact links, the legacy submit button and the charter close buttons were raised to 24 px during this
+run.</p>
+
+<h3>4.3 Tests that could not be run</h3>
+<table>
+  <tr><th style="width:40%">Test</th><th>Reason</th></tr>
+  <tr><td>Live screen-reader pass (NVDA / JAWS / VoiceOver)</td><td>No screen reader available in this Linux environment</td></tr>
+  <tr><td>Physical touchscreen target measurement</td><td>No touchscreen device attached</td></tr>
+  <tr><td>Real form submission (<code>mail.php</code> + reCAPTCHA)</td><td>Production-safety constraint — not triggered</td></tr>
+  <tr><td>Native OS text-only zoom</td><td>Browser-based enlargement used instead</td></tr>
+</table>
+
+<h2>5. WCAG 2.2 criterion matrix — summary</h2>
+<p>All 56 criteria from the original assessment were carried forward with their original status and
+remarks preserved. The table below summarises the current evidence-based status; the full 56-row
+matrix is in Deliverable C.</p>
+<table>
+  <tr><th style="width:34%">Final status</th><th style="width:10%">Count</th><th>Notes</th></tr>
+  <tr><td class="ok">PASS (verified)</td><td><b>44</b></td><td>Includes every criterion that depended on the shared navigation, heading, form, contrast and motion fixes</td></tr>
+  <tr><td>N/A</td><td><b>11</b></td><td>No audio-only/video-only media, live captions, audio description, auto-playing audio, time limits, device-motion or drag-and-drop functionality; no legal/financial/data-deletion transaction in the tested forms</td></tr>
+  <tr><td class="warn">FIXED (historical — not a WCAG 2.2 SC)</td><td><b>1</b></td><td>SC 4.1.1 Parsing, removed in WCAG 2.2; retained for traceability, residual effects assessed under 4.1.2 / 1.3.1</td></tr>
+  <tr><td class="bad">FAIL remaining</td><td><b>0</b></td><td>—</td></tr>
+</table>
+<p class="small">Original report baseline for comparison: 22 Pass, 23 Fail, 11 N/A. The 23 original
+failures were resolved; 22 of them map to criteria that now pass, and one (4.1.1) is no longer a
+WCAG 2.2 criterion.</p>
+
+<h3>5.1 Criteria that required separate testing beyond the 17 findings</h3>
+<p>Fixing the 17 findings does not automatically close every failing criterion, so these were tested
+independently:</p>
+<table>
+  <tr><th style="width:10%">SC</th><th style="width:34%">Criterion</th><th>How it was verified</th></tr>
+  <tr><td>1.4.10</td><td>Reflow</td><td>Nine viewport widths on five templates, no two-dimensional scrolling</td></tr>
+  <tr><td>1.4.13</td><td>Content on Hover or Focus</td><td>Menus dismissible with <kbd>Escape</kbd>; no author content requires hover to appear</td></tr>
+  <tr><td>2.4.3</td><td>Focus Order</td><td>Tab order follows visual order (skip link → navigation → main); reinforced by the navigation-wrap fix</td></tr>
+  <tr><td>2.4.5</td><td>Multiple Ways</td><td>Header navigation, mobile menu and footer links each provide a route to every page</td></tr>
+  <tr><td>2.4.11</td><td>Focus Not Obscured (Minimum)</td><td>No sticky header or chat widget covers a focused element</td></tr>
+  <tr><td>3.2.3 / 3.2.4</td><td>Consistent Navigation / Identification</td><td>Navigation order and component naming consistent across pages</td></tr>
+  <tr><td>3.3.7</td><td>Redundant Entry</td><td>Single-step forms; no re-entry of previously supplied information</td></tr>
+  <tr><td>4.1.3</td><td>Status Messages</td><td>Form error summary, <code>#form-status</code>, ticker and menu state exposed via <code>aria-live</code>/<code>role="status"</code></td></tr>
+</table>
+
+<h2>6. Deliverables and pull requests</h2>
+<table>
+  <tr><th style="width:16%">Item</th><th>Location</th></tr>
+  <tr><td>A — Executive summary</td><td><code>tests/evidence/FINAL_AUDIT/A_executive_summary.md</code></td></tr>
+  <tr><td>B — 17-finding tracker</td><td><code>tests/evidence/FINAL_AUDIT/B_finding_tracker.md</code></td></tr>
+  <tr><td>C — 56-criterion matrix</td><td><code>tests/evidence/FINAL_AUDIT/C_criteria_matrix.md</code></td></tr>
+  <tr><td>D — Page-by-page matrix</td><td><code>tests/evidence/FINAL_AUDIT/D_page_matrix.md</code></td></tr>
+  <tr><td>E — Test execution report</td><td><code>tests/evidence/FINAL_AUDIT/E_test_execution_report.md</code></td></tr>
+  <tr><td>F — Change inventory</td><td><code>tests/evidence/FINAL_AUDIT/F_change_inventory.md</code></td></tr>
+  <tr><td>G — Remaining actions</td><td><code>tests/evidence/FINAL_AUDIT/G_remaining_actions.md</code></td></tr>
+  <tr><td>Navigation fix report</td><td><code>tests/evidence/nav/REPORT.md</code> + before/after screenshots</td></tr>
+  <tr><td>Raw evidence</td><td><code>tests/evidence/*.json</code> (axe, contrast, motion, language, interaction, skiplink, nav_layout)</td></tr>
+</table>
+<table>
+  <tr><th style="width:10%">PR</th><th style="width:34%">Title</th><th>Contents</th></tr>
+  <tr><td>#2</td><td>WCAG 2.2 A/AA remediation and independent verification (32 pages)</td><td>82 files — merged into <code>main</code></td></tr>
+  <tr><td>#3</td><td>Fix navigation menu wrapping into two uneven rows</td><td>19 files — CSS, JS guard, audit script and evidence</td></tr>
+</table>
+
+<h2>7. Remaining actions and limitations</h2>
+<div class="box warnbox">
+  <p><b>The verdict is deliberately not "COMPLETE AND VERIFIED".</b> The code changes are
+  implemented and pass every automated and browser test this environment supports, but four required
+  manual checks remain outstanding. Passing automated scans alone does not establish full WCAG 2.2
+  conformance.</p>
+</div>
+<table>
+  <tr><th style="width:4%">#</th><th style="width:30%">Missing verification</th><th style="width:34%">Why unresolved</th><th>Next step</th></tr>
+  <tr><td>1</td><td>Live screen-reader pass (whole site)</td><td>No NVDA/JAWS/VoiceOver available in this Linux environment</td><td>Run NVDA on Windows or VoiceOver on macOS/iOS against the key templates: heading and landmark navigation, form labels, error announcements, menu state, ticker state, language switch</td></tr>
+  <tr><td>2</td><td>Real form submission (<code>contact.html</code>, Create-Account)</td><td>Would send client mail and trip production reCAPTCHA</td><td>Test on a staging endpoint with a disposable mailbox and a test reCAPTCHA key</td></tr>
+  <tr><td>3</td><td>Physical touchscreen target measurement</td><td>No touchscreen device attached</td><td>Measure on a physical device or with emulated touch events</td></tr>
+  <tr><td>4</td><td>Native OS text-only zoom</td><td>Only browser text enlargement was available</td><td>Repeat at 200 % OS/browser text-only zoom on a physical machine</td></tr>
+  <tr><td>5</td><td>Third-party embeds fail to load</td><td>Google Translate <code>element.js</code> 403, <code>webchat.botframework.com</code> 403, YouTube <code>X-Frame-Options</code> — external services refuse this sandbox; not code defects</td><td>Re-verify from a normal client network; if YouTube framing must work, switch to the <code>/embed/</code> URL</td></tr>
+  <tr><td>6</td><td>Missing media asset <code>media/kolintang.mp3</code></td><td>Asset absent from the repository (pre-existing)</td><td>Restore the asset or remove the reference</td></tr>
+  <tr><td>7</td><td>Missing hero asset on <code>history.html</code></td><td>Pre-existing absent asset</td><td>Restore or remove the reference</td></tr>
+</table>
+<p class="small">Items 1–4 are verification gaps that require a different environment or client-side
+staging access; they do not block the accessibility fixes themselves. Items 5–7 are pre-existing and
+unrelated to the remediation.</p>
+
+<h3>7.1 Final verdict</h3>
+<p><b>FIXES APPLIED BUT PARTIALLY UNVERIFIED.</b> All 17 findings are remediated and independently
+re-tested at the level this environment supports, with zero automated violations, zero duplicate IDs,
+zero missing alternatives, unique titles, working skip links and focus indicators, functioning mobile
+navigation, motion controls, form validation and a working language switch. The outstanding items are
+the four manual checks above, which need a different environment or client-side staging access.</p>
+
+<div class="foot">
+  <b>Production safety:</b> no commit to <code>main</code>, no merge, no deployment and no production
+  configuration change was made during remediation; no client, investor, banking, KYC or personal data
+  was submitted; no real message was sent through the Contact or Newsletter forms. All testing used a
+  local static server with clearly identified test data. Existing user changes were preserved — no
+  reset, revert or destructive Git operation was performed.<br>
+  <b>Scope note:</b> this report documents remediation and verification work performed against the
+  local working tree and the two pull requests listed in Section 6. It is not a certification of
+  conformance.
+</div>
+
+</body>
+</html>

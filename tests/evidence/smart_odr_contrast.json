@@ -1,0 +1,176 @@
+[
+  {
+    "viewport": "1280x900",
+    "screenshot": "smart_odr_step_heading_1280.png",
+    "text": "Step-by-Step Process",
+    "text_color": "rgb(255, 255, 255)",
+    "font_size_px": 27.1755,
+    "bold": true,
+    "large_text": true,
+    "required": 3.0,
+    "section_background_image": "linear-gradient(135deg, rgb(26, 35, 126), rgb(13, 71, 161))",
+    "contrast_vs_each_gradient_stop": [
+      {
+        "stop": [
+          26,
+          35,
+          126
+        ],
+        "ratio": 13.24
+      },
+      {
+        "stop": [
+          13,
+          71,
+          161
+        ],
+        "ratio": 8.63
+      }
+    ],
+    "worst_case_ratio": 8.63,
+    "dominant_painted_bg_px": [
+      16,
+      32,
+      128
+    ],
+    "ratio_vs_dominant_painted_bg": 13.63,
+    "pass": true,
+    "dominant_clusters": [
+      [
+        [
+          16,
+          32,
+          128
+        ],
+        14725
+      ],
+      [
+        [
+          16,
+          48,
+          144
+        ],
+        14178
+      ],
+      [
+        [
+          16,
+          48,
+          128
+        ],
+        6604
+      ],
+      [
+        [
+          160,
+          176,
+          208
+        ],
+        1854
+      ],
+      [
+        [
+          80,
+          96,
+          160
+        ],
+        150
+      ],
+      [
+        [
+          128,
+          144,
+          192
+        ],
+        133
+      ]
+    ]
+  },
+  {
+    "viewport": "400x800",
+    "screenshot": "smart_odr_step_heading_400.png",
+    "text": "Step-by-Step Process",
+    "text_color": "rgb(255, 255, 255)",
+    "font_size_px": 23.0992,
+    "bold": true,
+    "large_text": true,
+    "required": 3.0,
+    "section_background_image": "linear-gradient(135deg, rgb(26, 35, 126), rgb(13, 71, 161))",
+    "contrast_vs_each_gradient_stop": [
+      {
+        "stop": [
+          26,
+          35,
+          126
+        ],
+        "ratio": 13.24
+      },
+      {
+        "stop": [
+          13,
+          71,
+          161
+        ],
+        "ratio": 8.63
+      }
+    ],
+    "worst_case_ratio": 8.63,
+    "dominant_painted_bg_px": [
+      16,
+      32,
+      128
+    ],
+    "ratio_vs_dominant_painted_bg": 13.63,
+    "pass": true,
+    "dominant_clusters": [
+      [
+        [
+          16,
+          32,
+          128
+        ],
+        8832
+      ],
+      [
+        [
+          160,
+          160,
+          208
+        ],
+        1147
+      ],
+      [
+        [
+          160,
+          160,
+          192
+        ],
+        155
+      ],
+      [
+        [
+          144,
+          160,
+          192
+        ],
+        91
+      ],
+      [
+        [
+          48,
+          64,
+          144
+        ],
+        87
+      ],
+      [
+        [
+          144,
+          144,
+          192
+        ],
+        83
+      ]
+    ]
+  }
+]

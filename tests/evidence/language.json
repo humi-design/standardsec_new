@@ -1,0 +1,49 @@
+{
+  "control": {
+    "found": true,
+    "text": "Select Language\u200b\u25bc",
+    "ariaLabel": null,
+    "ariaHaspopup": "true",
+    "href": "#",
+    "width": 128,
+    "height": 24,
+    "hostRole": "group",
+    "hostLabel": "Language selection",
+    "duplicateHiddenHost": {
+      "ariaHidden": "true",
+      "display": "none"
+    }
+  },
+  "english_initial": {
+    "htmlLang": "en",
+    "htmlClass": "",
+    "h1": "Setting strong foundations",
+    "h2": "Open your account",
+    "banner": false,
+    "controlText": "Select Language\u200b\u25bc"
+  },
+  "menu_after_enter": [
+    {
+      "w": 144,
+      "h": 56
+    }
+  ],
+  "hindi_selected": true,
+  "hindi_state": {
+    "htmlLang": "hi",
+    "htmlClass": "translated-ltr",
+    "h1": "\u092e\u091c\u092c\u0942\u0924 \u0928\u0940\u0902\u0935 \u0938\u094d\u0925\u093e\u092a\u093f\u0924 \u0915\u0930\u0928\u093e",
+    "h2": "\u0905\u092a\u0928\u093e \u0916\u093e\u0924\u093e \u0916\u094b\u0932\u0947\u0902",
+    "banner": false,
+    "controlText": "Hindi\u200b\u25bc"
+  },
+  "english_reselected": true,
+  "english_after_switch_back": {
+    "htmlLang": "en",
+    "htmlClass": "translated-ltr",
+    "h1": "Setting strong foundations",
+    "h2": "Open your account",
+    "banner": false,
+    "controlText": "English\u200b\u25bc"
+  }
+}

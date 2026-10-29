@@ -147,6 +147,73 @@ textarea:focus-visible,
     border-color: #767676 !important;
 }
 
+/* Entered text in form fields: the template sets #8f8f8f (3.23:1) on the
+   white field background. Applies to text inputs, selects and textareas. */
+.uk-input,
+.uk-textarea,
+.uk-select,
+input:not([type='checkbox']):not([type='radio']),
+select,
+textarea {
+    color: #3a3a3a !important;
+}
+
+/* Placeholder text also needs 4.5:1 once the field value is not the only
+   identifier; #555 (7.4:1) is already compliant but is stated for clarity. */
+.uk-input::placeholder,
+.uk-textarea::placeholder,
+input::placeholder,
+textarea::placeholder {
+    color: #555 !important;
+    opacity: 1 !important;
+}
+
+/* Widget / footer link lists use #8f8f8f (3.23:1) on white. */
+.in-widget-category li a,
+.in-widget-popular li a,
+.in-widget-archive li a,
+.in-customer-card blockquote,
+.in-pricing .uk-card,
+.in-help-center .uk-search-default .uk-search-icon {
+    color: #595959 !important;
+}
+
+/* Tag-cloud chips keep their outlined design instead of the solid badge
+   colour, with text and border dark enough to meet 1.4.3 and 1.4.11. */
+.in-widget-tag .uk-label {
+    background-color: transparent !important;
+    border: 1px dashed #767676 !important;
+    color: #595959 !important;
+}
+
+/* "Read more" text buttons sit on the #f1f1f1 page background (#999 = 2.52:1). */
+.uk-button-text,
+.uk-button-link {
+    color: #0B4C8C !important;
+}
+
+.uk-button-text:hover,
+.uk-button-text:focus,
+.uk-button-link:hover,
+.uk-button-link:focus {
+    color: #083a6b !important;
+}
+
+/* Price ticker rows: the list items inherit the grey body colour
+   (#595959 on the #146CE0 ticker band = 1.41:1). */
+.monee-price-ticker,
+.monee-price-ticker .uk-slider-items>li,
+.monee-price-ticker .uk-slider-items>li>span:not([class*='uk-label']) {
+    color: #fff !important;
+}
+
+/* Inline links inside body copy must not rely on colour alone to be
+   distinguishable from surrounding text (1.4.1 / link-in-text-block). */
+p a[href]:not([class*='uk-button']):not([class*='uk-icon']),
+.in-footer-disclaimer p a[href]:not([class*='uk-button']) {
+    text-decoration: underline;
+}
+
 /* Footer "Need help?" / muted text and icon links (#8f8f8f = 3.23:1). */
 .in-footer-info,
 .in-footer-info .uk-subnav>*> :first-child,
@@ -791,6 +858,47 @@ table {
 .in-colored-card h4>a, .in-colored-card h5>a, .in-colored-card h6>a {
     display: inline-block;
     min-height: 24px;
+}
+
+/* The accessibility toolbar's floating button reuses the Font Awesome ".fab"
+   class, so each page's inline ".fab { position: fixed; ... }" block also
+   captured the brand-icon links and stacked every one of them in the page
+   corner. The icon links are anchors, so "a.fab" restores normal flow for them
+   while leaving the real <button class="fab"> toolbar toggle untouched. */
+a.fab {
+    position: static;
+    width: auto;
+    height: auto;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: transparent;
+    border-radius: 0;
+    overflow: visible;
+    padding: 0;
+    font-size: inherit;
+    box-shadow: none;
+}
+
+/* Standalone text controls that render below the 24x24 minimum: inline
+   contact links, the legacy complaint submit button and the charter tab
+   close buttons. Give each a 24px minimum interactive height. */
+.in-contact-links a,
+a[href^="tel:"]:not([class]),
+a[href^="mailto:"]:not([class]),
+input[type="submit"]:not([class]),
+[role="button"].topright {
+    display: inline-block;
+    min-height: 24px;
+    min-width: 24px;
+    padding: 3px 0;
+    box-sizing: border-box;
+}
+
+/* The charter close control is a bare glyph; centre it in its 24px box. */
+[role="button"].topright {
+    line-height: 1.2;
+    padding: 0 4px;
+    text-align: center;
 }
 
 .uk-button,

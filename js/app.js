@@ -25,27 +25,37 @@
         display() {
             const {openButton, chatBox, sendButton} = this.args;
 
-            if (!openButton || !chatBox || !sendButton) return;
+            if (!openButton || !chatBox) return;
 
             // Make chatbox accessible
             this.setupAccessibility(chatBox);
 
-            openButton.addEventListener('click', () => this.toggleState(chatBox));
-            openButton.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    this.toggleState(chatBox);
-                }
-            });
+            // The wrapper div is the pointer target; the nested <button> is the
+            // real control. Bind to the button so a click fires once and so
+            // ARIA state lives on a focusable element.
+            const control = this.getControl() || openButton;
+            control.addEventListener('click', () => this.toggleState(chatBox));
 
-            sendButton.addEventListener('click', () => this.onSendButton(chatBox));
+            // Most pages render the conversation in an embedded iframe and have
+            // no in-page input, so the send controls are optional.
+            if (sendButton) {
+                sendButton.addEventListener('click', () => this.onSendButton(chatBox));
+            }
 
             const node = chatBox.querySelector('input');
-            node.addEventListener("keyup", ({key}) => {
-                if (key === "Enter") {
-                    this.onSendButton(chatBox)
-                }
-            });
+            if (node) {
+                node.addEventListener("keyup", ({key}) => {
+                    if (key === "Enter") {
+                        this.onSendButton(chatBox)
+                    }
+                });
+            }
+        }
+
+        getControl() {
+            const openButton = this.args.openButton;
+            if (!openButton) return null;
+            return openButton.querySelector('button') || openButton;
         }
 
         setupAccessibility(chatBox) {
@@ -54,12 +64,19 @@
             // Ensure proper role
             chatBox.setAttribute('role', 'dialog');
             chatBox.setAttribute('aria-label', 'Chat support');
-            
+
+            if (!chatBox.id) {
+                chatBox.id = 'chatbox-support';
+            }
+
             // Make toggle accessible
-            const openButton = this.args.openButton;
-            if (openButton && !openButton.getAttribute('aria-label')) {
-                openButton.setAttribute('aria-label', 'Open chat support');
-                openButton.setAttribute('aria-expanded', 'false');
+            const control = this.getControl();
+            if (control) {
+                if (!control.getAttribute('aria-label')) {
+                    control.setAttribute('aria-label', 'Open chat support');
+                }
+                control.setAttribute('aria-expanded', 'false');
+                control.setAttribute('aria-controls', chatBox.id);
             }
         }
 
@@ -67,15 +84,18 @@
             this.state = !this.state;
 
             // show or hides the box
+            const control = this.getControl();
             if(this.state) {
                 chatbox.classList.add('chatbox--active');
-                if (this.args.openButton) {
-                    this.args.openButton.setAttribute('aria-expanded', 'true');
+                if (control) {
+                    control.setAttribute('aria-expanded', 'true');
+                    control.setAttribute('aria-label', 'Close chat support');
                 }
             } else {
                 chatbox.classList.remove('chatbox--active');
-                if (this.args.openButton) {
-                    this.args.openButton.setAttribute('aria-expanded', 'false');
+                if (control) {
+                    control.setAttribute('aria-expanded', 'false');
+                    control.setAttribute('aria-label', 'Open chat support');
                 }
             }
         }

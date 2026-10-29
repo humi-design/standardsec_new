@@ -1,0 +1,3269 @@
+{
+  "per_page": {
+    "404.html": {
+      "title": "Page Not Found | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Oops!",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+        }
+      ]
+    },
+    "Advisory.html": {
+      "title": "Advisory Services | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Advisory",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Why trade with Standard Securities?",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Benefits you'll get from us",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Categories",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Open your account",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "Commodities.html": {
+      "title": "Commodities Trading | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Commodities",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Why trade with Standard Securities?",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Benefits you'll get from us",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Categories",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Open your account",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "Currency.html": {
+      "title": "Currency Trading | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Currency",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Why trade with Standard Securities?",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Benefits you'll get from us",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Categories",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Open your account",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "Depository.html": {
+      "title": "Depository Services | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Depository",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Why trade with Standard Securities?",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Benefits you'll get from us",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Categories",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Open your account",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "Equity.html": {
+      "title": "Equity Trading | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Equity",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Why trade with Standard Securities?",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Benefits you'll get from us",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Categories",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Open your account",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "IPOs.html": {
+      "title": "IPO Services | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "IPOs",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Why trade with Standard Securities?",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Benefits you'll get from us",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Categories",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Open your account",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "Terms.html": {
+      "title": "Terms & Conditions | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "A relationship on your terms.",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "about.html": {
+      "title": "About Us | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Putting our clients first since 1994",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Philosophy",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "History",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Culture",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "2012",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "2009",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "2008",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "2006",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "2002",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "2001",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "2000",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "1994",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [
+        {
+          "tag": "BUTTON",
+          "visible": "\u267f Accessibility Options",
+          "ariaLabel": "Open accessibility tools",
+          "cls": "fab"
+        }
+      ],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "accessibility-toolbar.html": {
+      "title": "Accessibility Tools | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Accessibility Tools",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1264,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": []
+    },
+    "accessibility.html": {
+      "title": "Accessibility Statement | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Accessibility Statement",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Our Commitment",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Measures We Have Taken",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Limitations",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Reporting Accessibility Issues",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Alternative Contact",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "botbot.html": {
+      "title": "Investor Relations | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Investor Relations",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs.PoRNb8Ts5amROUJ",
+          "title": "Chat widget for customer support",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1264,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": []
+    },
+    "careers.html": {
+      "title": "Careers | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Careers",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Join Now",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "complaint.html": {
+      "title": "Complaint Form (Legacy) | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Register a Complaint",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1264,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": []
+    },
+    "complaint_new.html": {
+      "title": "Complaint Form | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Register Complaint",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcCuhAiAAAAAIcwbPIbre3c1cDuJwY4uZGHSZ",
+          "title": "reCAPTCHA",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        },
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "unlabeled": [],
+      "autocomplete": [
+        {
+          "id": "client_code",
+          "name": "client_code",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "customer_name",
+          "name": "customer_name",
+          "type": "text",
+          "autocomplete": "name"
+        },
+        {
+          "id": "customer_email",
+          "name": "customer_email",
+          "type": "email",
+          "autocomplete": "email"
+        },
+        {
+          "id": "goog-gt-votingInputSrcLang",
+          "name": "sl",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputTrgLang",
+          "name": "tl",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputSrcText",
+          "name": "query",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputTrgText",
+          "name": "gtrans",
+          "type": "text",
+          "autocomplete": null
+        },
+        {
+          "id": "goog-gt-votingInputVote",
+          "name": "vote",
+          "type": "text",
+          "autocomplete": null
+        }
+      ]
+    },
+    "contact.html": {
+      "title": "Contact Us | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Contact Us",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "REGISTERED OFFICE",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "OFFICE",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "OFFICE",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Locate Us",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Escalation Matrix",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.8513067731183!2d72.859046514903",
+          "title": "Google Maps location",
+          "byScript": null
+        },
+        {
+          "src": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcCuhAiAAAAAIcwbPIbre3c1cDuJwY4uZGHSZ",
+          "title": "reCAPTCHA",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        },
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [
+        {
+          "tag": "A",
+          "text": "https://scores.sebi.gov.in",
+          "w": 257,
+          "h": 19,
+          "cls": ""
+        },
+        {
+          "tag": "A",
+          "text": "BSE eComplaint",
+          "w": 162,
+          "h": 19,
+          "cls": ""
+        },
+        {
+          "tag": "A",
+          "text": "NCDEX",
+          "w": 68,
+          "h": 19,
+          "cls": ""
+        },
+        {
+          "tag": "A",
+          "text": "MCX",
+          "w": 43,
+          "h": 19,
+          "cls": ""
+        },
+        {
+          "tag": "A",
+          "text": "CDSL",
+          "w": 52,
+          "h": 19,
+          "cls": ""
+        }
+      ],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [
+        {
+          "tag": "BUTTON",
+          "visible": "\u267f Accessibility Options",
+          "ariaLabel": "Open accessibility tools",
+          "cls": "fab"
+        }
+      ],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "unlabeled": [],
+      "autocomplete": [
+        {
+          "id": "name",
+          "name": "name",
+          "type": "text",
+          "autocomplete": "name"
+        },
+        {
+          "id": "email",
+          "name": "email",
+          "type": "email",
+          "autocomplete": "email"
+        }
+      ]
+    },
+    "customers.html": {
+      "title": "Customer Services | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "35,817",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "4,400",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "disclaimer.html": {
+      "title": "Disclaimer | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "A relationship on your terms.",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "downloads.html": {
+      "title": "Downloads | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Hi, Here you can download the forms.",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Download Form",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Fill The Form",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Send Form",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Client Registeration Form",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Block M Early Payin_Annexure",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Investor Charter_DP Feb 2025.pdf",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Investor Charter Broker Feb 2025.pdf",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Investor-Charter-Member-id-08054.doc",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Investor-Charter-Member-id-86900.doc",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Saral Form",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Rights and obligation DP",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "CDSL_Investor_charter.pdf",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Checklist Of Corporate",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "C_KYC Form",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Client Copy",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "DIS BOOK ISSUE LETTER",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "DIS_ISSUE",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "DO'S & DON'T",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Do`s and Don`ts_Annexure17",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "DORMANT ACTIVATION FORM",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Off Market Sale Annexure (SSIIL)",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Standard DRF",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Trading Account Re activation Request Form - EQ",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "TRANSMISSION REQUEST FORM",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Transposition",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "UCC ANNEXURE",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "UPDATION OF ANNUAL INCOME",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "history.html": {
+      "title": "Our History | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "A relationship on your terms.",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Everyone\u2019s an Investor",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Attention Investor",
+          "visible": true
+        },
+        {
+          "level": 5,
+          "text": "Investor alerts",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs.PoRNb8Ts5amROUJ",
+          "title": "Chat widget for customer support",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+        }
+      ]
+    },
+    "index.html": {
+      "title": "Home | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Setting strong foundations",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Open your account",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Trade on world-class platform",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "A partner invested in your success",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Currency",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Commodities",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Equity",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "IPOs",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Advisory",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Depository",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Working Experience in Quality Services",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "25+ Years of Excellence",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Stay Ahead of the Curve",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Commodities",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Currency",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Equity",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "IPOs",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Advisory",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Depository",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Do You Know?",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Risk Disclosures on Derivatives",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "SEBI presents Samajh Se Investing Simple:",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [
+        {
+          "tag": "BUTTON",
+          "visible": "\u267f Accessibility Options",
+          "ariaLabel": "Open accessibility tools",
+          "cls": "fab"
+        }
+      ],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "unlabeled": [],
+      "autocomplete": [
+        {
+          "id": "signup-name",
+          "name": "name",
+          "type": "text",
+          "autocomplete": "name"
+        },
+        {
+          "id": "signup-email",
+          "name": "email",
+          "type": "email",
+          "autocomplete": "email"
+        },
+        {
+          "id": "phone",
+          "name": "phone",
+          "type": "tel",
+          "autocomplete": "tel"
+        }
+      ]
+    },
+    "invester_charter.html": {
+      "title": "Investor Charter | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Investor Charter",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Annexure-C (CDSL)",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Depository Participant",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Investor Charter",
+          "visible": false
+        },
+        {
+          "level": 3,
+          "text": "Stock Broker",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "management.html": {
+      "title": "Our Management | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Putting our clients first since 1994",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Our Leaders",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Neelam Dhingra",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Cherish Dhingra",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Irshad Khan",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Why Choose Us? WE ASSURE QUALITY",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "news.html": {
+      "title": "News & Updates | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "News",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "World food prices back down in March after two-year high",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "How the Stock Exchange works",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "We simply attempt to be fearful when others are greedy and to be greed",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "April 2019 Market Report Podcast",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "https://themeforest.net/item/altis-professional-hosting-html-template/",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Oooh....Hello World! I\u2019m a standard Post",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Mark Harris",
+          "visible": true
+        },
+        {
+          "level": 5,
+          "text": "Categories",
+          "visible": true
+        },
+        {
+          "level": 5,
+          "text": "Popular",
+          "visible": true
+        },
+        {
+          "level": 5,
+          "text": "Archive",
+          "visible": true
+        },
+        {
+          "level": 5,
+          "text": "Tag Cloud",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://www.youtube.com/embed/F3QpgXBtDeo?autoplay=0&controls=0&disablekb=1&playsinline=1&",
+          "title": "Player for How The Stock Exchange Works (For Dummies)",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [
+        {
+          "tag": "BUTTON",
+          "visible": "PausePlay",
+          "ariaLabel": "Play, How The Stock Exchange Works (For Dummies)",
+          "cls": "plyr__controls__item plyr__control"
+        },
+        {
+          "tag": "BUTTON",
+          "visible": "PausePlay",
+          "ariaLabel": "Play",
+          "cls": "plyr__controls__item plyr__control"
+        }
+      ],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+        },
+        {
+          "type": "error",
+          "text": "Refused to display 'https://www.youtube.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'."
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+        },
+        {
+          "type": "error",
+          "text": "Refused to display 'https://www.youtube.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'."
+        }
+      ]
+    },
+    "pay.html": {
+      "title": "Payment Services | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Hi, Here you can download the forms.",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs.PoRNb8Ts5amROUJ",
+          "title": "Chat widget for customer support",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": []
+    },
+    "privacy.html": {
+      "title": "Privacy Policy | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "A relationship on your terms.",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "procedures.html": {
+      "title": "Procedures | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Policies & Procedures",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "products.html": {
+      "title": "Investment Products | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "A relationship on your terms.",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Equity",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Currency",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Commodities",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "IPOs",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Advisory",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Depository",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "We charge lowest brokerage \u2014 open your account now",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window",
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": null,
+          "byScript": null
+        },
+        {
+          "src": "",
+          "title": "Language Translate Widget",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ]
+    },
+    "signin.html": {
+      "title": "Sign In | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Log into your account",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [
+        {
+          "tag": "BUTTON",
+          "visible": "Login Login - sign in to your account",
+          "ariaLabel": "Login - sign in to your account",
+          "cls": "uk-button uk-width-1-1 uk-button-primary"
+        },
+        {
+          "tag": "BUTTON",
+          "visible": "\u267f Accessibility Options",
+          "ariaLabel": "Open accessibility tools",
+          "cls": "fab"
+        }
+      ],
+      "console_errors": [],
+      "unlabeled": [],
+      "autocomplete": [
+        {
+          "id": "username",
+          "name": null,
+          "type": "text",
+          "autocomplete": "username"
+        },
+        {
+          "id": "password",
+          "name": null,
+          "type": "password",
+          "autocomplete": "current-password"
+        }
+      ]
+    },
+    "single.html": {
+      "title": "Latest Update | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Latest Update",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "World food prices back down in March after two-year high",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "The solutions",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "\"World food prices back down in March after two-year high\"",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Mark Harris",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Dennis Olson",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Peter Morrison",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Leave a comment",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Markets",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Our Menus",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Policies and Terms",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": []
+    },
+    "smart_ODR.html": {
+      "title": "Smart ODR | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "SEBI Investor Complaint & Dispute Resolution",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Official SEBI Grievance Redressal Portals",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "SCORES Portal",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "SMARTODR Portal",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Information Required Before Filing a Complaint",
+          "visible": false
+        },
+        {
+          "level": 3,
+          "text": "Full Name",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "PAN Number",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Residential Address",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Mobile Number",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Email ID",
+          "visible": false
+        },
+        {
+          "level": 2,
+          "text": "Benefits of Using SEBI Portals",
+          "visible": false
+        },
+        {
+          "level": 3,
+          "text": "Easy & Quick Complaint Filing",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Effective Communication",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Transparent Process",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Speedy Grievance Resolution",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Online Tracking",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Secure Digital Platform",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Time Saving",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Investor Protection",
+          "visible": false
+        },
+        {
+          "level": 2,
+          "text": "Step-by-Step Process",
+          "visible": false
+        },
+        {
+          "level": 3,
+          "text": "Register on SCORES or SMARTODR",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Provide mandatory details",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Submit complaint/dispute",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Track status online",
+          "visible": false
+        },
+        {
+          "level": 4,
+          "text": "Receive updates and resolution",
+          "visible": false
+        },
+        {
+          "level": 2,
+          "text": "Official Links",
+          "visible": false
+        },
+        {
+          "level": 3,
+          "text": "SCORES",
+          "visible": false
+        },
+        {
+          "level": 3,
+          "text": "SMARTODR",
+          "visible": false
+        },
+        {
+          "level": 3,
+          "text": "Disclaimer",
+          "visible": false
+        },
+        {
+          "level": 3,
+          "text": "Products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": []
+    },
+    "team.html": {
+      "title": "Our Team | Standard Securities",
+      "html_lang": "en",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Putting our clients first since 1994",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Our Team",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Name",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Name",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Name",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "We're always looking for talent",
+          "visible": true
+        },
+        {
+          "level": 2,
+          "text": "Chat support",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "products",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Menus",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Quick Links",
+          "visible": true
+        },
+        {
+          "level": 3,
+          "text": "Contact us",
+          "visible": true
+        },
+        {
+          "level": 4,
+          "text": "Attention Investor",
+          "visible": true
+        }
+      ],
+      "duplicate_ids": [],
+      "images_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs.PoRNb8Ts5amROUJ",
+          "title": "Google Maps location",
+          "byScript": null
+        }
+      ],
+      "undersized": [],
+      "overflow_1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "label_in_name_violations": [],
+      "console_errors": []
+    }
+  },
+  "reflow": {
+    "index.html": {
+      "320": {
+        "docScroll": 320,
+        "docClient": 320,
+        "bodyScroll": 320,
+        "hasOverflow": false
+      },
+      "400": {
+        "docScroll": 400,
+        "docClient": 400,
+        "bodyScroll": 400,
+        "hasOverflow": false
+      },
+      "640": {
+        "docScroll": 640,
+        "docClient": 640,
+        "bodyScroll": 640,
+        "hasOverflow": false
+      },
+      "893": {
+        "docScroll": 893,
+        "docClient": 893,
+        "bodyScroll": 893,
+        "hasOverflow": false
+      },
+      "894": {
+        "docScroll": 894,
+        "docClient": 894,
+        "bodyScroll": 894,
+        "hasOverflow": false
+      },
+      "895": {
+        "docScroll": 895,
+        "docClient": 895,
+        "bodyScroll": 895,
+        "hasOverflow": false
+      },
+      "1024": {
+        "docScroll": 1024,
+        "docClient": 1024,
+        "bodyScroll": 1024,
+        "hasOverflow": false
+      },
+      "1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "1440": {
+        "docScroll": 1440,
+        "docClient": 1440,
+        "bodyScroll": 1440,
+        "hasOverflow": false
+      }
+    },
+    "contact.html": {
+      "320": {
+        "docScroll": 320,
+        "docClient": 320,
+        "bodyScroll": 320,
+        "hasOverflow": false
+      },
+      "400": {
+        "docScroll": 400,
+        "docClient": 400,
+        "bodyScroll": 400,
+        "hasOverflow": false
+      },
+      "640": {
+        "docScroll": 640,
+        "docClient": 640,
+        "bodyScroll": 640,
+        "hasOverflow": false
+      },
+      "893": {
+        "docScroll": 893,
+        "docClient": 893,
+        "bodyScroll": 893,
+        "hasOverflow": false
+      },
+      "894": {
+        "docScroll": 894,
+        "docClient": 894,
+        "bodyScroll": 894,
+        "hasOverflow": false
+      },
+      "895": {
+        "docScroll": 895,
+        "docClient": 895,
+        "bodyScroll": 895,
+        "hasOverflow": false
+      },
+      "1024": {
+        "docScroll": 1024,
+        "docClient": 1024,
+        "bodyScroll": 1024,
+        "hasOverflow": false
+      },
+      "1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "1440": {
+        "docScroll": 1440,
+        "docClient": 1440,
+        "bodyScroll": 1440,
+        "hasOverflow": false
+      }
+    },
+    "products.html": {
+      "320": {
+        "docScroll": 320,
+        "docClient": 320,
+        "bodyScroll": 320,
+        "hasOverflow": false
+      },
+      "400": {
+        "docScroll": 400,
+        "docClient": 400,
+        "bodyScroll": 400,
+        "hasOverflow": false
+      },
+      "640": {
+        "docScroll": 640,
+        "docClient": 640,
+        "bodyScroll": 640,
+        "hasOverflow": false
+      },
+      "893": {
+        "docScroll": 893,
+        "docClient": 893,
+        "bodyScroll": 893,
+        "hasOverflow": false
+      },
+      "894": {
+        "docScroll": 894,
+        "docClient": 894,
+        "bodyScroll": 894,
+        "hasOverflow": false
+      },
+      "895": {
+        "docScroll": 895,
+        "docClient": 895,
+        "bodyScroll": 895,
+        "hasOverflow": false
+      },
+      "1024": {
+        "docScroll": 1024,
+        "docClient": 1024,
+        "bodyScroll": 1024,
+        "hasOverflow": false
+      },
+      "1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "1440": {
+        "docScroll": 1440,
+        "docClient": 1440,
+        "bodyScroll": 1440,
+        "hasOverflow": false
+      }
+    },
+    "news.html": {
+      "320": {
+        "docScroll": 320,
+        "docClient": 320,
+        "bodyScroll": 320,
+        "hasOverflow": false
+      },
+      "400": {
+        "docScroll": 400,
+        "docClient": 400,
+        "bodyScroll": 400,
+        "hasOverflow": false
+      },
+      "640": {
+        "docScroll": 640,
+        "docClient": 640,
+        "bodyScroll": 640,
+        "hasOverflow": false
+      },
+      "893": {
+        "docScroll": 893,
+        "docClient": 893,
+        "bodyScroll": 893,
+        "hasOverflow": false
+      },
+      "894": {
+        "docScroll": 894,
+        "docClient": 894,
+        "bodyScroll": 894,
+        "hasOverflow": false
+      },
+      "895": {
+        "docScroll": 895,
+        "docClient": 895,
+        "bodyScroll": 895,
+        "hasOverflow": false
+      },
+      "1024": {
+        "docScroll": 1024,
+        "docClient": 1024,
+        "bodyScroll": 1024,
+        "hasOverflow": false
+      },
+      "1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "1440": {
+        "docScroll": 1440,
+        "docClient": 1440,
+        "bodyScroll": 1440,
+        "hasOverflow": false
+      }
+    },
+    "single.html": {
+      "320": {
+        "docScroll": 320,
+        "docClient": 320,
+        "bodyScroll": 320,
+        "hasOverflow": false
+      },
+      "400": {
+        "docScroll": 400,
+        "docClient": 400,
+        "bodyScroll": 400,
+        "hasOverflow": false
+      },
+      "640": {
+        "docScroll": 640,
+        "docClient": 640,
+        "bodyScroll": 640,
+        "hasOverflow": false
+      },
+      "893": {
+        "docScroll": 893,
+        "docClient": 893,
+        "bodyScroll": 893,
+        "hasOverflow": false
+      },
+      "894": {
+        "docScroll": 894,
+        "docClient": 894,
+        "bodyScroll": 894,
+        "hasOverflow": false
+      },
+      "895": {
+        "docScroll": 895,
+        "docClient": 895,
+        "bodyScroll": 895,
+        "hasOverflow": false
+      },
+      "1024": {
+        "docScroll": 1024,
+        "docClient": 1024,
+        "bodyScroll": 1024,
+        "hasOverflow": false
+      },
+      "1280": {
+        "docScroll": 1280,
+        "docClient": 1280,
+        "bodyScroll": 1280,
+        "hasOverflow": false
+      },
+      "1440": {
+        "docScroll": 1440,
+        "docClient": 1440,
+        "bodyScroll": 1440,
+        "hasOverflow": false
+      }
+    }
+  },
+  "text_resize_200pct": {
+    "index.html": {
+      "docScroll": 1280,
+      "docClient": 1280,
+      "bodyScroll": 1280,
+      "hasOverflow": false
+    },
+    "contact.html": {
+      "docScroll": 1280,
+      "docClient": 1280,
+      "bodyScroll": 1280,
+      "hasOverflow": false
+    },
+    "products.html": {
+      "docScroll": 1280,
+      "docClient": 1280,
+      "bodyScroll": 1280,
+      "hasOverflow": false
+    },
+    "signin.html": {
+      "docScroll": 1280,
+      "docClient": 1280,
+      "bodyScroll": 1280,
+      "hasOverflow": false
+    }
+  },
+  "text_spacing": {
+    "index.html": {
+      "docScroll": 1280,
+      "docClient": 1280,
+      "bodyScroll": 1280,
+      "hasOverflow": false
+    },
+    "products.html": {
+      "docScroll": 1280,
+      "docClient": 1280,
+      "bodyScroll": 1280,
+      "hasOverflow": false
+    },
+    "news.html": {
+      "docScroll": 1280,
+      "docClient": 1280,
+      "bodyScroll": 1280,
+      "hasOverflow": false
+    },
+    "Currency.html": {
+      "docScroll": 1280,
+      "docClient": 1280,
+      "bodyScroll": 1280,
+      "hasOverflow": false
+    },
+    "Commodities.html": {
+      "docScroll": 1280,
+      "docClient": 1280,
+      "bodyScroll": 1280,
+      "hasOverflow": false
+    },
+    "contact.html": {
+      "docScroll": 1280,
+      "docClient": 1280,
+      "bodyScroll": 1280,
+      "hasOverflow": false
+    }
+  }
+}

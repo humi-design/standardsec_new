@@ -1,0 +1,634 @@
+{
+  "create_account_empty": {
+    "invalid": [
+      "signup-name",
+      "signup-email",
+      "phone"
+    ],
+    "status": "Please fill in all required fields correctly.",
+    "status_role": "status",
+    "focused": "signup-name"
+  },
+  "create_account_bad_email": {
+    "invalid": [
+      "signup-email"
+    ],
+    "focused": "signup-email"
+  },
+  "create_account_valid": {
+    "status": "Thank you! We will contact you shortly.",
+    "invalid": []
+  },
+  "contact_empty": {
+    "invalid": [
+      "name",
+      "email",
+      "message"
+    ],
+    "nameError": "Full name is required.",
+    "emailError": "Enter a valid email address.",
+    "messageError": "Message must be at least 10 characters.",
+    "summary": "\u26a0\ufe0f Please fix the errors before submitting.",
+    "focused": "name"
+  },
+  "contact_bad": {
+    "invalid": [
+      "email"
+    ],
+    "emailError": "Enter a valid email address.",
+    "messageError": "Message must be at least 10 characters.",
+    "focused": "email"
+  },
+  "contrast_index": {
+    "hero_h1": {
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(11, 76, 140)",
+      "fontSize": "48px",
+      "weight": "700"
+    },
+    "open_account_btn": {
+      "color": "rgb(11, 76, 140)",
+      "bg": "rgb(255, 255, 255)",
+      "fontSize": "12.6225px",
+      "weight": "700"
+    },
+    "ticker_success": {
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(21, 122, 61)",
+      "fontSize": "11px",
+      "weight": "400"
+    },
+    "ticker_danger": {
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(176, 0, 32)",
+      "fontSize": "11px",
+      "weight": "400"
+    },
+    "a11y_fab": {
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(0, 123, 255)",
+      "fontSize": "24px",
+      "weight": "400"
+    },
+    "footer_need_help": {
+      "color": "rgb(85, 85, 85)",
+      "bg": "rgb(241, 241, 241)",
+      "fontSize": "16.5px"
+    },
+    "contact_input_border": {
+      "borderColor": "rgb(118, 118, 118)",
+      "borderWidth": "1px",
+      "bg": "rgb(255, 255, 255)"
+    }
+  },
+  "smart_odr_contrast": [
+    {
+      "tag": "H2",
+      "text": "Step-by-Step Process",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(241, 241, 241)",
+      "grad": "none",
+      "fontSize": "27.1755px",
+      "weight": "700"
+    }
+  ],
+  "zoom200": {
+    "index.html": {
+      "sw": 1280,
+      "cw": 1280,
+      "overflow": false
+    },
+    "contact.html": {
+      "sw": 1280,
+      "cw": 1280,
+      "overflow": false
+    },
+    "about.html": {
+      "sw": 1280,
+      "cw": 1280,
+      "overflow": false
+    },
+    "smart_ODR.html": {
+      "sw": 1280,
+      "cw": 1280,
+      "overflow": false
+    },
+    "news.html": {
+      "sw": 1280,
+      "cw": 1280,
+      "overflow": false
+    }
+  },
+  "textspacing": {
+    "index.html": {
+      "overflow": false,
+      "clipped_count": 11,
+      "clipped": [
+        {
+          "tag": "SPAN",
+          "txt": "(required)",
+          "sh": 25,
+          "ch": 1,
+          "sw": 91,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "(required)",
+          "sh": 25,
+          "ch": 1,
+          "sw": 91,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "(required)",
+          "sh": 25,
+          "ch": 1,
+          "sw": 91,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "Pause price ticker",
+          "sh": 18,
+          "ch": 1,
+          "sw": 125,
+          "cw": 1
+        },
+        {
+          "tag": "H2",
+          "txt": "Stay Ahead of the Curve",
+          "sh": 41,
+          "ch": 41,
+          "sw": 2751,
+          "cw": 1060
+        },
+        {
+          "tag": "LI",
+          "txt": "1. Understand Before You Inves",
+          "sh": 28,
+          "ch": 25,
+          "sw": 450,
+          "cw": 450
+        },
+        {
+          "tag": "LI",
+          "txt": "2. Choose Regulated Investment",
+          "sh": 28,
+          "ch": 25,
+          "sw": 450,
+          "cw": 450
+        },
+        {
+          "tag": "LI",
+          "txt": "3. Start Early, Stay Invested.",
+          "sh": 28,
+          "ch": 25,
+          "sw": 450,
+          "cw": 450
+        }
+      ]
+    },
+    "contact.html": {
+      "overflow": false,
+      "clipped_count": 5,
+      "clipped": [
+        {
+          "tag": "SPAN",
+          "txt": "(required)",
+          "sh": 25,
+          "ch": 1,
+          "sw": 91,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "(required)",
+          "sh": 25,
+          "ch": 1,
+          "sw": 91,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "(required)",
+          "sh": 25,
+          "ch": 1,
+          "sw": 91,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "Pause scrolling notices",
+          "sh": 18,
+          "ch": 1,
+          "sw": 160,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "Accessibility Options",
+          "sh": 36,
+          "ch": 1,
+          "sw": 272,
+          "cw": 1
+        }
+      ]
+    },
+    "about.html": {
+      "overflow": false,
+      "clipped_count": 2,
+      "clipped": [
+        {
+          "tag": "SPAN",
+          "txt": "Pause scrolling notices",
+          "sh": 18,
+          "ch": 1,
+          "sw": 160,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "Accessibility Options",
+          "sh": 36,
+          "ch": 1,
+          "sw": 272,
+          "cw": 1
+        }
+      ]
+    },
+    "smart_ODR.html": {
+      "overflow": false,
+      "clipped_count": 1,
+      "clipped": [
+        {
+          "tag": "SPAN",
+          "txt": "Pause scrolling notices",
+          "sh": 18,
+          "ch": 1,
+          "sw": 160,
+          "cw": 1
+        }
+      ]
+    },
+    "news.html": {
+      "overflow": false,
+      "clipped_count": 14,
+      "clipped": [
+        {
+          "tag": "SPAN",
+          "txt": "Play",
+          "sh": 99,
+          "ch": 1,
+          "sw": 13,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "00:00",
+          "sh": 35,
+          "ch": 31,
+          "sw": 58,
+          "cw": 58
+        },
+        {
+          "tag": "SPAN",
+          "txt": "Mute",
+          "sh": 99,
+          "ch": 1,
+          "sw": 16,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "Settings",
+          "sh": 198,
+          "ch": 1,
+          "sw": 13,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "Enter fullscreen",
+          "sh": 371,
+          "ch": 1,
+          "sw": 13,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "Play",
+          "sh": 99,
+          "ch": 1,
+          "sw": 13,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "Play",
+          "sh": 99,
+          "ch": 1,
+          "sw": 13,
+          "cw": 1
+        },
+        {
+          "tag": "SPAN",
+          "txt": "00:00",
+          "sh": 35,
+          "ch": 31,
+          "sw": 58,
+          "cw": 58
+        }
+      ]
+    }
+  },
+  "targets": {
+    "320": {
+      "total": 129,
+      "under24": 0,
+      "items": []
+    },
+    "400": {
+      "total": 129,
+      "under24": 0,
+      "items": []
+    },
+    "640": {
+      "total": 129,
+      "under24": 0,
+      "items": []
+    },
+    "894": {
+      "total": 129,
+      "under24": 0,
+      "items": []
+    },
+    "1280": {
+      "total": 129,
+      "under24": 0,
+      "items": []
+    }
+  },
+  "reflow": {
+    "320": {
+      "sw": 320,
+      "cw": 320,
+      "overflow": false,
+      "offenders": [
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 469
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-danger",
+          "right": 464
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 685
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-danger",
+          "right": 679
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 901
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 898
+        }
+      ]
+    },
+    "400": {
+      "sw": 400,
+      "cw": 400,
+      "overflow": false,
+      "offenders": [
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 629
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-danger",
+          "right": 584
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 925
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-danger",
+          "right": 879
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1221
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1178
+        }
+      ]
+    },
+    "640": {
+      "sw": 640,
+      "cw": 640,
+      "overflow": false,
+      "offenders": [
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 811
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-danger",
+          "right": 787
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1064
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1042
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1317
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1295
+        }
+      ]
+    },
+    "893": {
+      "sw": 893,
+      "cw": 893,
+      "overflow": false,
+      "offenders": [
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1191
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-danger",
+          "right": 1103
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1570
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1485
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1950
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1864
+        }
+      ]
+    },
+    "894": {
+      "sw": 894,
+      "cw": 894,
+      "overflow": false,
+      "offenders": [
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1192
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-danger",
+          "right": 1104
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1572
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1487
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1952
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1867
+        }
+      ]
+    },
+    "895": {
+      "sw": 895,
+      "cw": 895,
+      "overflow": false,
+      "offenders": [
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1194
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-danger",
+          "right": 1105
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1574
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1488
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1955
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1869
+        }
+      ]
+    },
+    "1280": {
+      "sw": 1280,
+      "cw": 1280,
+      "overflow": false,
+      "offenders": [
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1331
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1303
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1534
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-danger",
+          "right": 1510
+        },
+        {
+          "tag": "LI",
+          "cls": "",
+          "right": 1738
+        },
+        {
+          "tag": "SPAN",
+          "cls": "uk-label uk-label-success",
+          "right": 1736
+        }
+      ]
+    }
+  }
+}

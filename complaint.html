@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Complaint Form | Standard Securities</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Complaint Form (Legacy) | Standard Securities</title>
     <link rel="stylesheet" href="css/accessibility-fixes.css">
 </head>
 <body>
-<main id="main-content">
 <a href="#main-content" class="skip-link">Skip to main content</a>
->
+<main id="main-content">
 <h1>Register a Complaint</h1>
-<form method="post" action="complaint.php">
+<form method="post" action="complaint.php" aria-label="Complaint form">
     <label for="customer_name">Customer Name:</label><br>
-    <input aria-required="true" type="text" id="customer_name" name="customer_name" required><br>
-    
+    <input aria-required="true" type="text" id="customer_name" name="customer_name" autocomplete="name" required><br>
+
     <label for="customer_email">Customer Email:</label><br>
-    <input aria-required="true" type="email" id="customer_email" name="customer_email" required><br>
-    
+    <input aria-required="true" type="email" id="customer_email" name="customer_email" autocomplete="email" required><br>
+
     <label for="complaint">Complaint:</label><br>
     <textarea id="complaint" name="complaint" rows="4" required></textarea><br>
-    
+
     <input type="submit" value="Submit">
 </form>
-
 </main>
 </body>
 </html>

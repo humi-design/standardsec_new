@@ -1,0 +1,482 @@
+{
+  "320": {
+    "navVisible": false,
+    "mobileToggleVisible": true,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      0
+    ],
+    "navW": 0,
+    "navScrollW": 0,
+    "ulScrollW": 0,
+    "contentW": 0,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 320,
+    "clientW": 320,
+    "flexWrap": "nowrap",
+    "layout": "mobile-hamburger",
+    "ok": true
+  },
+  "375": {
+    "navVisible": false,
+    "mobileToggleVisible": true,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      0
+    ],
+    "navW": 0,
+    "navScrollW": 0,
+    "ulScrollW": 0,
+    "contentW": 0,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 375,
+    "clientW": 375,
+    "flexWrap": "nowrap",
+    "layout": "mobile-hamburger",
+    "ok": true
+  },
+  "400": {
+    "navVisible": false,
+    "mobileToggleVisible": true,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      0
+    ],
+    "navW": 0,
+    "navScrollW": 0,
+    "ulScrollW": 0,
+    "contentW": 0,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 400,
+    "clientW": 400,
+    "flexWrap": "nowrap",
+    "layout": "mobile-hamburger",
+    "ok": true
+  },
+  "640": {
+    "navVisible": false,
+    "mobileToggleVisible": true,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      0
+    ],
+    "navW": 0,
+    "navScrollW": 0,
+    "ulScrollW": 0,
+    "contentW": 0,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 640,
+    "clientW": 640,
+    "flexWrap": "nowrap",
+    "layout": "mobile-hamburger",
+    "ok": true
+  },
+  "768": {
+    "navVisible": false,
+    "mobileToggleVisible": true,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      0
+    ],
+    "navW": 0,
+    "navScrollW": 0,
+    "ulScrollW": 0,
+    "contentW": 0,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 768,
+    "clientW": 768,
+    "flexWrap": "nowrap",
+    "layout": "mobile-hamburger",
+    "ok": true
+  },
+  "894": {
+    "navVisible": false,
+    "mobileToggleVisible": true,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      0
+    ],
+    "navW": 0,
+    "navScrollW": 0,
+    "ulScrollW": 0,
+    "contentW": 0,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 894,
+    "clientW": 894,
+    "flexWrap": "nowrap",
+    "layout": "mobile-hamburger",
+    "ok": true
+  },
+  "895": {
+    "navVisible": false,
+    "mobileToggleVisible": true,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      0
+    ],
+    "navW": 0,
+    "navScrollW": 0,
+    "ulScrollW": 0,
+    "contentW": 0,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 895,
+    "clientW": 895,
+    "flexWrap": "nowrap",
+    "layout": "mobile-hamburger",
+    "ok": true
+  },
+  "959": {
+    "navVisible": false,
+    "mobileToggleVisible": true,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      0
+    ],
+    "navW": 0,
+    "navScrollW": 0,
+    "ulScrollW": 0,
+    "contentW": 0,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 959,
+    "clientW": 959,
+    "flexWrap": "nowrap",
+    "layout": "mobile-hamburger",
+    "ok": true
+  },
+  "960": {
+    "navVisible": true,
+    "mobileToggleVisible": false,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      163
+    ],
+    "navW": 836,
+    "navScrollW": 836,
+    "ulScrollW": 836,
+    "contentW": 836,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 960,
+    "clientW": 960,
+    "flexWrap": "nowrap",
+    "layout": "desktop",
+    "ok": true
+  },
+  "1000": {
+    "navVisible": true,
+    "mobileToggleVisible": false,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      65
+    ],
+    "navW": 836,
+    "navScrollW": 836,
+    "ulScrollW": 836,
+    "contentW": 836,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 1000,
+    "clientW": 1000,
+    "flexWrap": "nowrap",
+    "layout": "desktop",
+    "ok": true
+  },
+  "1024": {
+    "navVisible": true,
+    "mobileToggleVisible": false,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      65
+    ],
+    "navW": 836,
+    "navScrollW": 836,
+    "ulScrollW": 836,
+    "contentW": 836,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 1024,
+    "clientW": 1024,
+    "flexWrap": "nowrap",
+    "layout": "desktop",
+    "ok": true
+  },
+  "1100": {
+    "navVisible": true,
+    "mobileToggleVisible": false,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      74
+    ],
+    "navW": 836,
+    "navScrollW": 836,
+    "ulScrollW": 836,
+    "contentW": 836,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 1100,
+    "clientW": 1100,
+    "flexWrap": "nowrap",
+    "layout": "desktop",
+    "ok": true
+  },
+  "1280": {
+    "navVisible": true,
+    "mobileToggleVisible": false,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      45
+    ],
+    "navW": 836,
+    "navScrollW": 836,
+    "ulScrollW": 836,
+    "contentW": 836,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 1280,
+    "clientW": 1280,
+    "flexWrap": "nowrap",
+    "layout": "desktop",
+    "ok": true
+  },
+  "1440": {
+    "navVisible": true,
+    "mobileToggleVisible": false,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      74
+    ],
+    "navW": 836,
+    "navScrollW": 836,
+    "ulScrollW": 836,
+    "contentW": 836,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 1440,
+    "clientW": 1440,
+    "flexWrap": "nowrap",
+    "layout": "desktop",
+    "ok": true
+  },
+  "1600": {
+    "navVisible": true,
+    "mobileToggleVisible": false,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      45
+    ],
+    "navW": 836,
+    "navScrollW": 836,
+    "ulScrollW": 836,
+    "contentW": 836,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 1600,
+    "clientW": 1600,
+    "flexWrap": "nowrap",
+    "layout": "desktop",
+    "ok": true
+  },
+  "1920": {
+    "navVisible": true,
+    "mobileToggleVisible": false,
+    "links": [
+      "Home",
+      "Products",
+      "About Us\n     ",
+      "Contact",
+      "Login\n        ",
+      "Quick Links\n  ",
+      "KYC\n          ",
+      "Complaints"
+    ],
+    "linkCount": 8,
+    "rows": 1,
+    "rowTops": [
+      74
+    ],
+    "navW": 836,
+    "navScrollW": 836,
+    "ulScrollW": 836,
+    "contentW": 836,
+    "clipped": false,
+    "docOverflow": false,
+    "docScrollW": 1920,
+    "clientW": 1920,
+    "flexWrap": "nowrap",
+    "layout": "desktop",
+    "ok": true
+  }
+}

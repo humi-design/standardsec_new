@@ -462,12 +462,7 @@
           "text": "Failed to load resource: the server responded with a status of 403 ()"
         }
       ],
-      "request_failed": [
-        {
-          "type": "requestfailed",
-          "text": "https://www.google.com/sorry/index?continue=https://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit_index&q=EhD9o-ciCsPMAAFJRMkKAi :: net::ERR_BLOCKED_BY_ORB"
-        }
-      ]
+      "request_failed": []
     },
     "contact.html": {
       "pageerrors": [],
@@ -477,12 +472,7 @@
           "text": "Failed to load resource: the server responded with a status of 403 ()"
         }
       ],
-      "request_failed": [
-        {
-          "type": "requestfailed",
-          "text": "http://www.google.com/sorry/index?continue=http://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit_contact&q=EhD9o-ciCsPMAAFJRMkKAi :: net::ERR_BLOCKED_BY_ORB"
-        }
-      ]
+      "request_failed": []
     },
     "signin.html": {
       "pageerrors": [],
@@ -492,12 +482,7 @@
     "smart_ODR.html": {
       "pageerrors": [],
       "console_errors": [],
-      "request_failed": [
-        {
-          "type": "requestfailed",
-          "text": "https://www.google.com/sorry/index?continue=https://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit&q=EhD9o-ciCsPMAAFJRMkKAiwEGJ6e :: net::ERR_BLOCKED_BY_ORB"
-        }
-      ]
+      "request_failed": []
     },
     "news.html": {
       "pageerrors": [],
@@ -526,7 +511,11 @@
         },
         {
           "type": "requestfailed",
-          "text": "http://www.google.com/sorry/index?continue=http://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit&q=EhD9o-ciCsPMAAFJRMkKAiwEGKKejN :: net::ERR_BLOCKED_BY_ORB"
+          "text": "https://www.google.com/sorry/index?continue=https://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit&q=EhD9o-ciCsPMAAFJRMkKAnspGKfO :: net::ERR_BLOCKED_BY_ORB"
+        },
+        {
+          "type": "requestfailed",
+          "text": "http://localhost:12000/media/kolintang.mp3 :: net::ERR_ABORTED"
         },
         {
           "type": "requestfailed",
@@ -542,7 +531,12 @@
           "text": "Failed to load resource: the server responded with a status of 403 ()"
         }
       ],
-      "request_failed": []
+      "request_failed": [
+        {
+          "type": "requestfailed",
+          "text": "http://www.google.com/sorry/index?continue=http://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit&q=EhD9o-ciCsPMAAFJRMkKAnspGKvOjN :: net::ERR_BLOCKED_BY_ORB"
+        }
+      ]
     },
     "about.html": {
       "pageerrors": [],
@@ -562,12 +556,7 @@
           "text": "Failed to load resource: the server responded with a status of 403 ()"
         }
       ],
-      "request_failed": [
-        {
-          "type": "requestfailed",
-          "text": "https://www.google.com/sorry/index?continue=https://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit&q=EhD9o-ciCsPMAAFJRMkKAiwEGK6e :: net::ERR_BLOCKED_BY_ORB"
-        }
-      ]
+      "request_failed": []
     }
   }
 }

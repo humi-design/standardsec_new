@@ -1,0 +1,185 @@
+{
+  "skip_link": {
+    "exists": true,
+    "box_unfocused": {
+      "x": 0,
+      "y": -80,
+      "width": 197.34375,
+      "height": 51.140625
+    },
+    "after_tab": {
+      "cls": "skip-link",
+      "tag": "A",
+      "text": "Skip to main content",
+      "rect": {
+        "x": 10,
+        "y": 10,
+        "width": 189.34375,
+        "height": 43.140625,
+        "top": 10,
+        "right": 199.34375,
+        "bottom": 53.140625,
+        "left": 10
+      }
+    },
+    "after_enter_hash": "#main-content",
+    "active_after_enter": "BODY"
+  },
+  "mobile_menu": [
+    {
+      "width": 893,
+      "toggle_present": true,
+      "visible": true,
+      "name": "Open mobile navigation menu",
+      "expanded_before": "false",
+      "expanded_after_click": "true",
+      "modal_open": "uk-modal-full uk-modal uk-open | display=block",
+      "expanded_after_esc": "false"
+    },
+    {
+      "width": 894,
+      "toggle_present": true,
+      "visible": true,
+      "name": "Open mobile navigation menu",
+      "expanded_before": "false",
+      "expanded_after_click": "true",
+      "modal_open": "uk-modal-full uk-modal uk-open | display=block",
+      "expanded_after_esc": "false"
+    },
+    {
+      "width": 895,
+      "toggle_present": true,
+      "visible": true,
+      "name": "Open mobile navigation menu",
+      "expanded_before": "false",
+      "expanded_after_click": "true",
+      "modal_open": "uk-modal-full uk-modal uk-open | display=block",
+      "expanded_after_esc": "false"
+    },
+    {
+      "width": 400,
+      "toggle_present": true,
+      "visible": true,
+      "name": "Open mobile navigation menu",
+      "expanded_before": "false",
+      "expanded_after_click": "true",
+      "modal_open": "uk-modal-full uk-modal uk-open | display=block",
+      "expanded_after_esc": "false"
+    },
+    {
+      "width": 320,
+      "toggle_present": true,
+      "visible": true,
+      "name": "Open mobile navigation menu",
+      "expanded_before": "false",
+      "expanded_after_click": "true",
+      "modal_open": "uk-modal-full uk-modal uk-open | display=block",
+      "expanded_after_esc": "false"
+    }
+  ],
+  "mobile_menu_keyboard": {
+    "reached_toggle_by_tab": true,
+    "tabs": 4,
+    "expanded_after_enter": "true",
+    "nav_visible": true,
+    "about_link_present": true
+  },
+  "motion": {
+    "slide_count": 1,
+    "slideshow_autoplay_attr": false,
+    "slider_autoplay_attr": true,
+    "pause_buttons": [
+      {
+        "label": "Pause price ticker\u2759\u2759",
+        "aria_pressed": "false",
+        "name": null
+      },
+      {
+        "label": "Pause scrolling notices\u2759\u2759",
+        "aria_pressed": "false",
+        "name": null
+      }
+    ],
+    "ticker_moving_before_pause": false,
+    "aria_pressed_after": "true",
+    "ticker_moving_while_paused": true,
+    "aria_pressed_resumed": "false"
+  },
+  "label_in_name": [
+    {
+      "visible": "\u267f\n            Accessibility Options",
+      "name": "Open accessibility tools",
+      "contains": false
+    },
+    {
+      "visible": "\ud83c\udf19 Dark Mode",
+      "name": "Dark Mode toggle",
+      "contains": false
+    },
+    {
+      "visible": "\ud83d\udd0a Read",
+      "name": "Read page aloud",
+      "contains": false
+    },
+    {
+      "visible": "\u267f Accessibility Statement",
+      "name": "View accessibility statement",
+      "contains": false
+    }
+  ],
+  "focus": {
+    "tested": 40,
+    "no_outline_count": 25,
+    "samples": [
+      {
+        "tag": "A",
+        "text": "History",
+        "outline": "none 3px rgb(1, 44, 109)"
+      },
+      {
+        "tag": "A",
+        "text": "Our Management",
+        "outline": "none 3px rgb(1, 44, 109)"
+      },
+      {
+        "tag": "A",
+        "text": "Careers",
+        "outline": "none 3px rgb(1, 44, 109)"
+      },
+      {
+        "tag": "A",
+        "text": "Employee Login",
+        "outline": "none 3px rgb(1, 44, 109)"
+      },
+      {
+        "tag": "A",
+        "text": "Smart ODR Login",
+        "outline": "none 3px rgb(1, 44, 109)"
+      },
+      {
+        "tag": "A",
+        "text": "Back Office",
+        "outline": "none 3px rgb(1, 44, 109)"
+      },
+      {
+        "tag": "A",
+        "text": "Downloads",
+        "outline": "none 3px rgb(1, 44, 109)"
+      },
+      {
+        "tag": "A",
+        "text": "Evoting Login",
+        "outline": "none 3px rgb(1, 44, 109)"
+      }
+    ]
+  },
+  "lang_toggle": {
+    "html_lang_before": "en",
+    "google_translate_present": false,
+    "lang_controls": [],
+    "google_translate_script": true
+  },
+  "console_index": [
+    "CONSOLE-error: Failed to load resource: the server responded with a status of 403 ()"
+  ]
+}

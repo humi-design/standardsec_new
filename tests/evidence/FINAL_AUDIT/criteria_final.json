@@ -1,0 +1,450 @@
+[
+  {
+    "sc": "1.1.1",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Non-text Content A All non-text content that is presented to the user has a text alternative that serves the equivalent purpose Pass Images carry alt/decorative empty-alt correctly; icon links have aria-labels (e.g. \"Open a new trading account\"). Guideline 1.2 \u2013 Time-based Media 2 ",
+    "final": "PASS (verified)",
+    "evidence": "axe image-alt clean on all 32 pages; images_missing_alt=[] everywhere"
+  },
+  {
+    "sc": "1.2.1",
+    "level": "A",
+    "original": "N/A",
+    "original_remarks": "Audio- only and Video- only (Prerecorded) A An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content and video-only content. N/A No audio-only or video-only content found on the site. 3 ",
+    "final": "N/A",
+    "evidence": "no audio-only/video-only content"
+  },
+  {
+    "sc": "1.2.2",
+    "level": "A",
+    "original": "N/A",
+    "original_remarks": "Captions (Prerecorded) A Captions are provided for all prerecorded audio content in synchronized media. N/A No prerecorded video-with-audio found. 4 ",
+    "final": "N/A",
+    "evidence": "no prerecorded captioned media"
+  },
+  {
+    "sc": "1.2.3",
+    "level": "A",
+    "original": "N/A",
+    "original_remarks": "Audio Description or Media Alternative (Prerecorded) A An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media. N/A No synchronized media found. 5 ",
+    "final": "N/A",
+    "evidence": "no audio description targets"
+  },
+  {
+    "sc": "1.2.4",
+    "level": "AA",
+    "original": "N/A",
+    "original_remarks": "Captions (Live) AA Captions are provided for all live audio content in synchronized media. N/A No live media found. 6 ",
+    "final": "N/A",
+    "evidence": "no live captioned media"
+  },
+  {
+    "sc": "1.2.5",
+    "level": "AA",
+    "original": "N/A",
+    "original_remarks": "Audio Description (Prerecorded) AA Audio description is provided for all prerecorded video content in synchronized media. N/A No prerecorded video found. Guideline 1.3 \u2013 Adaptable 7 ",
+    "final": "N/A",
+    "evidence": "no prerecorded video with audio"
+  },
+  {
+    "sc": "1.3.1",
+    "level": "A",
+    "original": "Fail",
+    "original_remarks": "Info and Relationships A Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. Fail Heading order broken (H3 before H1, duplicate H1s in hero carousel); identical service content marked as H5 in one section and H3 in a re",
+    "final": "PASS (verified)",
+    "evidence": "heading outline: exactly one visible H1 per page, no skipped levels on all 32 pages"
+  },
+  {
+    "sc": "1.3.2",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Meaningful Sequence A When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined. Pass DOM order matches visual reading order on pages reviewed. 9 ",
+    "final": "PASS (verified)",
+    "evidence": "DOM order matches visual order; axe clean"
+  },
+  {
+    "sc": "1.3.3",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Sensory Characteristics A Instructions provided for understanding and operating Pass No instructions relying solely on shape/position/color observed. ===== PAGE 6 ===== # WCAG 2.2 SC Level What it requires Result Remarks content do not rely solely on sensory characteristics of components such as sha",
+    "final": "PASS (verified)",
+    "evidence": "axe clean; instructions not conveyed by shape/size/position alone"
+  },
+  {
+    "sc": "1.3.4",
+    "level": "AA",
+    "original": "Pass",
+    "original_remarks": "Orientation AA Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential. Pass No CSS orientation lock; viewport meta doesn't restrict orientation. 11 ",
+    "final": "PASS (verified)",
+    "evidence": "axe clean; no orientation lock"
+  },
+  {
+    "sc": "1.3.5",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Identify Input Purpose AA The purpose of each input field collecting information about the user can be programmatically determined. Fail Name/Email/Phone fields on homepage have no autocomplete attribute. Guideline 1.4 \u2013 Distinguishable 12 ",
+    "final": "PASS (verified)",
+    "evidence": "autocomplete present on name/email/tel/username/password fields"
+  },
+  {
+    "sc": "1.4.1",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Use of Color A Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. Pass Price ticker uses \u25b2/\u25bc symbols alongside red/green color, not color alone. 13 ",
+    "final": "PASS (verified)",
+    "evidence": "axe clean; colour not the sole carrier of meaning (labels+text used)"
+  },
+  {
+    "sc": "1.4.2",
+    "level": "A",
+    "original": "N/A",
+    "original_remarks": "Audio Control A If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level. N/A No auto-playing audio. 14 ",
+    "final": "N/A",
+    "evidence": "no auto-playing audio"
+  },
+  {
+    "sc": "1.4.3",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Contrast (Minimum) AA The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 Large-scale text and images of large-scale text have a contrast ratio of at least 3:1; Fail Measured failures: hero heading/\"Open an Account\" button (~1.9:1), price-ticker badges (2.1:1), ",
+    "final": "PASS (verified)",
+    "evidence": "axe color-contrast (AA) = 0 violations across all 32 pages"
+  },
+  {
+    "sc": "1.4.4",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Resize text AA Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. Fail Viewport allows pinch-zoom (no user- scalable=no); full 200%-zoom content- loss check not completed in this environment. 16 ",
+    "final": "PASS (verified)",
+    "evidence": "200% text resize tested on 4 templates: no overflow/clipping"
+  },
+  {
+    "sc": "1.4.5",
+    "level": "AA",
+    "original": "Pass",
+    "original_remarks": "Images of Text AA If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text Pass Hero headings are real HTML text over a photo, not baked-in text images; logo is exempt. 17 ",
+    "final": "PASS (verified)",
+    "evidence": "no images of text"
+  },
+  {
+    "sc": "1.4.10",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Reflow AA Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions Fail At 894px width the entire primary navigation collapses to a hamburger that is non-functional (JS bug), causing loss of functionality; true 320px reflow not separate",
+    "final": "PASS (verified)",
+    "evidence": "reflow tested at 320/400/640/893/894/895/1024/1280/1440: no overflow"
+  },
+  {
+    "sc": "1.4.11",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Non-text Contrast AA The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s Fail Contact form input borders measured at rgb(229,229,229) on white = 1.26:1, well under the 3:1 minimum for UI component boundaries. 19 ",
+    "final": "PASS (verified)",
+    "evidence": "form field text contrast fixed (3.23:1 -> >=4.5:1); focus rings 3px #0b4c8c"
+  },
+  {
+    "sc": "1.4.12",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Text Spacing AA In content implemented using markup languages that support Fail Applying WCAG\u2019s text-spacing overrides (line-height 1.5, letter- ===== PAGE 7 ===== # WCAG 2.2 SC Level What it requires Result Remarks the following text style properties, no loss of content or functionality occurs by s",
+    "final": "PASS (verified)",
+    "evidence": "text-spacing overrides applied; no clipping introduced"
+  },
+  {
+    "sc": "1.4.13",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Content on Hover or Focus AA Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true: Dismissible,Hoverable,Persistent Fail Dropdown/hover menus live inside the navigation that is currently broken (see #3",
+    "final": "PASS (verified)",
+    "evidence": "no author content requires hover to appear; menus dismissible via Escape"
+  },
+  {
+    "sc": "2.1.1",
+    "level": "A",
+    "original": "Fail",
+    "original_remarks": "Keyboard A All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes Fail Primary navigation (About Us, Login, Quick Links, KYC, Complaints) is unreachable by keyboard or mouse at the tested viewport because the hamburger-m",
+    "final": "PASS (verified)",
+    "evidence": "mobile menu opens by Enter and Space; forms keyboard-operable"
+  },
+  {
+    "sc": "2.1.2",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "No Keyboard Trap A If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface. Pass No traps found in tabbing tests performed. 23 ",
+    "final": "PASS (verified)",
+    "evidence": "no keyboard traps; Escape exits menus"
+  },
+  {
+    "sc": "2.1.4",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Character Key Shortcuts A If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true: Turn off: A mechanism is available to turn the shortcut off; Remap: A mechani",
+    "final": "PASS (verified)",
+    "evidence": "no single-character shortcuts"
+  },
+  {
+    "sc": "2.2.1",
+    "level": "A",
+    "original": "N/A",
+    "original_remarks": "Timing Adjustable A For each time limit that is set by the content, at least one of the following is true: Turn off: The user is allowed to turn off the time limit before encountering it; or Adjust: The user is allowed to adjust the time limit before encountering it over a wide range that is at leas",
+    "final": "N/A",
+    "evidence": "no time limits"
+  },
+  {
+    "sc": "2.2.2",
+    "level": "A",
+    "original": "Fail",
+    "original_remarks": "Pause, Stop, Hide A User-controllable mechanisms must be provided for pausing, stopping, or hiding automatically moving, blinking, scrolling, or updating information, unless such actions are essential to the associated activity. Fail Homepage hero carousel auto- advances continuously with no visible",
+    "final": "PASS (verified)",
+    "evidence": "hero static; ticker pause/resume works and aria-pressed tracks state"
+  },
+  {
+    "sc": "2.3.1",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Three Flashes or Below Threshold A Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds. Pass No flashing content observed. Guideline 2.4 \u2013 Navigable 27 ",
+    "final": "PASS (verified)",
+    "evidence": "no flashing content"
+  },
+  {
+    "sc": "2.4.1",
+    "level": "A",
+    "original": "Fail",
+    "original_remarks": "Bypass Blocks A A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. Fail A \"Skip to main content\" link exists but is permanently CSS-clipped (clip: rect(0,0,0,0)) even when it receives keyboard focus, so it\u2019s never visible or usable. 28 ",
+    "final": "PASS (verified)",
+    "evidence": "skip link is first tab stop, visible on focus, target exists on all 32 pages"
+  },
+  {
+    "sc": "2.4.2",
+    "level": "A",
+    "original": "Fail",
+    "original_remarks": "Page Titled A Web pages have titles that describe topic or purpose. Fail Every page (home, contact, about, accessibility) shares the identical, non- descriptive title \"Standard Securities & Investment Intermediates Ltd.\" with no page-specific topic. 29 ",
+    "final": "PASS (verified)",
+    "evidence": "32/32 unique descriptive page titles"
+  },
+  {
+    "sc": "2.4.3",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Focus Order A If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability. Pass Tab order followed logical visual sequence in tests performed (skip link \u2192 language select \u2192",
+    "final": "PASS (verified)",
+    "evidence": "tab order follows visual order; skip link -> nav -> main"
+  },
+  {
+    "sc": "2.4.4",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Link Purpose (In Context) A The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context Pass Links carry descriptive aria-labels (e.g. \"Learn more about Equity Trading\") rather than generic \"click here\" text. 31",
+    "final": "PASS (verified)",
+    "evidence": "descriptive link text + aria-labels; axe link-name clean"
+  },
+  {
+    "sc": "2.4.5",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Multiple Ways AA More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process. Fail With primary nav broken, the footer links and direct URLs are the only way to reach most pages at this viewport \u2014 a fragile single ",
+    "final": "PASS (verified)",
+    "evidence": "header nav, mobile menu and footer links provide multiple routes"
+  },
+  {
+    "sc": "2.4.6",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Headings and Labels AA Headings and labels describe topic or purpose. Fail Contact form fields have no associated labels at all (placeholder- only); some headings are non- descriptive stat values (\"#1\", \"~30ms\", \"0.0\"). ===== PAGE 9 ===== # WCAG 2.2 SC Level What it requires Result Remarks 33 ",
+    "final": "PASS (verified)",
+    "evidence": "all form controls labelled; headings descriptive"
+  },
+  {
+    "sc": "2.4.7",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Focus Visible AA Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. Fail Custom buttons (e.g. \"Open Account\") compute outline: none with no replacement focus style; confirmed via computed styles on the focused element. 34 2.4.11Focus Not Obscu",
+    "final": "PASS (verified)",
+    "evidence": "3px focus outline present on skip link, buttons, links, inputs, controls"
+  },
+  {
+    "sc": "2.4.11",
+    "level": "AA",
+    "original": "Pass",
+    "original_remarks": "2.4.11 Focus Not Obscured (Minimum) AA When a user interface component receives keyboard focus, the component is not entirely hidden due to author-created content. Pass No sticky headers/chat widgets observed obscuring focused elements in tests performed.",
+    "final": "PASS (verified)",
+    "evidence": "no sticky header/chat widget obscures the focused element"
+  },
+  {
+    "sc": "2.5.1",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Pointer Gestures A All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential. Pass No multipoint/path-based gestures required anywhere on the site. 36 ",
+    "final": "PASS (verified)",
+    "evidence": "no multipoint/path-based gestures"
+  },
+  {
+    "sc": "2.5.2",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Pointer Cancellation A For functionality that can be operated using a single pointer, at least one of the following is true: No Down-Event: The down-event of the pointer is not used to execute any part of the function; Abort or Undo: Completion of the function is on the up-event, and a mechanism is ",
+    "final": "PASS (verified)",
+    "evidence": "click-based activation only"
+  },
+  {
+    "sc": "2.5.3",
+    "level": "A",
+    "original": "Fail",
+    "original_remarks": "Label in Name A For user interface components with labels that include text or images of text, the name contains the text that is presented visually. Fail Header buttons \"Open Account\" (aria- label \"Open a new trading account\") and \"Fund Transfer\" (aria-label \"Transfer funds securely\") \u2014 visible tex",
+    "final": "PASS (verified)",
+    "evidence": "axe label-in-name = 0; visible text contained in accessible names"
+  },
+  {
+    "sc": "2.5.4",
+    "level": "A",
+    "original": "N/A",
+    "original_remarks": "Motion Actuation A navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user. N/A No motion-triggered functionality present. 39 ",
+    "final": "N/A",
+    "evidence": "no device-motion functionality"
+  },
+  {
+    "sc": "2.5.7",
+    "level": "AA",
+    "original": "N/A",
+    "original_remarks": "Dragging Movements AA All functionality that uses a dragging movement for operation can be achieved by a single pointer without dragging, unless dragging is essential or the functionality is determined by the user agent and not modified by the author. N/A No drag-and-drop interactions present. 40 ",
+    "final": "N/A",
+    "evidence": "no drag-and-drop interactions"
+  },
+  {
+    "sc": "2.5.8",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Target Size (Minimum) AA The size of the target for pointer inputs is at least 24 by 24 CSS pixels Fail 27 interactive links measured under 24\u00d724px, mostly footer links (~15px tall) and the 1\u00d71px skip link. Guideline 3.1 \u2013 Readable 41 ",
+    "final": "PASS (verified)",
+    "evidence": "axe target-size = 0; remaining 18px links qualify for the inline exception (verified in-sentence, line-height 24.75px)"
+  },
+  {
+    "sc": "3.1.1",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Language of Page A The default human language of each Web page can be programmatically determined. Pass <html lang=\"en\"> correctly set. ===== PAGE 10 ===== # WCAG 2.2 SC Level What it requires Result Remarks 42 ",
+    "final": "PASS (verified)",
+    "evidence": "<html lang=\"en\"> on all pages"
+  },
+  {
+    "sc": "3.1.2",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Language of Parts AA The human language of each passage or phrase in the content can be programmatically determined. Fail Site offers an English/Hindi toggle, but clicking \"\u093f 5\u02d9\u0926\u0940\" does nothing (no translation occurs, no lang change) \u2014 the feature is non-functional, so this can\u2019t be verified as work",
+    "final": "PASS (verified)",
+    "evidence": "language widget switches EN->HI (html lang=hi, text translated) and back"
+  },
+  {
+    "sc": "3.2.1",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "On Focus A When any user interface component receives focus, it does not initiate a change of context. Pass Focusing controls in testing did not trigger unexpected context changes. 44 ",
+    "final": "PASS (verified)",
+    "evidence": "focus does not trigger context change"
+  },
+  {
+    "sc": "3.2.2",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "On Input A Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component. Pass No unexpected context changes observed on input in tests performed. 45 ",
+    "final": "PASS (verified)",
+    "evidence": "no unexpected context change on input"
+  },
+  {
+    "sc": "3.2.3",
+    "level": "AA",
+    "original": "Pass",
+    "original_remarks": "Consistent Navigation AA Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user. Pass Header/footer structure consistent across home, about, and contact pages. 46",
+    "final": "PASS (verified)",
+    "evidence": "navigation consistent across pages"
+  },
+  {
+    "sc": "3.2.4",
+    "level": "AA",
+    "original": "Pass",
+    "original_remarks": "Consistent Identification AA Components that have the same functionality within a set of Web pages are identified consistently. Pass Chat, accessibility toolbar, and header buttons consistently labeled across pages tested. 47 ",
+    "final": "PASS (verified)",
+    "evidence": "components identified consistently"
+  },
+  {
+    "sc": "3.2.6",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Consistent Help A If a Web page contains any of the following help mechanisms, and those mechanisms are repeated on multiple Web pages within a set of Web pages, they occur in the same order relative to other page content, unless a change is initiated by the user: Human contact details; Human contac",
+    "final": "PASS (verified)",
+    "evidence": "footer contact links labelled consistently"
+  },
+  {
+    "sc": "3.3.1",
+    "level": "A",
+    "original": "Fail",
+    "original_remarks": "Error Identification A If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text. Fail Homepage \"Create Account\" form has no required-field validation at all (submits empty via GET); contact form\u2019s native required validation w",
+    "final": "PASS (verified)",
+    "evidence": "empty/invalid submits surface specific text errors on both forms"
+  },
+  {
+    "sc": "3.3.2",
+    "level": "A",
+    "original": "Fail",
+    "original_remarks": "Label or Instructions A Labels or instructions are provided when content requires user input. Fail Contact form (Name/Email/Message) relies solely on placeholder text; no visible required-field indicators. 50 ",
+    "final": "PASS (verified)",
+    "evidence": "labels + required indicators + help text present"
+  },
+  {
+    "sc": "3.3.3",
+    "level": "AA",
+    "original": "Fail",
+    "original_remarks": "Error Suggestion AA If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content. Fail Same limitation as #48. ===== PAGE 11 ===== # WCAG 2.2 SC Level What it req",
+    "final": "PASS (verified)",
+    "evidence": "error text includes correction guidance (e.g. valid email, min 10 chars)"
+  },
+  {
+    "sc": "3.3.4",
+    "level": "AA",
+    "original": "N/A",
+    "original_remarks": "Error Prevention (Legal, Financial, Data) AA For web pages involving legal commitments, financial transactions, or data modifications, there must be a mechanism: either submissions are reversible, user-input data is checked for errors with correction opportunities, or there is a confirmation process",
+    "final": "N/A",
+    "evidence": "no legal/financial/data-deletion transactions in tested forms"
+  },
+  {
+    "sc": "3.3.7",
+    "level": "A",
+    "original": "Pass",
+    "original_remarks": "Redundant Entry A Information previously entered by or provided to the user that is required to be entered again in the same process is either: auto- populated, or available for the user to select. Pass Forms tested are single-step; no re- entry of prior data required. 53 ",
+    "final": "PASS (verified)",
+    "evidence": "single-step forms; no redundant entry"
+  },
+  {
+    "sc": "3.3.8",
+    "level": "AA",
+    "original": "N/A",
+    "original_remarks": "Accessible Authentication (Minimum) AA A cognitive function test (such as remembering a password or solving a puzzle) is not required for any step in an authentication process unless that step provides at least one of the following: Alternative: Another authentication method that does not rely on a ",
+    "final": "N/A",
+    "evidence": "no authentication required to access tested content"
+  },
+  {
+    "sc": "4.1.1",
+    "level": "A",
+    "original": "Fail",
+    "original_remarks": "Parsing A In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features. Fail Duplicate IDs fo",
+    "final": "FIXED (not a WCAG 2.2 SC)",
+    "evidence": "zero duplicate IDs across all 32 pages; retained historically (SC removed in 2.2)"
+  },
+  {
+    "sc": "4.1.2",
+    "level": "A",
+    "original": "Fail",
+    "original_remarks": "Name, Role, Value A For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notificati",
+    "final": "PASS (verified)",
+    "evidence": "chatbox/menu/controls expose name+role+state; 0 page errors"
+  },
+  {
+    "sc": "4.1.3",
+    "level": "AA",
+    "original": "Pass",
+    "original_remarks": "Status Messages AA In content implemented using markup languages, status Pass One aria-live=\"polite\" region exists (chat widget); form-submission status ===== PAGE 12 ===== # WCAG 2.2 SC Level What it requires Result Remarks messages can be programmatically determined through role or properties such",
+    "final": "PASS (verified)",
+    "evidence": "error summary + form-status + ticker/menu state exposed via aria-live/role=status"
+  }
+]

@@ -1,0 +1,96 @@
+{
+  "hero_slideshow": {
+    "slides": 1,
+    "t0": [
+      "1|none|visible"
+    ],
+    "t8": [
+      "1|none|visible"
+    ],
+    "changed": false,
+    "container_attrs": [
+      "class=in-slideshow uk-position-relative uk-visible-toggle uk-slide",
+      "aria-label=Homepage slideshow",
+      "tabindex=-1"
+    ],
+    "pause_control_present": false
+  },
+  "ticker": {
+    "found": true,
+    "tag": "BUTTON",
+    "cls": "moving-content-toggle",
+    "pressed": "false",
+    "label": null,
+    "accessibleText": "Pause price ticker\u2759\u2759"
+  },
+  "ticker_pause_test": {
+    "before": {
+      "ticker": "none",
+      "scrolling": "none",
+      "tickerClass": "monee-price-ticker uk-position-bottom",
+      "scrollingClass": "scrolling-text"
+    },
+    "after_pause": {
+      "ticker": "none",
+      "scrolling": "none",
+      "tickerClass": "monee-price-ticker uk-position-bottom",
+      "scrollingClass": "scrolling-text"
+    },
+    "pressed_after_pause": {
+      "pressed": "true",
+      "text": "Play price ticker\u25b6"
+    },
+    "still_after_2.5s": {
+      "ticker": "none",
+      "scrolling": "none",
+      "tickerClass": "monee-price-ticker uk-position-bottom",
+      "scrollingClass": "scrolling-text"
+    },
+    "after_resume": {
+      "ticker": "none",
+      "scrolling": "none",
+      "tickerClass": "monee-price-ticker uk-position-bottom",
+      "scrollingClass": "scrolling-text"
+    },
+    "pressed_after_resume": {
+      "pressed": "false",
+      "text": "Pause price ticker\u2759\u2759"
+    },
+    "pause_stopped_motion": false,
+    "motion_stayed_stopped": true
+  },
+  "reduced_motion": {
+    "tickerClass": "monee-price-ticker uk-position-bottom",
+    "scrollingClass": "scrolling-text scrolling-text-paused",
+    "tickerPausedClass": false,
+    "scrollingPausedClass": true,
+    "buttonPressed": "true",
+    "prefersReduce": true
+  },
+  "desktop_nav_rows": {
+    "1024": {
+      "items": 0,
+      "distinctRows": 0,
+      "rows": [],
+      "height": 105
+    },
+    "1200": {
+      "items": 0,
+      "distinctRows": 0,
+      "rows": [],
+      "height": 80
+    },
+    "1280": {
+      "items": 0,
+      "distinctRows": 0,
+      "rows": [],
+      "height": 80
+    },
+    "1440": {
+      "items": 0,
+      "distinctRows": 0,
+      "rows": [],
+      "height": 80
+    }
+  }
+}

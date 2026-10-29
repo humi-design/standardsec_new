@@ -1,27 +1,60 @@
+<!DOCTYPE html>
 <html lang="en">
-<!-- accessibility-toolbar.html -->
-<a href="#main-content" class="skip-link">Skip to main content</a>
-<title>Accessibility Tools | Standard Securities</title>
-<link rel="stylesheet" href="css/accessibility-fixes.css">
-<!-- accessibility-toolbar.html -->
-<a href="#main-content" class="skip-link">Skip to main content</a>
-<h1 class="sr-only">Accessibility Tools</h1>
-<div class="accessibility-menu main-content-section" id="main-content" aria-label="Accessibility Tools">
-    <!-- Floating Toggle Button -->
-    <button id="accessibilityToggle_accessibility-toolbar" class="fab" aria-expanded="false" aria-controls="accessibilityPanel_accessibility-toolbar">
-      ♿
-    </button>
-  
-    <!-- Hidden Panel -->
-    <div id="accessibilityPanel_accessibility-toolbar" class="accessibility-panel" hidden>
-      <button onclick="changeFontSize(1)" aria-label="A+ Increase text size">A+</button>
-      <button onclick="changeFontSize(-1)" aria-label="A- Decrease text size">A-</button>
-      <button onclick="toggleDarkMode()" aria-label="Dark Mode toggle">🌙 Dark Mode</button>
-      <button onclick="readContent()" aria-label="Read page aloud">🔊 Read</button>
-      <a href="accessibility.html" aria-label="Accessibility Statement">♿ Accessibility</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility Tools | Standard Securities</title>
+  <link rel="stylesheet" href="css/accessibility-fixes.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <main id="main-content">
+    <h1 class="sr-only">Accessibility Tools</h1>
+    <div class="accessibility-menu" role="complementary" aria-label="Accessibility Tools">
+      <!-- Floating Toggle Button -->
+      <button id="accessibilityToggle_accessibility-toolbar" class="fab" aria-expanded="false" aria-controls="accessibilityPanel_accessibility-toolbar" aria-label="Open accessibility tools">
+        <span aria-hidden="true">&#9855;</span>
+      </button>
+
+      <!-- Hidden Panel -->
+      <div id="accessibilityPanel_accessibility-toolbar" class="accessibility-panel" hidden>
+        <button onclick="changeFontSize(1)" aria-label="A+ Increase text size">A+</button>
+        <button onclick="changeFontSize(-1)" aria-label="A- Decrease text size">A-</button>
+        <button onclick="toggleDarkMode()" aria-label="Dark Mode toggle">Dark Mode</button>
+        <button onclick="readContent()" aria-label="Read page aloud">Read</button>
+        <a href="accessibility.html" aria-label="Accessibility Statement">Accessibility</a>
+      </div>
     </div>
-  </div>
-  
-  <link rel="stylesheet" href="accessibility-toolbar.css">
-  <script src="accessibility-toolbar.js"></script>
-  
+  </main>
+
+  <script src="js/a11y-nav.js"></script>
+  <script>
+    const toggleBtn = document.getElementById("accessibilityToggle_accessibility-toolbar");
+    const panel = document.getElementById("accessibilityPanel_accessibility-toolbar");
+
+    toggleBtn.addEventListener("click", () => {
+      const expanded = toggleBtn.getAttribute("aria-expanded") === "true";
+      toggleBtn.setAttribute("aria-expanded", String(!expanded));
+      toggleBtn.setAttribute("aria-label", expanded ? "Open accessibility tools" : "Close accessibility tools");
+      panel.hidden = expanded;
+    });
+
+    function changeFontSize(delta) {
+      let body = document.body;
+      let currentSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+      body.style.fontSize = (currentSize + delta) + 'px';
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    function readContent() {
+      let content = document.querySelector("main") || document.body;
+      let speech = new SpeechSynthesisUtterance(content.innerText);
+      speech.lang = "en-IN";
+      window.speechSynthesis.speak(speech);
+    }
+  </script>
+</body>
+</html>

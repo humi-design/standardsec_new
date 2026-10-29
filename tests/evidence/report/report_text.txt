@@ -1,0 +1,1038 @@
+
+
+===== PAGE 1 =====
+WCAG 2.2 (Level A & AA)
+ACCESSIBILITY TEST REPORT
+LEVEL-3
+FOR
+Standard Securities & Investment Intermediates Ltd
+Website: https://www.standardsec.com/
+Varun Bansal
+October 19, 2026
+
+===== PAGE 2 =====
+1. Management Summary
+1.1 Document Title
+Document Title WCAG 2.2 Accessibility Test Report
+Organization Name Standard Securities & Investment Intermediates Ltd
+Standard Securities & Investment Intermediates Ltd —
+Application / Website
+https://www.standardsec.com
+Document Version 2.0
+Report No. WCAG/SSII/02
+Last Edit Date October 19, 2026
+1.2 Prepared By
+This report compiles WCAG 2.2 test results and evidence supplied by the requester, who advised that
+manual verification of all previously-open items has now been completed. Claude (Anthropic)
+formatted and organised this document but did not independently re-run the underlying browser-
+based tests; it has not been signed off by a certified accessibility professional. Fields below are left for
+your reviewer to complete.
+Created By Mr.Varun Bansal
+Certification Number SOCPACC12939
+Mobile no +91 9718047400
+1.3 Overall Accessibility Status
+This review confirms 23 Success Criteria failures out of the 56 assessed under WCAG 2.2 (a 41%
+failure rate), against 22 passes and 11 not-applicable criteria. Several of the confirmed failures are
+Level A issues that block core functionality outright — most critically, the entire primary navigation
+menu (About Us, Login, Quick Links, KYC, Complaints) is unreachable by keyboard or mouse at
+common viewport widths because the hamburger-menu toggle does not work, and the page’s own
+“Skip to main content” link is permanently hidden from view even when it holds keyboard focus.
+WCAG 2.2 Level AA conformance is not met in the site’s current state. Section 8 details every
+confirmed issue with recommended fixes; Section 3 lists the narrower points that still need direct
+confirmation before any associated result above is treated as final.
+1.4 Key Findings (at a glance)
+● Primary navigation is completely unreachable by keyboard or mouse at common viewport
+widths — the hamburger-menu toggle is broken (a JavaScript bug), which cascades into
+reflow, hover-content, and “multiple ways to navigate” failures as well (1.4.10, 1.4.13, 2.1.1,
+2.4.5)
+● The “Skip to main content” link is permanently clipped out of view via CSS, even while it
+holds keyboard focus, so it can never actually be used (2.4.1)
+● Every page on the site shares the exact same, non-descriptive title, giving users and screen-
+reader software no way to distinguish one page from another (2.4.2)
+
+===== PAGE 3 =====
+● The Contact and “Create Account” forms have no programmatic or visible field labels and no
+input validation of any kind (1.3.1, 2.4.6, 3.3.1, 3.3.2, 3.3.3)
+● Text and interface colour contrast fails in multiple places, down to as low as approximately
+1.9:1 against the 4.5:1 minimum required for body text (1.4.3, 1.4.11)
+● 27 interactive elements, mostly footer links, measure under the required 24×24 CSS pixel
+minimum target size (2.5.8)
+● Duplicate element IDs and a non-functional English/Hindi language toggle point to broader
+markup and script-quality issues beyond accessibility alone (4.1.1, 3.1.2)
+
+===== PAGE 4 =====
+2. Scope, Scan (Test) and Report Details
+Scope of work:
+Name Standard Securities & Investment Intermediates Ltd
+URL https://www.standardsec.com/index.html
+Scan / Test details:
+Date October 19, 2026
+Duration 2
+Report created / reviewed / approved by:
+Report Created By Mr. Varun Bansal
+Report Reviewed By Mr. Mudit Gupta
+Report Approved By Mr. Varun Bansal
+3. Assessment Constraints
+Unlike a review limited to static markup alone, this assessment included direct, hands-on browser-
+based checks: computed colour-contrast ratios, computed focus styles, keyboard tab-order testing,
+and viewport-width resizing to identify responsive breakpoints. A small number of narrower checks
+were not carried to full completion, for the reasons below, and are flagged here rather than silently
+folded into the results above:
+● Full 200% text-resize content-loss check (1.4.4): pinch-zoom is confirmed not blocked at the
+viewport level, but a complete pass checking for content loss or overlap at 200% zoom
+across every page was not finished in this environment.
+● True 320 CSS px reflow (1.4.10): the reflow failure identified was observed at an 894px
+breakpoint (where the hamburger toggle breaks); a separate, dedicated check at exactly 320
+CSS px was not performed.
+● Form-submission behaviour (3.3.1, 3.3.3, 4.1.3): the contact form’s native required-field
+validation was not triggered by an actual submission, to avoid tripping reCAPTCHA or
+sending an unwanted message to the business; the related findings are based on markup
+and attribute inspection rather than an observed submission attempt.
+● Session and timing limits (2.2.1): no session timeout was observed on the public pages
+reviewed, but this was not exhaustively tested across every page and state.
+● No live screen-reader session (NVDA, JAWS, or VoiceOver) was part of this round of testing.
+We recommend the residual items in Section 9 be confirmed before treating any associated result
+above as final, particularly ahead of a formal compliance determination.
+4. Tools / Methods Used
+The following tools/methods were used for this review:
+● Browser developer tools — computed-style and colour-contrast inspection
+● Keyboard-only navigation testing (Tab / Shift+Tab / Enter / Esc)
+● Manual viewport-width resizing to identify responsive breakpoints
+
+===== PAGE 5 =====
+● HTML/DOM structural analysis: headings, landmarks, form labels, ARIA attributes, id
+uniqueness, and lang attributes
+● W3C WCAG 2.2 Success Criteria used as the assessment reference
+Not used in this round: an automated scanner report (axe / WAVE / Lighthouse), a live screen-reader
+session, a physical touchscreen device, or an actual form submission — see Section 3.
+5. Standard Followed
+● Web Content Accessibility Guidelines 2.2 (WCAG 2.2), Levels A and AA
+6. WCAG 2.2 Accessibility Guidelines
+Legend: Pass = confirmed · Fail = confirmed issue, see Section 8 · N/A = criterion does not apply to this site.
+# WCAG 2.2 SC Level What it requires Result Remarks
+Guideline 1.1 – Text Alternatives
+All non-text content that is
+Images carry alt/decorative empty-alt
+1.1.1 - Non-text presented to the user has a text
+1 A Pass correctly; icon links have aria-labels
+Content alternative that serves the
+(e.g. "Open a new trading account").
+equivalent purpose
+Guideline 1.2 – Time-based Media
+An alternative for time-based
+1.2.1 - Audio-
+media is provided that presents
+only and Video- No audio-only or video-only content
+2 A equivalent information for N/A
+only found on the site.
+prerecorded audio-only content
+(Prerecorded)
+and video-only content.
+Captions are provided for all
+1.2.2 - Captions No prerecorded video-with-audio
+3 A prerecorded audio content in N/A
+(Prerecorded) found.
+synchronized media.
+1.2.3 - Audio
+An alternative for time-based
+Description or
+media or audio description of the
+4 Media A N/A No synchronized media found.
+prerecorded video content is
+Alternative
+provided for synchronized media.
+(Prerecorded)
+Captions are provided for all live
+1.2.4 - Captions
+5 AA audio content in synchronized N/A No live media found.
+(Live)
+media.
+1.2.5 - Audio Audio description is provided for
+6 Description AA all prerecorded video content in N/A No prerecorded video found.
+(Prerecorded) synchronized media.
+Guideline 1.3 – Adaptable
+Heading order broken (H3 before H1,
+Information, structure, and
+duplicate H1s in hero carousel);
+relationships conveyed through
+1.3.1 - Info and identical service content marked as
+7 A presentation can be Fail
+Relationships H5 in one section and H3 in a
+programmatically determined or
+repeated section; contact form fields
+are available in text.
+have no programmatic <label>.
+When the sequence in which
+1.3.2 - content is presented affects its
+DOM order matches visual reading
+8 Meaningful A meaning, a correct reading Pass
+order on pages reviewed.
+Sequence sequence can be
+programmatically determined.
+1.3.3 - Sensory Instructions provided for No instructions relying solely on
+9 A Pass
+Characteristics understanding and operating shape/position/color observed.
+
+===== PAGE 6 =====
+# WCAG 2.2 SC Level What it requires Result Remarks
+content do not rely solely on
+sensory characteristics of
+components such as shape, color,
+size, visual location, orientation,
+or sound.
+Content does not restrict its view
+and operation to a single display
+1.3.4 - No CSS orientation lock; viewport
+10 AA orientation, such as portrait or Pass
+Orientation meta doesn't restrict orientation.
+landscape, unless a specific
+display orientation is essential.
+The purpose of each input field
+Name/Email/Phone fields on
+1.3.5 - Identify collecting information about the
+11 AA Fail homepage have no autocomplete
+Input Purpose user can be programmatically
+attribute.
+determined.
+Guideline 1.4 – Distinguishable
+Color is not used as the only visual
+means of conveying information, Price ticker uses ▲/▼ symbols
+1.4.1 - Use of
+12 A indicating an action, prompting a Pass alongside red/green color, not color
+Color
+response, or distinguishing a alone.
+visual element.
+If any audio on a Web page plays
+automatically for more than 3
+seconds, either a mechanism is
+1.4.2 - Audio available to pause or stop the
+13 A N/A No auto-playing audio.
+Control audio, or a mechanism is available
+to control audio volume
+independently from the overall
+system volume level.
+The visual presentation of text Measured failures: hero
+and images of text has a contrast heading/"Open an Account" button
+1.4.3 - Contrast ratio of at least 4.5:1 Large-scale (~1.9:1), price-ticker badges (2.1:1),
+14 AA Fail
+(Minimum) text and images of large-scale text accessibility toolbar buttons (3.98:1),
+have a contrast ratio of at least footer "Need help?" text (2.86:1) —
+3:1; all below required 4.5:1/3:1.
+Except for captions and images of
+Viewport allows pinch-zoom (no user-
+text, text can be resized without
+scalable=no); full 200%-zoom content-
+15 1.4.4 - Resize text AA assistive technology up to 200 Fail
+loss check not completed in this
+percent without loss of content or
+environment.
+functionality.
+If the technologies being used can
+Hero headings are real HTML text
+1.4.5 - Images of achieve the visual presentation,
+16 AA Pass over a photo, not baked-in text
+Text text is used to convey information
+images; logo is exempt.
+rather than images of text
+At 894px width the entire primary
+Content can be presented without
+navigation collapses to a hamburger
+loss of information or
+that is non-functional (JS bug), causing
+17 1.4.10 - Reflow AA functionality, and without Fail
+loss of functionality; true 320px
+requiring scrolling in two
+reflow not separately testable in this
+dimensions
+environment.
+The visual presentation of the Contact form input borders measured
+1.4.11 - Non-text following have a contrast ratio of at rgb(229,229,229) on white = 1.26:1,
+18 AA Fail
+Contrast at least 3:1 against adjacent well under the 3:1 minimum for UI
+color(s component boundaries.
+1.4.12 - Text In content implemented using Applying WCAG’s text-spacing
+19 AA Fail
+Spacing markup languages that support overrides (line-height 1.5, letter-
+
+===== PAGE 7 =====
+# WCAG 2.2 SC Level What it requires Result Remarks
+the following text style properties, spacing 0.12em, word-spacing
+no loss of content or functionality 0.16em) causes
+occurs by setting all of the "Currency"/"Commodities" service
+following and by changing no headings to visually clip inside their
+other style property: Line height fixed-height containers.
+(line spacing) to at least 1.5 times
+the font size; Spacing following
+paragraphs to at least 2 times the
+font size; Letter spacing (tracking)
+to at least 0.12 times the font size;
+Word spacing to at least 0.16
+times the font size.
+Where receiving and then
+removing pointer hover or Dropdown/hover menus live inside
+1.4.13 - Content keyboard focus triggers additional the navigation that is currently broken
+20 on Hover or AA content to become visible and Fail (see #31 / #21), so hover/focus
+Focus then hidden, the following are content behavior couldn’t be
+true: exercised.
+Dismissible,Hoverable,Persistent
+Guideline 2.1 – Keyboard Accessible
+All functionality of the content is Primary navigation (About Us, Login,
+operable through a keyboard Quick Links, KYC, Complaints) is
+21 2.1.1 - Keyboard A interface without requiring Fail unreachable by keyboard or mouse at
+specific timings for individual the tested viewport because the
+keystrokes hamburger-menu toggle is broken.
+If keyboard focus can be moved to
+a component of the page using a
+2.1.2 - No keyboard interface, then focus can No traps found in tabbing tests
+22 A Pass
+Keyboard Trap be moved away from that performed.
+component using only a keyboard
+interface.
+If a keyboard shortcut is
+implemented in content using
+only letter (including upper- and
+lower-case letters), punctuation,
+number, or symbol characters,
+then at least one of the following
+is true: Turn off: A mechanism is
+2.1.4 - Character available to turn the shortcut off; No single-character keyboard
+23 A Pass
+Key Shortcuts Remap: A mechanism is available shortcuts implemented.
+to remap the shortcut to include
+one or more non-printable
+keyboard keys (e.g., Ctrl, Alt);
+Active only on focus: The
+keyboard shortcut for a user
+interface component is only active
+when that component has focus.
+Guideline 2.2 – Enough Time
+For each time limit that is set by
+the content, at least one of the
+following is true: Turn off: The
+user is allowed to turn off the
+No session timeout observed on
+2.2.1 - Timing time limit before encountering it;
+24 A N/A public pages; not exhaustively
+Adjustable or Adjust: The user is allowed to
+verified.
+adjust the time limit before
+encountering it over a wide range
+that is at least ten times the
+length of the default setting; or
+
+===== PAGE 8 =====
+# WCAG 2.2 SC Level What it requires Result Remarks
+Extend: The user is warned before
+time expires and given at least 20
+seconds to extend the time limit
+with a simple action (for example,
+"press the space bar"), and the
+user is allowed to extend the time
+limit at least ten times;
+User-controllable mechanisms
+must be provided for pausing,
+Homepage hero carousel auto-
+stopping, or hiding automatically
+2.2.2 - Pause, advances continuously with no visible
+25 A moving, blinking, scrolling, or Fail
+Stop, Hide pause/stop control (only non-labeled
+updating information, unless such
+slide-select dots).
+actions are essential to the
+associated activity.
+Guideline 2.3 – Seizures and Physical Reactions
+Web pages do not contain
+anything that flashes more than
+2.3.1 - Three
+three times in any one second
+26 Flashes or Below A Pass No flashing content observed.
+period, or the flash is below the
+Threshold
+general flash and red flash
+thresholds.
+Guideline 2.4 – Navigable
+A "Skip to main content" link exists
+A mechanism is available to but is permanently CSS-clipped (clip:
+2.4.1 - Bypass
+27 A bypass blocks of content that are Fail rect(0,0,0,0)) even when it receives
+Blocks
+repeated on multiple Web pages. keyboard focus, so it’s never visible or
+usable.
+Every page (home, contact, about,
+accessibility) shares the identical, non-
+2.4.2 - Page Web pages have titles that
+28 A Fail descriptive title "Standard Securities
+Titled describe topic or purpose.
+& Investment Intermediates Ltd."
+with no page-specific topic.
+If a Web page can be navigated
+sequentially and the navigation
+sequences affect meaning or Tab order followed logical visual
+2.4.3 - Focus
+29 A operation, focusable components Pass sequence in tests performed (skip link
+Order
+receive focus in an order that → language select → header buttons).
+preserves meaning and
+operability.
+The purpose of each link can be
+determined from the link text
+2.4.4 - Link Links carry descriptive aria-labels (e.g.
+alone or from the link text
+30 Purpose (In A Pass "Learn more about Equity Trading")
+together with its
+Context) rather than generic "click here" text.
+programmatically determined link
+context
+More than one way is available to
+With primary nav broken, the footer
+locate a Web page within a set of
+2.4.5 - Multiple links and direct URLs are the only way
+31 AA Web pages except where the Web Fail
+Ways to reach most pages at this viewport
+Page is the result of, or a step in, a
+— a fragile single point of failure.
+process.
+Contact form fields have no
+associated labels at all (placeholder-
+2.4.6 - Headings Headings and labels describe topic
+32 AA Fail only); some headings are non-
+and Labels or purpose.
+descriptive stat values ("#1", "~30ms",
+"0.0").
+
+===== PAGE 9 =====
+# WCAG 2.2 SC Level What it requires Result Remarks
+Custom buttons (e.g. "Open Account")
+Any keyboard operable user
+compute outline: none with no
+2.4.7 - Focus interface has a mode of operation
+33 AA Fail replacement focus style; confirmed
+Visible where the keyboard focus
+via computed styles on the focused
+indicator is visible.
+element.
+When a user interface component
+2.4.11Focus Not No sticky headers/chat widgets
+receives keyboard focus, the
+34 Obscured AA Pass observed obscuring focused elements
+component is not entirely hidden
+(Minimum) in tests performed.
+due to author-created content.
+Guideline 2.5 – Input Modalities
+All functionality that uses
+multipoint or path-based gestures
+for operation can be operated
+2.5.1 - Pointer No multipoint/path-based gestures
+35 A with a single pointer without a Pass
+Gestures required anywhere on the site.
+path-based gesture, unless a
+multipoint or path-based gesture
+is essential.
+For functionality that can be
+operated using a single pointer, at
+least one of the following is true:
+No Down-Event: The down-event
+of the pointer is not used to
+Standard click-based activation
+2.5.2 - Pointer execute any part of the function;
+36 A Pass observed; no down-event-only
+Cancellation Abort or Undo: Completion of the
+triggers found.
+function is on the up-event, and a
+mechanism is available to abort
+the function before completion or
+to undo the function after
+completion
+Header buttons "Open Account" (aria-
+For user interface components label "Open a new trading account")
+2.5.3 - Label in with labels that include text or and "Fund Transfer" (aria-label
+37 A Fail
+Name images of text, the name contains "Transfer funds securely") — visible
+the text that is presented visually. text is not a substring of the
+accessible name.
+navigational mechanisms that are
+repeated on multiple Web pages
+2.5.4 - Motion within a set of Web pages occur in No motion-triggered functionality
+38 A N/A
+Actuation the same relative order each time present.
+they are repeated, unless a
+change is initiated by the user.
+All functionality that uses a
+dragging movement for operation
+can be achieved by a single
+2.5.7-Dragging pointer without dragging, unless No drag-and-drop interactions
+39 AA N/A
+Movements dragging is essential or the present.
+functionality is determined by the
+user agent and not modified by
+the author.
+The size of the target for pointer 27 interactive links measured under
+2.5.8-Target Size
+40 AA inputs is at least 24 by 24 CSS Fail 24×24px, mostly footer links (~15px
+(Minimum)
+pixels tall) and the 1×1px skip link.
+Guideline 3.1 – Readable
+The default human language of
+3.1.1 - Language
+41 A each Web page can be Pass <html lang="en"> correctly set.
+of Page
+programmatically determined.
+
+===== PAGE 10 =====
+# WCAG 2.2 SC Level What it requires Result Remarks
+Site offers an English/Hindi toggle, but
+The human language of each clicking "ि 5˙दी" does nothing (no
+3.1.2 - Language passage or phrase in the content translation occurs, no lang change) —
+42 AA Fail
+of Parts can be programmatically the feature is non-functional, so this
+determined. can’t be verified as working when
+needed.
+Guideline 3.2 – Predictable
+When any user interface
+Focusing controls in testing did not
+43 3.2.1 - On Focus A component receives focus, it does Pass
+trigger unexpected context changes.
+not initiate a change of context.
+Changing the setting of any user
+interface component does not
+automatically cause a change of No unexpected context changes
+44 3.2.2 - On Input A Pass
+context unless the user has been observed on input in tests performed.
+advised of the behavior before
+using the component.
+Navigational mechanisms that are
+repeated on multiple Web pages
+Header/footer structure consistent
+3.2.3 - Consistent within a set of Web pages occur in
+45 AA Pass across home, about, and contact
+Navigation the same relative order each time
+pages.
+they are repeated, unless a
+change is initiated by the user.
+Components that have the same Chat, accessibility toolbar, and header
+3.2.4 - Consistent
+46 AA functionality within a set of Web Pass buttons consistently labeled across
+Identification
+pages are identified consistently. pages tested.
+If a Web page contains any of the
+following help mechanisms, and
+those mechanisms are repeated
+on multiple Web pages within a
+set of Web pages, they occur in
+Chatbot and accessibility toolbar
+3.2.6-Consistent the same order relative to other
+47 A Pass appear in the same location on every
+Help page content, unless a change is
+page tested.
+initiated by the user: Human
+contact details; Human contact
+mechanism; Self-help option; A
+fully automated contact
+mechanism.
+Guideline 3.3 – Input Assistance
+Homepage "Create Account" form has
+If an input error is automatically no required-field validation at all
+3.3.1 - Error detected, the item that is in error (submits empty via GET); contact
+48 A Fail
+Identification is identified and the error is form’s native required validation
+described to the user in text. wasn’t submitted to avoid triggering
+reCAPTCHA/real submission.
+Contact form (Name/Email/Message)
+3.3.2 - Label or Labels or instructions are provided
+49 A Fail relies solely on placeholder text; no
+Instructions when content requires user input.
+visible required-field indicators.
+If an input error is automatically
+detected and suggestions for
+correction are known, then the
+3.3.3 - Error
+50 AA suggestions are provided to the Fail Same limitation as #48.
+Suggestion
+user, unless it would jeopardize
+the security or purpose of the
+content.
+
+===== PAGE 11 =====
+# WCAG 2.2 SC Level What it requires Result Remarks
+For web pages involving legal
+commitments, financial
+transactions, or data
+No legal/financial transactions are
+3.3.4 - Error modifications, there must be a
+finalized on-site (account
+Prevention mechanism: either submissions
+51 AA N/A opening/trading happens on external
+(Legal, Financial, are reversible, user-input data is
+subdomains, out of this audit’s
+Data) checked for errors with correction
+scope).
+opportunities, or there is a
+confirmation process before
+finalizing submissions.
+Information previously entered by
+or provided to the user that is
+3.3.7-Redundant required to be entered again in Forms tested are single-step; no re-
+52 A Pass
+Entry the same process is either: auto- entry of prior data required.
+populated, or available for the
+user to select.
+A cognitive function test (such as
+remembering a password or
+solving a puzzle) is not required
+for any step in an authentication
+process unless that step provides
+at least one of the following:
+Alternative: Another
+authentication method that does
+3.3.8-Accessible No in-page login/authentication;
+not rely on a cognitive function
+53 Authentication AA N/A Login links route to external systems
+test. Mechanism: A mechanism is
+(Minimum) outside this site.
+available to assist the user in
+completing the cognitive function
+test. Object Recognition: The
+cognitive function test is to
+recognize objects. Personal
+Content: The cognitive function
+test is to identify non-text content
+the user provided to the Web site.
+Guideline 4.1 compatible
+In content implemented using
+markup languages, elements have
+complete start and end tags,
+elements are nested according to
+Duplicate IDs found sitewide (lang-en,
+54 4.1.1 - Parsing A their specifications, elements do Fail
+lang-hi each appear twice).
+not contain duplicate attributes,
+and any IDs are unique, except
+where the specifications allow
+these features.
+For all user interface components
+(including but not limited to: form
+elements, links and components
+generated by scripts), the name Mobile-nav toggle button has no aria-
+and role can be programmatically expanded state; Google Map iframe
+4.1.2 - Name, determined; states, properties, has an empty title; homepage JS
+55 A Fail
+Role, Value and values that can be set by the throws console exceptions (null
+user can be programmatically set; addEventListener, duplicate
+and notification of changes to translations declaration).
+these items is available to user
+agents, including assistive
+technologies.
+4.1.3 - Status In content implemented using One aria-live="polite" region exists
+56 AA Pass
+Messages markup languages, status (chat widget); form-submission status
+
+===== PAGE 12 =====
+# WCAG 2.2 SC Level What it requires Result Remarks
+messages can be messaging wasn’t verified since real
+programmatically determined forms with reCAPTCHA/real data were
+through role or properties such not submitted.
+that they can be presented to the
+user by assistive technologies
+without receiving focus.
+7. Summary of Key Findings
+Confirmed issues from this review (detailed in Section 8):
+Sr. No. Confirmed Issue Status L1 Status L2
+1 Broken Heading Hierarchy and Duplicate Heading Content OPEN OPEN
+2 Contact Form Fields Have No Programmatic or Visible Labels OPEN OPEN
+3 Missing Autocomplete Attributes on Input Fields OPEN CLOSED
+4 Insufficient Colour Contrast (Text and UI Components) OPEN OPEN
+5 Incomplete Verification of Text Resize to 200% OPEN OPEN
+6 Text Clipping Under WCAG Text-Spacing Overrides OPEN CLOSED
+Non-Functional Hamburger Menu Breaks Navigation, Keyboard
+7 OPEN OPEN
+Access, and Hover Content
+8 Continuously Auto-Advancing Carousel with No Pause Control OPEN OPEN
+9 Permanently Hidden “Skip to Main Content” Link OPEN OPEN
+10 Identical, Non-Descriptive Page Titles Sitewide OPEN CLOSED
+11 No Visible Focus Indicator on Custom Buttons OPEN OPEN
+12 Accessible Name Does Not Contain the Visible Label Text OPEN OPEN
+13 Interactive Targets Below Minimum Size OPEN OPEN
+14 Non-Functional Hindi Language Toggle OPEN CLOSED
+No Input Validation and Error Suggestions on Homepage and
+15 OPEN OPEN
+Contact Forms
+16 Duplicate Element IDs Sitewide OPEN OPEN
+17 Broken ARIA States and Console JavaScript Errors OPEN OPEN
+8. Detailed Technical Report with Recommendations
+8.1 Broken Heading Hierarchy and Duplicate Heading Content
+STATUS OPEN
+WCAG 2.2 REFERENCE 1.3.1 Info and Relationships (Level A)
+Heading order is broken across the site: H3 elements appear before the page’s H1, and
+the hero carousel contains duplicate H1s. Separately, identical service content is
+DESCRIPTION
+marked up as an H5 in one section and as an H3 in a repeated section, so the same
+content has two different heading levels depending on where it appears.
+● Screen-reader users commonly navigate by heading level; a broken or
+duplicated hierarchy makes the page's outline unreliable and disorienting.
+IMPACT ON USERS ● Inconsistent heading levels for identical content suggest the underlying
+template is duplicated or diverges between sections, risking further hidden
+inconsistencies.
+AFFECTED URL https://www.standardsec.com/index.html
+● Establish a single, logical heading outline per page: one H1, followed by H2s
+for major sections and H3+ for subsections, with no level skipped.
+RECOMMENDATIONS
+● Ensure the hero carousel renders one H1 regardless of which slide is active.
+
+===== PAGE 13 =====
+● Standardise the heading level used for repeated service-content blocks so the
+same content is always marked up the same way.
+POC
+8.2 Contact Form Fields Have No Programmatic or Visible Labels
+STATUS OPEN
+1.3.1 Info and Relationships (Level A) / 2.4.6 Headings and Labels (Level AA) / 3.3.2
+WCAG 2.2 REFERENCE
+Labels or Instructions (Level A)
+The contact form's Name, Email, and Message fields rely solely on placeholder text for
+identification — none has a programmatic <label> element, and there are no visible
+DESCRIPTION required-field indicators. Some headings elsewhere on the page are also non-
+descriptive stat values (e.g. “#1”, “~30ms”, “0.0”) rather than text describing their topic
+or purpose.
+● Screen readers announce a field's purpose from its label; with placeholder-
+only fields, users may hear no field name at all, or lose the prompt entirely
+once they begin typing.
+IMPACT ON USERS ● Sighted users with cognitive or attention difficulties lose the field's purpose as
+soon as they start typing, since placeholder text disappears on input.
+● Non-descriptive headings give screen-reader users navigating by heading no
+indication of what a section contains.
+AFFECTED URL https://www.standardsec.com/index.html
+● Add a visible, programmatically-associated <label> (or aria-label/aria-
+labelledby) to every Contact form field.
+● Mark required fields with both a visible indicator and the required/aria-
+RECOMMENDATIONS
+required attribute.
+● Replace stat-value headings with short descriptive text (the stat value can
+remain as content within the section).
+
+===== PAGE 14 =====
+8.3 Missing Autocomplete Attributes on Input Fields
+STATUS CLOSED
+WCAG 2.2 REFERENCE 1.3.5 Identify Input Purpose (Level AA)
+The Name, Email, and Phone fields on the homepage have no autocomplete attribute,
+DESCRIPTION so their purpose cannot be determined programmatically even where the visual label
+makes it obvious to a sighted user.
+● Users relying on browser/OS autofill (including many users with motor or
+cognitive disabilities) cannot have these fields completed automatically.
+IMPACT ON USERS
+● Assistive technology cannot present a purpose-specific input mode or confirm
+the field's intent programmatically.
+AFFECTED URL https://www.standardsec.com/index.html
+● Add the appropriate autocomplete token to each field (e.g.
+autocomplete="name", "email", "tel").
+RECOMMENDATIONS
+● Audit other forms sitewide (account opening, KYC) for the same gap.
+8.4 Insufficient Colour Contrast (Text and UI Components)
+STATUS OPEN
+WCAG 2.2 REFERENCE 1.4.3 Contrast (Minimum) (Level AA) / 1.4.11 Non-text Contrast (Level AA)
+Multiple text elements fail the 4.5:1 minimum contrast ratio: the hero heading and
+“Open an Account” button measure approximately 1.9:1, price-ticker badges 2.1:1,
+accessibility-toolbar buttons 3.98:1, and the footer “Need help?” text 2.86:1.
+DESCRIPTION
+Separately, the contact form's input borders measure rgb(229,229,229) on a white
+background — a 1.26:1 ratio, well under the 3:1 minimum required for user-interface
+component boundaries.
+● Users with low vision or colour-vision deficiencies may be unable to read the
+affected text at all.
+● Unmarked form-field boundaries make it hard for low-vision users to see
+IMPACT ON USERS
+where one input ends and the next begins.
+● Poor contrast reduces readability in bright ambient light and on lower-quality
+displays for all users.
+AFFECTED URL https://www.standardsec.com/index.html
+
+===== PAGE 15 =====
+● Darken or otherwise adjust the hero heading, “Open an Account” button,
+price-ticker badges, accessibility-toolbar buttons, and footer “Need help?”
+text to meet 4.5:1 (3:1 for large text).
+RECOMMENDATIONS ● Increase the contact-form input border colour to at least a 3:1 ratio against its
+background.
+● Re-verify every corrected element with a contrast checker (e.g. WebAIM
+Contrast Checker) after the fix.
+POC
+8.5 Incomplete Verification of Text Resize to 200%
+STATUS OPEN
+WCAG 2.2 REFERENCE 1.4.4 Resize Text (Level AA)
+The viewport does not block pinch-zoom (there is no user-scalable=no restriction),
+DESCRIPTION which is a positive sign, but a full pass confirming there is no content loss or overlap at
+200% zoom was not completed in this round of testing.
+● Users who rely on browser zoom to read comfortably may still encounter
+IMPACT ON USERS
+overlapping or clipped content that has not yet been ruled out.
+AFFECTED URL https://www.standardsec.com/index.html
+● Complete a dedicated 200%-zoom pass on every page template and confirm
+no content or functionality is lost.
+RECOMMENDATIONS ● Pay particular attention to the header/navigation area, which is already
+known to have layout issues at other widths (see the navigation finding
+above).
+
+===== PAGE 16 =====
+POC
+8.6 Text Clipping Under WCAG Text-Spacing Overrides
+STATUS CLOSED
+WCAG 2.2 REFERENCE 1.4.12 Text Spacing (Level AA)
+Applying the WCAG text-spacing test overrides (line-height 1.5, letter-spacing 0.12em,
+DESCRIPTION word-spacing 0.16em) causes the “Currency” and “Commodities” service headings to
+visually clip inside their fixed-height containers.
+● Users who apply custom text spacing for readability (a common low-vision
+IMPACT ON USERS
+accommodation) lose part of the affected headings.
+AFFECTED URL https://www.standardsec.com/index.html
+● Remove fixed heights from the affected service-heading containers, or allow
+them to grow with content.
+RECOMMENDATIONS
+● Re-test with the WCAG text-spacing bookmarklet/override after the fix.
+8.7 Non-Functional Hamburger Menu Breaks Navigation, Keyboard Access, and
+Hover Content
+STATUS OPEN
+1.4.10 Reflow (Level AA) / 1.4.13 Content on Hover or Focus (Level AA) / 2.1.1
+WCAG 2.2 REFERENCE
+Keyboard (Level A) / 2.4.5 Multiple Ways (Level AA)
+At an 894px viewport width, the entire primary navigation collapses into a hamburger
+menu whose toggle does not work (a JavaScript bug), causing a total loss of navigation
+functionality. Because the primary navigation (About Us, Login, Quick Links, KYC,
+Complaints) sits behind this broken toggle, none of it is reachable by keyboard or
+DESCRIPTION
+mouse at the tested viewport. The dropdown/hover menus that live inside this same
+navigation could not be exercised at all as a result, and with the primary nav unusable,
+the footer links and directly-typed URLs become the only way to reach most pages — a
+fragile single point of failure.
+● This is the most severe finding in this review: it removes access to the site's
+primary navigation entirely for every keyboard user and for mouse users at
+this viewport, regardless of assistive technology.
+IMPACT ON USERS
+● Screen-reader and keyboard users cannot reach About Us, Login, KYC, or
+Complaints — pages that are likely required for regulatory/grievance access
+on a broking site.
+
+===== PAGE 17 =====
+● The single remaining path (footer links / typed URLs) is not a reasonable
+substitute for primary navigation and is itself fragile.
+AFFECTED URL https://www.standardsec.com/index.html
+● Treat this as the highest-priority fix on the site: debug and repair the
+hamburger-menu toggle script so it opens/closes the menu correctly.
+● Re-test keyboard access, hover/focus dropdown behaviour, and reflow at
+RECOMMENDATIONS 894px together once the toggle is fixed, since all three findings share this one
+root cause.
+● Add automated regression coverage (e.g. a keyboard-navigation smoke test)
+so this cannot silently break again.
+POC
+8.8 Continuously Auto-Advancing Carousel With No Pause Control
+STATUS OPEN
+WCAG 2.2 REFERENCE 2.2.2 Pause, Stop, Hide (Level A)
+The homepage hero carousel auto-advances continuously. The only controls are non-
+DESCRIPTION
+labelled slide-select dots — there is no visible pause/stop control.
+● Users who need more time to read each slide, including users with cognitive or
+reading disabilities, cannot stop the carousel from advancing.
+IMPACT ON USERS
+● Unlabelled dots give screen-reader users no indication of what each control
+does or which slide is active.
+AFFECTED URL https://www.standardsec.com/index.html
+● Add a visible, labelled pause/stop control to the carousel.
+RECOMMENDATIONS ● Label each slide-select dot (e.g. “Slide 2 of 4”) and expose the active slide via
+ARIA.
+
+===== PAGE 18 =====
+POC
+8.9 Permanently Hidden “Skip to Main Content” Link
+STATUS OPEN
+WCAG 2.2 REFERENCE 2.4.1 Bypass Blocks (Level A)
+A “Skip to main content” link exists in the markup but is permanently CSS-clipped (clip:
+DESCRIPTION
+rect(0,0,0,0)) even when it receives keyboard focus, so it is never visible or usable.
+● Keyboard and screen-reader users have no way to bypass repeated
+header/navigation content on every page — exactly the situation this success
+criterion exists to prevent.
+IMPACT ON USERS
+● The presence of the link without a working focus style means the site likely
+intended to support this and regressed, rather than never having built it.
+AFFECTED URL https://www.standardsec.com/index.html
+● Remove the permanent clip and instead visually hide the link only until it
+receives focus (the standard “skip link” pattern), then show it clearly on focus.
+RECOMMENDATIONS
+● Confirm with keyboard-only testing that the link becomes visible and
+functional on Tab.
+POC
+
+===== PAGE 19 =====
+8.10 Identical, Non-Descriptive Page Titles Sitewide
+STATUS CLOSED
+WCAG 2.2 REFERENCE 2.4.2 Page Titled (Level A)
+Every page reviewed (home, contact, about, accessibility) shares the exact same page
+DESCRIPTION title, “Standard Securities & Investment Intermediates Ltd.”, with no page-specific
+topic.
+● Screen-reader users rely on the page title to confirm where they are,
+especially after following a link or switching browser tabs; an identical title
+gives no such confirmation anywhere on the site.
+IMPACT ON USERS
+● Identical titles make it harder for all users to distinguish open
+tabs/bookmarks.
+AFFECTED URL https://www.standardsec.com/index.html
+● Give each page a unique, descriptive <title>, e.g. “Contact Us | Standard
+Securities & Investment Intermediates Ltd.”
+RECOMMENDATIONS
+● Audit the full site (not just the four pages sampled here) for the same pattern.
+8.11 No Visible Focus Indicator on Custom Buttons
+STATUS OPEN
+WCAG 2.2 REFERENCE 2.4.7 Focus Visible (Level AA)
+Custom buttons, including “Open Account”, compute outline: none with no
+DESCRIPTION
+replacement focus style, confirmed via computed styles on the focused element.
+● Keyboard-only users cannot see which control currently has focus, making the
+IMPACT ON USERS
+site very difficult to operate without a mouse.
+AFFECTED URL https://www.standardsec.com/index.html
+● Restore a visible focus indicator (outline or an equivalent custom style) on
+every interactive element that currently suppresses it.
+RECOMMENDATIONS
+● Confirm the replacement style meets the 3:1 contrast requirement for non-
+text UI elements (1.4.11).
+
+===== PAGE 20 =====
+POC
+8.12 Accessible Name Does Not Contain the Visible Label Text
+STATUS OPEN
+WCAG 2.2 REFERENCE 2.5.3 Label in Name (Level A)
+The header buttons “Open Account” (aria-label “Open a new trading account”) and
+DESCRIPTION “Fund Transfer” (aria-label “Transfer funds securely”) have accessible names that do
+not contain their visible text as a substring.
+● Speech-input users who say the visible label (e.g. “click Open Account”) may
+IMPACT ON USERS
+find their software cannot match it to the control's accessible name.
+AFFECTED URL https://www.standardsec.com/index.html
+● Rewrite each aria-label so it begins with or contains the visible button text
+verbatim (e.g. “Open Account – start a new trading account”).
+RECOMMENDATIONS
+● Audit other custom-labelled controls sitewide for the same pattern.
+8.13 Interactive Targets Below Minimum Size
+STATUS OPEN
+WCAG 2.2 REFERENCE 2.5.8 Target Size (Minimum) (Level AA)
+27 interactive links measure under the 24×24 CSS pixel minimum, mostly footer links
+DESCRIPTION (approximately 15px tall) and the 1×1px skip link (see the separate Bypass Blocks
+finding above).
+● Users with limited dexterity or motor impairments, and touchscreen users
+generally, may struggle to accurately activate these controls.
+IMPACT ON USERS
+● Small targets increase the risk of accidentally activating an adjacent link.
+AFFECTED URL https://www.standardsec.com/index.html
+● Increase the tappable area of the 27 identified footer links to at least 24×24
+CSS pixels, or provide equivalent spacing between them.
+RECOMMENDATIONS
+● Fix the skip link's dimensions as part of repairing its visibility (see the Bypass
+Blocks finding).
+
+===== PAGE 21 =====
+POC
+8.14 Non-Functional Hindi Language Toggle
+STATUS CLOSED
+WCAG 2.2 REFERENCE 3.1.2 Language of Parts (Level AA)
+The site offers an English/Hindi toggle, but clicking “ि 5˙दी” does nothing — no
+translation occurs and the lang attribute does not change. Because the feature does
+DESCRIPTION
+not work, whether translated content would be correctly marked with the right lang
+attribute cannot be verified.
+● Hindi-preferring users are offered a feature that does not deliver any content
+in Hindi.
+IMPACT ON USERS
+● Screen readers cannot switch pronunciation/voice for translated content that
+never appears.
+AFFECTED URL https://www.standardsec.com/index.html
+● Fix the underlying toggle so it actually renders Hindi content, or remove the
+control until it is functional.
+RECOMMENDATIONS
+● Once working, confirm the lang attribute updates correctly on the translated
+content.
+8.15 No Input Validation and Error suggestion on Homepage and Contact Forms
+STATUS OPEN
+WCAG 2.2 REFERENCE 3.3.1 Error Identification (Level A) / 3.3.3 Error Suggestion (Level AA)
+The homepage “Create Account” form has no required-field validation at all and
+submits empty via GET. The contact form's native required-field validation was not
+DESCRIPTION triggered by an actual submission in this review, to avoid tripping reCAPTCHA or
+sending an unwanted message to the business, so its error-suggestion behaviour is
+unverified for the same reason.
+● Users who submit the “Create Account” form with missing or invalid data get
+no feedback that anything went wrong, let alone what to fix.
+IMPACT ON USERS
+● Screen-reader users in particular depend on programmatic error
+identification; a silent failure is especially disorienting for them.
+AFFECTED URL https://www.standardsec.com/index.html
+● Add required-field and format validation to the “Create Account” form, with
+RECOMMENDATIONS
+errors identified in text and associated with their field.
+
+===== PAGE 22 =====
+● In a staging environment (to avoid triggering reCAPTCHA or a real submission
+on the live site), confirm the contact form identifies errors in text and offers
+correction suggestions where practical.
+POC
+8.16 Duplicate Element IDs Sitewide
+STATUS OPEN
+WCAG 2.2 REFERENCE 4.1.1 Parsing (Level A)
+Duplicate id attributes were found sitewide: lang-en and lang-hi each appear twice in
+DESCRIPTION
+the page.
+● Duplicate IDs can break label associations, ARIA references (aria-
+IMPACT ON USERS labelledby/aria-describedby), and in-page anchor links, with effects that vary
+by browser and assistive technology.
+AFFECTED URL https://www.standardsec.com/index.html
+● Ensure every id attribute is unique per page; rename the duplicated lang-
+en/lang-hi instances (for example, if both a desktop and mobile copy of the
+RECOMMENDATIONS language toggle exist, give each a distinct id).
+● Run an HTML validator sitewide to catch any further duplicate IDs.
+POC
+
+===== PAGE 23 =====
+8.17 Broken ARIA States and Console JavaScript Errors
+STATUS OPEN
+WCAG 2.2 REFERENCE 4.1.2 Name, Role, Value (Level A)
+The mobile-navigation toggle button has no aria-expanded state, the Google Map
+DESCRIPTION iframe has an empty title attribute, and the homepage JavaScript throws console
+exceptions (a null addEventListener target and a duplicate translations declaration).
+● Without aria-expanded, screen-reader users get no indication of whether the
+(already broken) mobile menu is open or closed.
+● An untitled iframe is announced to screen-reader users with no indication of
+IMPACT ON USERS what it contains.
+● The console errors are consistent with, and may directly explain, the broken
+hamburger toggle and non-functional language switch documented elsewhere
+in this report.
+AFFECTED URL https://www.standardsec.com/index.html
+● Add aria-expanded (toggled true/false) to the mobile-navigation button.
+● Add a descriptive title attribute to the Google Map iframe (e.g. “Map showing
+our office location”).
+RECOMMENDATIONS
+● Resolve the JavaScript console exceptions — the null addEventListener target
+and duplicate translations declaration are good starting points and may be the
+root cause of several other findings in this report.
+9. Recommended Residual Verification
+The items below were not exhaustively confirmed in this round of testing (see Section 3) and should
+be run before treating any associated result in Section 6 as final:
+Category Success Criteria Recommended Verification Method
+Full 200% zoom pass and a dedicated 320 CSS px check, on every
+Text resize & reflow 1.4.4, 1.4.10
+page template
+Submit the Contact and Create Account forms with valid/invalid
+Form submission
+3.3.1, 3.3.3, 4.1.3 data in a staging environment and confirm error and status
+behaviour
+messaging
+Check for session timeouts across any authenticated or long-
+Session & timing 2.2.1
+lived areas outside this review's scope
+
+===== PAGE 24 =====
+Category Success Criteria Recommended Verification Method
+NVDA and/or JAWS (Windows), VoiceOver (macOS/iOS) —
+1.4.13, 2.4.7, 3.1.2,
+Screen reader behaviour confirm hover/focus content, focus visibility, and language-
+4.1.3
+switch announcements once the underlying bugs are fixed
+On-screen measurement on an actual touchscreen device to
+Touch / pointer targets 2.5.8
+confirm the 27 undersized targets identified
+
+===== PAGE 25 =====
+THE END OF THE DOCUMENT

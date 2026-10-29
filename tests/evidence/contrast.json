@@ -1,0 +1,1119 @@
+{
+  "index.html": [
+    {
+      "selector": ".monee-slide4-text h1",
+      "label": "hero heading",
+      "missing": true
+    },
+    {
+      "selector": ".uk-button-primary",
+      "label": "Open an Account button",
+      "x": 705.5,
+      "y": 7,
+      "w": 106,
+      "h": 28,
+      "text": "Open Account",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "11.9955px",
+      "fontWeight": "400",
+      "text_px": [
+        255,
+        255,
+        255
+      ],
+      "bg_px": [
+        16,
+        96,
+        224
+      ],
+      "ratio": 5.57,
+      "required": 4.5,
+      "large_text": false,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            16,
+            96,
+            224
+          ],
+          2596
+        ],
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          63
+        ],
+        [
+          [
+            32,
+            112,
+            224
+          ],
+          43
+        ],
+        [
+          [
+            208,
+            224,
+            240
+          ],
+          38
+        ],
+        [
+          [
+            80,
+            144,
+            224
+          ],
+          28
+        ],
+        [
+          [
+            64,
+            128,
+            224
+          ],
+          24
+        ],
+        [
+          [
+            160,
+            192,
+            240
+          ],
+          24
+        ],
+        [
+          [
+            112,
+            160,
+            224
+          ],
+          21
+        ]
+      ],
+      "box_pixels": 2968
+    },
+    {
+      "selector": ".monee-price-ticker",
+      "label": "price ticker band",
+      "x": 92,
+      "y": 1748.21875,
+      "w": 1056,
+      "h": 57.5,
+      "text": "XAUUSD \u25b2 1478.81 (+0.28%)\n              ",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "13px",
+      "fontWeight": "400",
+      "error": "Page.screenshot: Clipped area is either empty or outside the resulting image\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n"
+    },
+    {
+      "selector": ".in-footer-info",
+      "label": "footer Need help text",
+      "x": 50,
+      "y": 4873.78125,
+      "w": 530,
+      "h": 30,
+      "text": "Need help?\n                       022417",
+      "color": "rgb(89, 89, 89)",
+      "fontSize": "16.5px",
+      "fontWeight": "400",
+      "error": "Page.screenshot: Clipped area is either empty or outside the resulting image\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n"
+    },
+    {
+      "selector": ".uk-input",
+      "label": "contact form field",
+      "x": 90,
+      "y": 868.484375,
+      "w": 200,
+      "h": 38,
+      "text": "",
+      "color": "rgb(58, 58, 58)",
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "text_px": [
+        58,
+        58,
+        58
+      ],
+      "bg_px": [
+        240,
+        240,
+        240
+      ],
+      "ratio": 9.98,
+      "required": 4.5,
+      "large_text": false,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          5573
+        ],
+        [
+          [
+            112,
+            112,
+            112
+          ],
+          258
+        ],
+        [
+          [
+            80,
+            80,
+            80
+          ],
+          110
+        ],
+        [
+          [
+            208,
+            208,
+            208
+          ],
+          49
+        ],
+        [
+          [
+            192,
+            192,
+            192
+          ],
+          42
+        ],
+        [
+          [
+            128,
+            128,
+            128
+          ],
+          41
+        ],
+        [
+          [
+            160,
+            160,
+            160
+          ],
+          32
+        ],
+        [
+          [
+            224,
+            224,
+            224
+          ],
+          32
+        ]
+      ],
+      "box_pixels": 6200
+    }
+  ],
+  "contact.html": [
+    {
+      "selector": ".uk-input",
+      "label": "contact form field",
+      "x": 790,
+      "y": 329,
+      "w": 320,
+      "h": 38,
+      "text": "",
+      "color": "rgb(58, 58, 58)",
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "text_px": [
+        58,
+        58,
+        58
+      ],
+      "bg_px": [
+        240,
+        240,
+        240
+      ],
+      "ratio": 9.98,
+      "required": 4.5,
+      "large_text": false,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          10686
+        ],
+        [
+          [
+            112,
+            112,
+            112
+          ],
+          715
+        ],
+        [
+          [
+            80,
+            80,
+            80
+          ],
+          206
+        ],
+        [
+          [
+            208,
+            208,
+            208
+          ],
+          99
+        ],
+        [
+          [
+            224,
+            224,
+            224
+          ],
+          88
+        ],
+        [
+          [
+            128,
+            128,
+            128
+          ],
+          88
+        ],
+        [
+          [
+            192,
+            192,
+            192
+          ],
+          73
+        ],
+        [
+          [
+            144,
+            144,
+            144
+          ],
+          63
+        ]
+      ],
+      "box_pixels": 12160
+    },
+    {
+      "selector": "#send",
+      "label": "contact submit button",
+      "x": 790,
+      "y": 901.71875,
+      "w": 320,
+      "h": 38,
+      "text": "Send Message",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "12.6225px",
+      "fontWeight": "700",
+      "error": "Page.screenshot: Clipped area is either empty or outside the resulting image\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n"
+    }
+  ],
+  "Advisory.html": [
+    {
+      "selector": ".monee-slide4-text h1",
+      "label": "hero heading",
+      "x": 615,
+      "y": 354.265625,
+      "w": 441,
+      "h": 57.59375,
+      "text": "Advisory",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "text_px": [
+        255,
+        255,
+        255
+      ],
+      "bg_px": [
+        0,
+        48,
+        208
+      ],
+      "ratio": 9.0,
+      "required": 3.0,
+      "large_text": true,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          2720
+        ],
+        [
+          [
+            0,
+            48,
+            208
+          ],
+          2420
+        ],
+        [
+          [
+            0,
+            32,
+            176
+          ],
+          2414
+        ],
+        [
+          [
+            0,
+            16,
+            160
+          ],
+          2135
+        ],
+        [
+          [
+            0,
+            0,
+            128
+          ],
+          1851
+        ],
+        [
+          [
+            0,
+            32,
+            192
+          ],
+          1689
+        ],
+        [
+          [
+            0,
+            48,
+            192
+          ],
+          1445
+        ],
+        [
+          [
+            0,
+            0,
+            112
+          ],
+          1339
+        ]
+      ],
+      "box_pixels": 25137
+    }
+  ],
+  "Currency.html": [
+    {
+      "selector": ".monee-slide4-text h1",
+      "label": "hero heading",
+      "x": 615,
+      "y": 354.265625,
+      "w": 441,
+      "h": 57.59375,
+      "text": "Currency",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "text_px": [
+        255,
+        255,
+        255
+      ],
+      "bg_px": [
+        0,
+        48,
+        208
+      ],
+      "ratio": 9.0,
+      "required": 3.0,
+      "large_text": true,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          2760
+        ],
+        [
+          [
+            0,
+            48,
+            208
+          ],
+          2648
+        ],
+        [
+          [
+            0,
+            32,
+            176
+          ],
+          2261
+        ],
+        [
+          [
+            0,
+            16,
+            160
+          ],
+          2154
+        ],
+        [
+          [
+            0,
+            0,
+            128
+          ],
+          1851
+        ],
+        [
+          [
+            0,
+            32,
+            192
+          ],
+          1593
+        ],
+        [
+          [
+            0,
+            48,
+            192
+          ],
+          1504
+        ],
+        [
+          [
+            0,
+            0,
+            112
+          ],
+          1339
+        ]
+      ],
+      "box_pixels": 25137
+    }
+  ],
+  "Commodities.html": [
+    {
+      "selector": ".monee-slide4-text h1",
+      "label": "hero heading",
+      "x": 615,
+      "y": 354.265625,
+      "w": 441,
+      "h": 57.59375,
+      "text": "Commodities",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "text_px": [
+        255,
+        255,
+        255
+      ],
+      "bg_px": [
+        0,
+        48,
+        208
+      ],
+      "ratio": 9.0,
+      "required": 3.0,
+      "large_text": true,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          4295
+        ],
+        [
+          [
+            0,
+            48,
+            208
+          ],
+          2467
+        ],
+        [
+          [
+            0,
+            32,
+            176
+          ],
+          1858
+        ],
+        [
+          [
+            0,
+            0,
+            128
+          ],
+          1851
+        ],
+        [
+          [
+            0,
+            48,
+            192
+          ],
+          1595
+        ],
+        [
+          [
+            0,
+            32,
+            192
+          ],
+          1458
+        ],
+        [
+          [
+            0,
+            16,
+            160
+          ],
+          1371
+        ],
+        [
+          [
+            0,
+            0,
+            112
+          ],
+          1339
+        ]
+      ],
+      "box_pixels": 25137
+    }
+  ],
+  "Equity.html": [
+    {
+      "selector": ".monee-slide4-text h1",
+      "label": "hero heading",
+      "x": 615,
+      "y": 354.265625,
+      "w": 441,
+      "h": 57.59375,
+      "text": "Equity",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "text_px": [
+        255,
+        255,
+        255
+      ],
+      "bg_px": [
+        0,
+        32,
+        176
+      ],
+      "ratio": 11.45,
+      "required": 3.0,
+      "large_text": true,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            0,
+            32,
+            176
+          ],
+          3026
+        ],
+        [
+          [
+            0,
+            48,
+            208
+          ],
+          2505
+        ],
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          2367
+        ],
+        [
+          [
+            0,
+            16,
+            160
+          ],
+          2129
+        ],
+        [
+          [
+            0,
+            32,
+            192
+          ],
+          2085
+        ],
+        [
+          [
+            0,
+            0,
+            128
+          ],
+          1851
+        ],
+        [
+          [
+            0,
+            48,
+            192
+          ],
+          1393
+        ],
+        [
+          [
+            0,
+            0,
+            112
+          ],
+          1339
+        ]
+      ],
+      "box_pixels": 25137
+    }
+  ],
+  "IPOs.html": [
+    {
+      "selector": ".monee-slide4-text h1",
+      "label": "hero heading",
+      "x": 615,
+      "y": 354.265625,
+      "w": 441,
+      "h": 57.59375,
+      "text": "IPOs",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "text_px": [
+        255,
+        255,
+        255
+      ],
+      "bg_px": [
+        0,
+        32,
+        176
+      ],
+      "ratio": 11.45,
+      "required": 3.0,
+      "large_text": true,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            0,
+            32,
+            176
+          ],
+          2757
+        ],
+        [
+          [
+            0,
+            48,
+            208
+          ],
+          2425
+        ],
+        [
+          [
+            0,
+            32,
+            192
+          ],
+          2339
+        ],
+        [
+          [
+            0,
+            16,
+            160
+          ],
+          2129
+        ],
+        [
+          [
+            0,
+            48,
+            192
+          ],
+          2086
+        ],
+        [
+          [
+            0,
+            0,
+            128
+          ],
+          1851
+        ],
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          1445
+        ],
+        [
+          [
+            0,
+            0,
+            112
+          ],
+          1339
+        ]
+      ],
+      "box_pixels": 25137
+    }
+  ],
+  "Depository.html": [
+    {
+      "selector": ".monee-slide4-text h1",
+      "label": "hero heading",
+      "x": 615,
+      "y": 362.6171875,
+      "w": 441,
+      "h": 57.59375,
+      "text": "Depository",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "48px",
+      "fontWeight": "700",
+      "text_px": [
+        255,
+        255,
+        255
+      ],
+      "bg_px": [
+        0,
+        48,
+        208
+      ],
+      "ratio": 9.0,
+      "required": 3.0,
+      "large_text": true,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          3492
+        ],
+        [
+          [
+            0,
+            48,
+            208
+          ],
+          2634
+        ],
+        [
+          [
+            0,
+            32,
+            176
+          ],
+          1820
+        ],
+        [
+          [
+            0,
+            0,
+            128
+          ],
+          1760
+        ],
+        [
+          [
+            0,
+            16,
+            160
+          ],
+          1519
+        ],
+        [
+          [
+            0,
+            32,
+            192
+          ],
+          1378
+        ],
+        [
+          [
+            0,
+            48,
+            192
+          ],
+          1240
+        ],
+        [
+          [
+            0,
+            0,
+            112
+          ],
+          1151
+        ]
+      ],
+      "box_pixels": 25137
+    }
+  ],
+  "smart_ODR.html": [
+    {
+      "selector": ".timeline-section h2",
+      "label": "Step-by-Step Process heading",
+      "x": 90,
+      "y": 3074.203125,
+      "w": 1100,
+      "h": 35.3125,
+      "text": "Step-by-Step Process",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "27.1755px",
+      "fontWeight": "700",
+      "error": "Page.screenshot: Clipped area is either empty or outside the resulting image\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n"
+    }
+  ],
+  "news.html": [
+    {
+      "selector": ".accessibility-menu button",
+      "label": "accessibility toolbar button",
+      "x": 1205,
+      "y": 640,
+      "w": 60,
+      "h": 60,
+      "text": "\u267f",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "24px",
+      "fontWeight": "400",
+      "text_px": [
+        255,
+        255,
+        255
+      ],
+      "bg_px": [
+        0,
+        112,
+        240
+      ],
+      "ratio": 4.59,
+      "required": 3.0,
+      "large_text": true,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            0,
+            112,
+            240
+          ],
+          3421
+        ],
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          40
+        ],
+        [
+          [
+            16,
+            128,
+            240
+          ],
+          14
+        ],
+        [
+          [
+            48,
+            144,
+            240
+          ],
+          11
+        ],
+        [
+          [
+            80,
+            160,
+            240
+          ],
+          11
+        ],
+        [
+          [
+            224,
+            224,
+            224
+          ],
+          10
+        ],
+        [
+          [
+            144,
+            192,
+            240
+          ],
+          8
+        ],
+        [
+          [
+            128,
+            192,
+            240
+          ],
+          8
+        ]
+      ],
+      "box_pixels": 3600
+    }
+  ],
+  "about.html": [
+    {
+      "selector": ".accessibility-menu button",
+      "label": "accessibility toolbar button",
+      "x": 1205,
+      "y": 640,
+      "w": 60,
+      "h": 60,
+      "text": "\u267f\n            Accessibility Options",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "24px",
+      "fontWeight": "400",
+      "text_px": [
+        255,
+        255,
+        255
+      ],
+      "bg_px": [
+        0,
+        112,
+        240
+      ],
+      "ratio": 4.59,
+      "required": 3.0,
+      "large_text": true,
+      "pass": true,
+      "clusters": [
+        [
+          [
+            0,
+            112,
+            240
+          ],
+          3421
+        ],
+        [
+          [
+            240,
+            240,
+            240
+          ],
+          40
+        ],
+        [
+          [
+            16,
+            128,
+            240
+          ],
+          14
+        ],
+        [
+          [
+            48,
+            144,
+            240
+          ],
+          11
+        ],
+        [
+          [
+            80,
+            160,
+            240
+          ],
+          11
+        ],
+        [
+          [
+            224,
+            224,
+            224
+          ],
+          10
+        ],
+        [
+          [
+            144,
+            192,
+            240
+          ],
+          8
+        ],
+        [
+          [
+            128,
+            192,
+            240
+          ],
+          8
+        ]
+      ],
+      "box_pixels": 3600
+    }
+  ],
+  "single.html": [
+    {
+      "selector": ".in-footer-info",
+      "label": "footer Need help text",
+      "x": 50,
+      "y": 3452.90625,
+      "w": 530,
+      "h": 54,
+      "text": "need help?\n                             ",
+      "color": "rgb(89, 89, 89)",
+      "fontSize": "16.5px",
+      "fontWeight": "400",
+      "error": "Page.screenshot: Clipped area is either empty or outside the resulting image\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n"
+    }
+  ]
+}

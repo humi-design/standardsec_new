@@ -1,0 +1,76 @@
+{
+  "skiplink_present": {
+    "text": "Skip to main content",
+    "href": "#main-content",
+    "top": "-80px",
+    "left": "0px",
+    "position": "absolute",
+    "w": 197,
+    "h": 51,
+    "clip": "auto",
+    "opacity": "1"
+  },
+  "skiplink_after_first_tab": {
+    "tag": "A",
+    "text": "Skip to main content",
+    "top": "10px",
+    "left": "10px",
+    "w": 189,
+    "h": 43,
+    "outline": "3px solid rgb(11, 76, 140)",
+    "visible": true
+  },
+  "skiplink_target_exists": {
+    "id": "main-content",
+    "exists": true,
+    "tag": "MAIN"
+  },
+  "skiplink_after_enter": {
+    "hash": "#main-content",
+    "targetTag": "MAIN",
+    "active": "BODY#"
+  },
+  "hero_markup": {
+    "found": true,
+    "cls": "in-slideshow uk-position-relative uk-visible-toggle uk-slide",
+    "attr": [
+      "class=in-slideshow uk-position-relative uk-vis",
+      "aria-label=Homepage slideshow",
+      "tabindex=-1"
+    ],
+    "slides": 1,
+    "autoplay": false
+  },
+  "hero_motion": {
+    "t0": [
+      "1|none|visible"
+    ],
+    "t6": [
+      "1|none|visible"
+    ],
+    "changed": false
+  },
+  "ticker": {
+    "found": true,
+    "cls": "monee-price-ticker uk-position-bottom",
+    "buttons": [
+      {
+        "text": "Pause price ticker\u2759\u2759",
+        "aria": null,
+        "pressed": "false",
+        "cls": "moving-content-toggle"
+      }
+    ]
+  },
+  "lang_controls": {
+    "htmlLang": "en",
+    "googleTranslateDiv": {
+      "cls": "translate-btn",
+      "role": "group",
+      "label": "Language selection",
+      "children": 0
+    },
+    "translateWidgetLoaded": false,
+    "hindiControls": []
+  }
+}

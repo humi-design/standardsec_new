@@ -1,0 +1,3355 @@
+{
+  "summary": {
+    "pages": 32,
+    "pages_with_duplicate_ids": [],
+    "pages_with_duplicate_titles": [
+      "complaint.html",
+      "complaint_new.html"
+    ],
+    "duplicate_title_values": {
+      "Complaint Form | Standard Securities": 2
+    },
+    "pages_missing_title": [],
+    "pages_with_unlabeled_inputs": [
+      "news.html"
+    ],
+    "pages_with_untitled_iframes": [],
+    "pages_with_missing_alt": [],
+    "pages_h1_not_one": []
+  },
+  "pages": [
+    {
+      "file": "404.html",
+      "title": "Page Not Found | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 2,
+      "img_missing_alt": [],
+      "iframes": [],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Oops!"
+        }
+      ],
+      "heading_sequence": [
+        "h1"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "Advisory.html",
+      "title": "Advisory Services | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 5,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Advisory"
+        },
+        {
+          "level": "h2",
+          "text": "Why trade with Standard Securities?"
+        },
+        {
+          "level": "h3",
+          "text": "Benefits you'll get from us"
+        },
+        {
+          "level": "h4",
+          "text": "Categories"
+        },
+        {
+          "level": "h2",
+          "text": "Open your account"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Full name",
+          "aria-label": "Full name",
+          "aria-labelledby": null,
+          "autocomplete": "name",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Email address",
+          "aria-label": "Email address",
+          "aria-labelledby": null,
+          "autocomplete": "email",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Phone number",
+          "aria-label": "Phone number",
+          "aria-labelledby": null,
+          "autocomplete": "tel",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "Commodities.html",
+      "title": "Commodities Trading | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 5,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Commodities"
+        },
+        {
+          "level": "h2",
+          "text": "Why trade with Standard Securities?"
+        },
+        {
+          "level": "h3",
+          "text": "Benefits you'll get from us"
+        },
+        {
+          "level": "h4",
+          "text": "Categories"
+        },
+        {
+          "level": "h2",
+          "text": "Open your account"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Full name",
+          "aria-label": "Full name",
+          "aria-labelledby": null,
+          "autocomplete": "name",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Email address",
+          "aria-label": "Email address",
+          "aria-labelledby": null,
+          "autocomplete": "email",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Phone number",
+          "aria-label": "Phone number",
+          "aria-labelledby": null,
+          "autocomplete": "tel",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "Currency.html",
+      "title": "Currency Trading | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 5,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Currency"
+        },
+        {
+          "level": "h2",
+          "text": "Why trade with Standard Securities?"
+        },
+        {
+          "level": "h3",
+          "text": "Benefits you'll get from us"
+        },
+        {
+          "level": "h4",
+          "text": "Categories"
+        },
+        {
+          "level": "h2",
+          "text": "Open your account"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Full name",
+          "aria-label": "Full name",
+          "aria-labelledby": null,
+          "autocomplete": "name",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Email address",
+          "aria-label": "Email address",
+          "aria-labelledby": null,
+          "autocomplete": "email",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Phone number",
+          "aria-label": "Phone number",
+          "aria-labelledby": null,
+          "autocomplete": "tel",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "Depository.html",
+      "title": "Depository Services | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 5,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Depository"
+        },
+        {
+          "level": "h2",
+          "text": "Why trade with Standard Securities?"
+        },
+        {
+          "level": "h3",
+          "text": "Benefits you'll get from us"
+        },
+        {
+          "level": "h4",
+          "text": "Categories"
+        },
+        {
+          "level": "h2",
+          "text": "Open your account"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "full-name",
+          "name": null,
+          "placeholder": "Full name",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "id": "email",
+          "name": null,
+          "placeholder": "Email address",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "tel",
+          "id": "phone",
+          "name": null,
+          "placeholder": "Phone number",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "Equity.html",
+      "title": "Equity Trading | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 5,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Equity"
+        },
+        {
+          "level": "h2",
+          "text": "Why trade with Standard Securities?"
+        },
+        {
+          "level": "h3",
+          "text": "Benefits you'll get from us"
+        },
+        {
+          "level": "h4",
+          "text": "Categories"
+        },
+        {
+          "level": "h2",
+          "text": "Open your account"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Full name",
+          "aria-label": "Full name",
+          "aria-labelledby": null,
+          "autocomplete": "name",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Email address",
+          "aria-label": "Email address",
+          "aria-labelledby": null,
+          "autocomplete": "email",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Phone number",
+          "aria-label": "Phone number",
+          "aria-labelledby": null,
+          "autocomplete": "tel",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "IPOs.html",
+      "title": "IPO Services | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 5,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "IPOs"
+        },
+        {
+          "level": "h2",
+          "text": "Why trade with Standard Securities?"
+        },
+        {
+          "level": "h3",
+          "text": "Benefits you'll get from us"
+        },
+        {
+          "level": "h4",
+          "text": "Categories"
+        },
+        {
+          "level": "h2",
+          "text": "Open your account"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Full name",
+          "aria-label": "Full name",
+          "aria-labelledby": null,
+          "autocomplete": "name",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Email address",
+          "aria-label": "Email address",
+          "aria-labelledby": null,
+          "autocomplete": "email",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Phone number",
+          "aria-label": "Phone number",
+          "aria-labelledby": null,
+          "autocomplete": "tel",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "Terms.html",
+      "title": "Terms & Conditions | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "A relationship on your terms."
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "about.html",
+      "title": "About Us | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Putting our clients first since 1994"
+        },
+        {
+          "level": "h2",
+          "text": "Philosophy"
+        },
+        {
+          "level": "h3",
+          "text": "History"
+        },
+        {
+          "level": "h3",
+          "text": "Culture"
+        },
+        {
+          "level": "h4",
+          "text": "2012"
+        },
+        {
+          "level": "h4",
+          "text": "2009"
+        },
+        {
+          "level": "h4",
+          "text": "2008"
+        },
+        {
+          "level": "h4",
+          "text": "2006"
+        },
+        {
+          "level": "h4",
+          "text": "2002"
+        },
+        {
+          "level": "h4",
+          "text": "2001"
+        },
+        {
+          "level": "h4",
+          "text": "2000"
+        },
+        {
+          "level": "h4",
+          "text": "1994"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h3",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "accessibility-toolbar.html",
+      "title": "Accessibility Tools | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 0,
+      "img_missing_alt": [],
+      "iframes": [],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Accessibility Tools"
+        }
+      ],
+      "heading_sequence": [
+        "h1"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "accessibility.html",
+      "title": "Accessibility Statement | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Accessibility Statement"
+        },
+        {
+          "level": "h2",
+          "text": "Our Commitment"
+        },
+        {
+          "level": "h2",
+          "text": "Measures We Have Taken"
+        },
+        {
+          "level": "h2",
+          "text": "Limitations"
+        },
+        {
+          "level": "h2",
+          "text": "Reporting Accessibility Issues"
+        },
+        {
+          "level": "h2",
+          "text": "Alternative Contact"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h2",
+        "h2",
+        "h2",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "name",
+          "name": "name",
+          "placeholder": null,
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "id": "email",
+          "name": "email",
+          "placeholder": null,
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "textarea",
+          "type": "",
+          "id": "issue",
+          "name": "issue",
+          "placeholder": null,
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "botbot.html",
+      "title": "Investor Relations | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 0,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs.PoRNb8Ts5amROUJEzeJyoYqaJIohHSf13mSMppg86As",
+          "title": "Chat widget for customer support"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Investor Relations"
+        }
+      ],
+      "heading_sequence": [
+        "h1"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "careers.html",
+      "title": "Careers | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Careers"
+        },
+        {
+          "level": "h2",
+          "text": "Join Now"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "complaint.html",
+      "title": "Complaint Form | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 0,
+      "img_missing_alt": [],
+      "iframes": [],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Register a Complaint"
+        }
+      ],
+      "heading_sequence": [
+        "h1"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "customer_name",
+          "name": "customer_name",
+          "placeholder": null,
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "id": "customer_email",
+          "name": "customer_email",
+          "placeholder": null,
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "textarea",
+          "type": "",
+          "id": "complaint",
+          "name": "complaint",
+          "placeholder": null,
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "submit",
+          "id": null,
+          "name": null,
+          "placeholder": null,
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "complaint_new.html",
+      "title": "Complaint Form | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 5,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Register Complaint"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "client_code",
+          "name": "client_code",
+          "placeholder": "Enter client code or PAN details",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "customer_name",
+          "name": "customer_name",
+          "placeholder": "Your Full Name",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": "name",
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "id": "customer_email",
+          "name": "customer_email",
+          "placeholder": "Your Email",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": "email",
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "textarea",
+          "type": "",
+          "id": "complaint",
+          "name": "complaint",
+          "placeholder": "Write your Complaint",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "contact.html",
+      "title": "Contact Us | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.8513067731183!2d72.8590465149031!3d19.201695787015993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7231ca1f365%3A0x5ec23b885da34812!2sTanishka%20Commercial%20Building!5e0!3m2!1sen!2sin!4v1653654613461!5m2!1sen!2sin",
+          "title": "Google Maps location"
+        },
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Contact Us"
+        },
+        {
+          "level": "h2",
+          "text": "REGISTERED OFFICE"
+        },
+        {
+          "level": "h3",
+          "text": "OFFICE"
+        },
+        {
+          "level": "h4",
+          "text": "OFFICE"
+        },
+        {
+          "level": "h4",
+          "text": "Locate Us"
+        },
+        {
+          "level": "h2",
+          "text": "Escalation Matrix"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h4",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "name",
+          "name": "name",
+          "placeholder": "Enter your full name",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": "name",
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": "nameHelp",
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "id": "email",
+          "name": "email",
+          "placeholder": "Enter your email address",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": "email",
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": "emailHelp",
+          "implicit_label": false
+        },
+        {
+          "tag": "textarea",
+          "type": "",
+          "id": "message",
+          "name": "message",
+          "placeholder": "How can we help you?",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": "messageHelp",
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "customers.html",
+      "title": "Customer Services | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 12,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "35,817"
+        },
+        {
+          "level": "h2",
+          "text": "4,400"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "disclaimer.html",
+      "title": "Disclaimer | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "A relationship on your terms."
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "downloads.html",
+      "title": "Downloads | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Hi, Here you can download the forms."
+        },
+        {
+          "level": "h2",
+          "text": "Download Form"
+        },
+        {
+          "level": "h3",
+          "text": "Fill The Form"
+        },
+        {
+          "level": "h3",
+          "text": "Send Form"
+        },
+        {
+          "level": "h4",
+          "text": "Client Registeration Form"
+        },
+        {
+          "level": "h4",
+          "text": "Block M Early Payin_Annexure"
+        },
+        {
+          "level": "h4",
+          "text": "Investor Charter_DP Feb 2025.pdf"
+        },
+        {
+          "level": "h4",
+          "text": "Investor Charter Broker Feb 2025.pdf"
+        },
+        {
+          "level": "h4",
+          "text": "Investor-Charter-Member-id-08054.doc"
+        },
+        {
+          "level": "h4",
+          "text": "Investor-Charter-Member-id-86900.doc"
+        },
+        {
+          "level": "h4",
+          "text": "Saral Form"
+        },
+        {
+          "level": "h4",
+          "text": "Rights and obligation DP"
+        },
+        {
+          "level": "h4",
+          "text": "CDSL_Investor_charter.pdf"
+        },
+        {
+          "level": "h4",
+          "text": "Checklist Of Corporate"
+        },
+        {
+          "level": "h4",
+          "text": "C_KYC Form"
+        },
+        {
+          "level": "h4",
+          "text": "Client Copy"
+        },
+        {
+          "level": "h4",
+          "text": "DIS BOOK ISSUE LETTER"
+        },
+        {
+          "level": "h4",
+          "text": "DIS_ISSUE"
+        },
+        {
+          "level": "h4",
+          "text": "DO'S & DON'T"
+        },
+        {
+          "level": "h4",
+          "text": "Do`s and Don`ts_Annexure17"
+        },
+        {
+          "level": "h4",
+          "text": "DORMANT ACTIVATION FORM"
+        },
+        {
+          "level": "h4",
+          "text": "Off Market Sale Annexure (SSIIL)"
+        },
+        {
+          "level": "h4",
+          "text": "Standard DRF"
+        },
+        {
+          "level": "h4",
+          "text": "Trading Account Re activation Request Form - EQ"
+        },
+        {
+          "level": "h4",
+          "text": "TRANSMISSION REQUEST FORM"
+        },
+        {
+          "level": "h4",
+          "text": "Transposition"
+        },
+        {
+          "level": "h4",
+          "text": "UCC ANNEXURE"
+        },
+        {
+          "level": "h4",
+          "text": "UPDATION OF ANNUAL INCOME"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h3",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "history.html",
+      "title": "Our History | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 7,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs.PoRNb8Ts5amROUJEzeJyoYqaJIohHSf13mSMppg86As",
+          "title": "Chat widget for customer support"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "A relationship on your terms."
+        },
+        {
+          "level": "h2",
+          "text": "Everyone\u2019s an Investor"
+        },
+        {
+          "level": "h3",
+          "text": "Chat support"
+        },
+        {
+          "level": "h4",
+          "text": "products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h4",
+          "text": "Attention Investor 1. Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020. 2. Update your mobile number & email Id with your stock broker/depository participant and receive OTP directly from depository on your email id and/or mobile number to create pledge. 3. Investors may please refer to the Exchange's Frequently Asked Questions (FAQs) issued vide circular reference NSE/INSP/45191 dated July 31, 2020 and NSE/INSP/45534 dated August 31, 2020 and other guidelines issued from time to time in this regard. 4 Check your Securities /MF/ Bonds in the consolidated account statement issued by NSDL/CDSL every month. Issued in the interest of Investors\"."
+        },
+        {
+          "level": "h5",
+          "text": "1.\"No need to issue cheques by investors while subscribing to IPO. Just write the bank account number and sign in the application form to authorise your bank to make payment in case of allotment. No worries for refund as the money remains in investor's account.\" 2. \"KYC is one time exercise while dealing in securities markets - once KYC is done through a SEBI registered intermediary (broker, DP, Mutual Fund etc.), you need not undergo the same process again when you approach another intermediary.\" 3.\"Prevent Unauthorized Transactions in your demat account --> Update your Mobile Number with your Depository Participant. Receive alerts on your Registered Mobile for all debit and other important transactions in your demat account directly from CDSL on the same day......................issued in the interest of investors.\""
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h3",
+        "h3",
+        "h3",
+        "h4",
+        "h5"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "index.html",
+      "title": "Home | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 23,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Setting strong foundations"
+        },
+        {
+          "level": "h2",
+          "text": "Open your account"
+        },
+        {
+          "level": "h2",
+          "text": "Trade on world-class platform"
+        },
+        {
+          "level": "h2",
+          "text": "A partner invested in your success"
+        },
+        {
+          "level": "h3",
+          "text": "Currency"
+        },
+        {
+          "level": "h3",
+          "text": "Commodities"
+        },
+        {
+          "level": "h3",
+          "text": "Equity"
+        },
+        {
+          "level": "h3",
+          "text": "IPOs"
+        },
+        {
+          "level": "h3",
+          "text": "Advisory"
+        },
+        {
+          "level": "h3",
+          "text": "Depository"
+        },
+        {
+          "level": "h2",
+          "text": "Working Experience in Quality Services"
+        },
+        {
+          "level": "h3",
+          "text": "25+ Years of Excellence"
+        },
+        {
+          "level": "h2",
+          "text": "Stay Ahead of the Curve"
+        },
+        {
+          "level": "h3",
+          "text": "Commodities"
+        },
+        {
+          "level": "h3",
+          "text": "Currency"
+        },
+        {
+          "level": "h3",
+          "text": "Equity"
+        },
+        {
+          "level": "h3",
+          "text": "IPOs"
+        },
+        {
+          "level": "h3",
+          "text": "Advisory"
+        },
+        {
+          "level": "h3",
+          "text": "Depository"
+        },
+        {
+          "level": "h2",
+          "text": "Do You Know?"
+        },
+        {
+          "level": "h3",
+          "text": "Risk Disclosures on Derivatives"
+        },
+        {
+          "level": "h2",
+          "text": "SEBI presents Samajh Se Investing Simple:"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h2",
+        "h3",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h2",
+        "h3",
+        "h2",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "signup-name",
+          "name": "name",
+          "placeholder": "Full name",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": "name",
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": "signup-name-error",
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "id": "signup-email",
+          "name": "email",
+          "placeholder": "Email address",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": "email",
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": "signup-email-error",
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "tel",
+          "id": "phone",
+          "name": "phone",
+          "placeholder": "Phone number",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": "tel",
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": "phone-error",
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "invester_charter.html",
+      "title": "Investor Charter | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Investor Charter"
+        },
+        {
+          "level": "h2",
+          "text": "Annexure-C (CDSL)"
+        },
+        {
+          "level": "h3",
+          "text": "Annexure C"
+        },
+        {
+          "level": "h3",
+          "text": "Depository Participant"
+        },
+        {
+          "level": "h4",
+          "text": "Depository Participant"
+        },
+        {
+          "level": "h3",
+          "text": "Investor Charter"
+        },
+        {
+          "level": "h4",
+          "text": "Investor Charter"
+        },
+        {
+          "level": "h3",
+          "text": "Stock Broker"
+        },
+        {
+          "level": "h4",
+          "text": "Stock Broker"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h3",
+        "h4",
+        "h3",
+        "h4",
+        "h3",
+        "h4",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "management.html",
+      "title": "Our Management | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 7,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Putting our clients first since 1994"
+        },
+        {
+          "level": "h2",
+          "text": "Our Leaders"
+        },
+        {
+          "level": "h3",
+          "text": "Neelam Dhingra"
+        },
+        {
+          "level": "h4",
+          "text": "Cherish Dhingra"
+        },
+        {
+          "level": "h4",
+          "text": "Irshad Khan"
+        },
+        {
+          "level": "h3",
+          "text": "Why Choose Us? WE ASSURE QUALITY"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h4",
+        "h3",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "news.html",
+      "title": "News & Updates | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 10,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://www.youtube.com/watch?v=F3QpgXBtDeo",
+          "title": "YouTube video player"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "News"
+        },
+        {
+          "level": "h2",
+          "text": "World food prices back down in March after two-year high"
+        },
+        {
+          "level": "h3",
+          "text": "How the Stock Exchange works"
+        },
+        {
+          "level": "h3",
+          "text": "We simply attempt to be fearful when others are greedy and to be greedy only when others are fearful."
+        },
+        {
+          "level": "h3",
+          "text": "April 2019 Market Report Podcast"
+        },
+        {
+          "level": "h3",
+          "text": "https://themeforest.net/item/altis-professional-hosting-html-template/19187736"
+        },
+        {
+          "level": "h3",
+          "text": "Oooh....Hello World! I\u2019m a standard Post"
+        },
+        {
+          "level": "h4",
+          "text": "Mark Harris"
+        },
+        {
+          "level": "h5",
+          "text": "Categories"
+        },
+        {
+          "level": "h5",
+          "text": "Popular"
+        },
+        {
+          "level": "h5",
+          "text": "Archive"
+        },
+        {
+          "level": "h5",
+          "text": "Tag Cloud"
+        },
+        {
+          "level": "h4",
+          "text": "Chat support"
+        },
+        {
+          "level": "h4",
+          "text": "products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h4",
+          "text": "Attention Investor 1. Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020. 2. Update your mobile number & email Id with your stock broker/depository participant and receive OTP directly from depository on your email id and/or mobile number to create pledge. 3. Investors may please refer to the Exchange's Frequently Asked Questions (FAQs) issued vide circular reference NSE/INSP/45191 dated July 31, 2020 and NSE/INSP/45534 dated August 31, 2020 and other guidelines issued from time to time in this regard. 4 Check your Securities /MF/ Bonds in the consolidated account statement issued by NSDL/CDSL every month. Issued in the interest of Investors\"."
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h4",
+        "h5",
+        "h5",
+        "h5",
+        "h5",
+        "h4",
+        "h4",
+        "h3",
+        "h3",
+        "h3",
+        "h4"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Write a message...",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "search",
+          "id": null,
+          "name": null,
+          "placeholder": "Search here...",
+          "aria-label": "Search news",
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "id": null,
+          "name": null,
+          "placeholder": "Write a message...",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "pay.html",
+      "title": "Payment Services | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 5,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs.PoRNb8Ts5amROUJEzeJyoYqaJIohHSf13mSMppg86As",
+          "title": "Chat widget for customer support"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Hi, Here you can download the forms."
+        },
+        {
+          "level": "h2",
+          "text": "Client Registeration Form"
+        },
+        {
+          "level": "h3",
+          "text": "Block M Early Payin_Annexure"
+        },
+        {
+          "level": "h4",
+          "text": "Investor-Charter-Member-id-08054.doc"
+        },
+        {
+          "level": "h4",
+          "text": "Checklist Of Corporate"
+        },
+        {
+          "level": "h4",
+          "text": "C_KYC Form"
+        },
+        {
+          "level": "h4",
+          "text": "Client Copy"
+        },
+        {
+          "level": "h4",
+          "text": "DIS BOOK ISSUE LETTER"
+        },
+        {
+          "level": "h4",
+          "text": "DIS_ISSUE"
+        },
+        {
+          "level": "h4",
+          "text": "DO'S & DON'T"
+        },
+        {
+          "level": "h4",
+          "text": "Do`s and Don`ts_Annexure17"
+        },
+        {
+          "level": "h4",
+          "text": "DORMANT ACTIVATION FORM"
+        },
+        {
+          "level": "h4",
+          "text": "DP - Account Closure Request Form"
+        },
+        {
+          "level": "h4",
+          "text": "DP RDD"
+        },
+        {
+          "level": "h4",
+          "text": "DP-TRAD Modification Form"
+        },
+        {
+          "level": "h4",
+          "text": "DRF_IPV_FORM"
+        },
+        {
+          "level": "h4",
+          "text": "FATCA_FATCA _NON INDIVIDUAL_SSIIL.pdf"
+        },
+        {
+          "level": "h4",
+          "text": "KYC NEW"
+        },
+        {
+          "level": "h4",
+          "text": "MARGIN PLEDGE REPLEDGE REQUEST FORM (MPRF)"
+        },
+        {
+          "level": "h4",
+          "text": "MARGIN UNPLEDGE REQUEST FORM (MURF)"
+        },
+        {
+          "level": "h4",
+          "text": "MOBILE AND EMAIL DECLARATION NEW"
+        },
+        {
+          "level": "h4",
+          "text": "NOMINATION PAGE"
+        },
+        {
+          "level": "h4",
+          "text": "Off Market Sale Annexure (SSIIL)"
+        },
+        {
+          "level": "h4",
+          "text": "Standard DRF"
+        },
+        {
+          "level": "h4",
+          "text": "Trading Account Re activation Request Form - EQ"
+        },
+        {
+          "level": "h4",
+          "text": "TRANSMISSION REQUEST FORM"
+        },
+        {
+          "level": "h4",
+          "text": "Transposition"
+        },
+        {
+          "level": "h4",
+          "text": "UCC ANNEXURE"
+        },
+        {
+          "level": "h4",
+          "text": "UPDATION OF ANNUAL INCOME"
+        },
+        {
+          "level": "h4",
+          "text": "Chat support"
+        },
+        {
+          "level": "h4",
+          "text": "products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h4",
+          "text": "Attention Investor 1. Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020. 2. Update your mobile number & email Id with your stock broker/depository participant and receive OTP directly from depository on your email id and/or mobile number to create pledge. 3. Investors may please refer to the Exchange's Frequently Asked Questions (FAQs) issued vide circular reference NSE/INSP/45191 dated July 31, 2020 and NSE/INSP/45534 dated August 31, 2020 and other guidelines issued from time to time in this regard. 4 Check your Securities /MF/ Bonds in the consolidated account statement issued by NSDL/CDSL every month. Issued in the interest of Investors\"."
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h3",
+        "h3",
+        "h3",
+        "h4"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "privacy.html",
+      "title": "Privacy Policy | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "A relationship on your terms."
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "procedures.html",
+      "title": "Procedures | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Policies & Procedures"
+        },
+        {
+          "level": "h2",
+          "text": "Client-code-modification 1_new"
+        },
+        {
+          "level": "h3",
+          "text": "Inactive Client Policy"
+        },
+        {
+          "level": "h4",
+          "text": "Internal Control"
+        },
+        {
+          "level": "h4",
+          "text": "PMLA Updated"
+        },
+        {
+          "level": "h4",
+          "text": "Pre-funded Instrument Policy"
+        },
+        {
+          "level": "h4",
+          "text": "RMS POLICY"
+        },
+        {
+          "level": "h4",
+          "text": "PRIVACY POLICY"
+        },
+        {
+          "level": "h4",
+          "text": "POLICY ON CONFLICT OF INTEREST"
+        },
+        {
+          "level": "h4",
+          "text": "NISM SORM Policy"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "products.html",
+      "title": "Investment Products | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 4,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs\u2026",
+          "title": "Chatbot conversation window"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "A relationship on your terms."
+        },
+        {
+          "level": "h2",
+          "text": "Equity"
+        },
+        {
+          "level": "h3",
+          "text": "Currency"
+        },
+        {
+          "level": "h4",
+          "text": "Commodities"
+        },
+        {
+          "level": "h4",
+          "text": "IPOs"
+        },
+        {
+          "level": "h4",
+          "text": "Advisory"
+        },
+        {
+          "level": "h4",
+          "text": "Depository"
+        },
+        {
+          "level": "h3",
+          "text": "We charge lowest brokerage \u2014 open your account now"
+        },
+        {
+          "level": "h2",
+          "text": "Chat support"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h3",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "signin.html",
+      "title": "Sign In | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 1,
+      "img_missing_alt": [],
+      "iframes": [],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Log into your account"
+        }
+      ],
+      "heading_sequence": [
+        "h1"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "username",
+          "name": null,
+          "placeholder": "Username",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": "username",
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "password",
+          "id": "password",
+          "name": null,
+          "placeholder": "Password",
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": "current-password",
+          "required": null,
+          "aria-required": "true",
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "id": "remember",
+          "name": null,
+          "placeholder": null,
+          "aria-label": null,
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": true
+        }
+      ]
+    },
+    {
+      "file": "single.html",
+      "title": "Latest Update | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 7,
+      "img_missing_alt": [],
+      "iframes": [],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Latest Update"
+        },
+        {
+          "level": "h2",
+          "text": "World food prices back down in March after two-year high"
+        },
+        {
+          "level": "h3",
+          "text": "The solutions"
+        },
+        {
+          "level": "h3",
+          "text": "\"World food prices back down in March after two-year high\""
+        },
+        {
+          "level": "h4",
+          "text": "Mark Harris"
+        },
+        {
+          "level": "h4",
+          "text": "Dennis Olson"
+        },
+        {
+          "level": "h4",
+          "text": "Peter Morrison"
+        },
+        {
+          "level": "h3",
+          "text": "Leave a comment"
+        },
+        {
+          "level": "h4",
+          "text": "Markets"
+        },
+        {
+          "level": "h4",
+          "text": "Our Menus"
+        },
+        {
+          "level": "h4",
+          "text": "Policies and Terms"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h3",
+        "h4",
+        "h4",
+        "h4",
+        "h3",
+        "h4",
+        "h4",
+        "h4",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": [
+        {
+          "tag": "input",
+          "type": "text",
+          "id": "name",
+          "name": null,
+          "placeholder": "Full name",
+          "aria-label": "Full name",
+          "aria-labelledby": null,
+          "autocomplete": "name",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "input",
+          "type": "email",
+          "id": "email",
+          "name": null,
+          "placeholder": "Email address",
+          "aria-label": "Email address",
+          "aria-labelledby": null,
+          "autocomplete": "email",
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        },
+        {
+          "tag": "textarea",
+          "type": "",
+          "id": "comment",
+          "name": null,
+          "placeholder": "Comment",
+          "aria-label": "Comment",
+          "aria-labelledby": null,
+          "autocomplete": null,
+          "required": null,
+          "aria-required": null,
+          "aria-invalid": null,
+          "aria-describedby": null,
+          "implicit_label": false
+        }
+      ]
+    },
+    {
+      "file": "smart_ODR.html",
+      "title": "Smart ODR | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 3,
+      "img_missing_alt": [],
+      "iframes": [],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "SEBI Investor Complaint & Dispute Resolution"
+        },
+        {
+          "level": "h2",
+          "text": "Official SEBI Grievance Redressal Portals"
+        },
+        {
+          "level": "h3",
+          "text": "SCORES Portal"
+        },
+        {
+          "level": "h3",
+          "text": "SMARTODR Portal"
+        },
+        {
+          "level": "h2",
+          "text": "Information Required Before Filing a Complaint"
+        },
+        {
+          "level": "h3",
+          "text": "Full Name"
+        },
+        {
+          "level": "h4",
+          "text": "PAN Number"
+        },
+        {
+          "level": "h4",
+          "text": "Residential Address"
+        },
+        {
+          "level": "h4",
+          "text": "Mobile Number"
+        },
+        {
+          "level": "h4",
+          "text": "Email ID"
+        },
+        {
+          "level": "h2",
+          "text": "Benefits of Using SEBI Portals"
+        },
+        {
+          "level": "h3",
+          "text": "Easy & Quick Complaint Filing"
+        },
+        {
+          "level": "h4",
+          "text": "Effective Communication"
+        },
+        {
+          "level": "h4",
+          "text": "Transparent Process"
+        },
+        {
+          "level": "h4",
+          "text": "Speedy Grievance Resolution"
+        },
+        {
+          "level": "h4",
+          "text": "Online Tracking"
+        },
+        {
+          "level": "h4",
+          "text": "Secure Digital Platform"
+        },
+        {
+          "level": "h4",
+          "text": "Time Saving"
+        },
+        {
+          "level": "h4",
+          "text": "Investor Protection"
+        },
+        {
+          "level": "h2",
+          "text": "Step-by-Step Process"
+        },
+        {
+          "level": "h3",
+          "text": "Register on SCORES or SMARTODR"
+        },
+        {
+          "level": "h4",
+          "text": "Provide mandatory details"
+        },
+        {
+          "level": "h4",
+          "text": "Submit complaint/dispute"
+        },
+        {
+          "level": "h4",
+          "text": "Track status online"
+        },
+        {
+          "level": "h4",
+          "text": "Receive updates and resolution"
+        },
+        {
+          "level": "h2",
+          "text": "Official Links"
+        },
+        {
+          "level": "h3",
+          "text": "SCORES"
+        },
+        {
+          "level": "h3",
+          "text": "SMARTODR"
+        },
+        {
+          "level": "h3",
+          "text": "Disclaimer"
+        },
+        {
+          "level": "h3",
+          "text": "Products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h3",
+          "text": "Attention Investor"
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h3",
+        "h2",
+        "h3",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h2",
+        "h3",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h2",
+        "h3",
+        "h4",
+        "h4",
+        "h4",
+        "h4",
+        "h2",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3",
+        "h3"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    },
+    {
+      "file": "team.html",
+      "title": "Our Team | Standard Securities",
+      "html_lang": "en",
+      "duplicate_ids": {},
+      "img_total": 8,
+      "img_missing_alt": [],
+      "iframes": [
+        {
+          "src": "https://webchat.botframework.com/embed/standardsec-bot-final?s=SvJm2QLqSrs.PoRNb8Ts5amROUJEzeJyoYqaJIohHSf13mSMppg86As",
+          "title": "Google Maps location"
+        }
+      ],
+      "iframes_untitled": [],
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Putting our clients first since 1994"
+        },
+        {
+          "level": "h2",
+          "text": "Our Team"
+        },
+        {
+          "level": "h3",
+          "text": "Name"
+        },
+        {
+          "level": "h4",
+          "text": "Name"
+        },
+        {
+          "level": "h4",
+          "text": "Name"
+        },
+        {
+          "level": "h3",
+          "text": "We're always looking for talent"
+        },
+        {
+          "level": "h4",
+          "text": "Chat support"
+        },
+        {
+          "level": "h4",
+          "text": "products"
+        },
+        {
+          "level": "h3",
+          "text": "Menus"
+        },
+        {
+          "level": "h3",
+          "text": "Quick Links"
+        },
+        {
+          "level": "h3",
+          "text": "Contact us"
+        },
+        {
+          "level": "h4",
+          "text": "Attention Investor 1. Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020. 2. Update your mobile number & email Id with your stock broker/depository participant and receive OTP directly from depository on your email id and/or mobile number to create pledge. 3. Investors may please refer to the Exchange's Frequently Asked Questions (FAQs) issued vide circular reference NSE/INSP/45191 dated July 31, 2020 and NSE/INSP/45534 dated August 31, 2020 and other guidelines issued from time to time in this regard. 4 Check your Securities /MF/ Bonds in the consolidated account statement issued by NSDL/CDSL every month. Issued in the interest of Investors\"."
+        }
+      ],
+      "heading_sequence": [
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h4",
+        "h3",
+        "h4",
+        "h4",
+        "h3",
+        "h3",
+        "h3",
+        "h4"
+      ],
+      "h1_count": 1,
+      "unlabeled_inputs": [],
+      "inputs": []
+    }
+  ]
+}

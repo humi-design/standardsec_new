@@ -1,0 +1,573 @@
+{
+  "mobile_menu": {
+    "375": {
+      "toggle_visible": true,
+      "initial": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      },
+      "after_pointer_open": {
+        "expanded": "true",
+        "label": "Close mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": true,
+        "modalVisible": true
+      },
+      "nav_links_visible": [
+        "Home",
+        "Products",
+        "About Us",
+        "Contact",
+        "Login",
+        "Quick Links",
+        "KYC",
+        "Complaints",
+        "Open account",
+        "Fund Transfer",
+        "Online Trading",
+        "Back Office"
+      ],
+      "after_escape": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      },
+      "focus_after_escape": "BUTTON.uk-button"
+    },
+    "640": {
+      "toggle_visible": true,
+      "initial": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      },
+      "after_pointer_open": {
+        "expanded": "true",
+        "label": "Close mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": true,
+        "modalVisible": true
+      },
+      "nav_links_visible": [
+        "Home",
+        "Products",
+        "About Us",
+        "Contact",
+        "Login",
+        "Quick Links",
+        "KYC",
+        "Complaints",
+        "Open account",
+        "Fund Transfer",
+        "Online Trading",
+        "Back Office"
+      ],
+      "after_escape": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      },
+      "focus_after_escape": "BUTTON.uk-button"
+    },
+    "893": {
+      "toggle_visible": true,
+      "initial": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      },
+      "after_pointer_open": {
+        "expanded": "true",
+        "label": "Close mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": true,
+        "modalVisible": true
+      },
+      "nav_links_visible": [
+        "Home",
+        "Products",
+        "About Us",
+        "Contact",
+        "Login",
+        "Quick Links",
+        "KYC",
+        "Complaints",
+        "Open account",
+        "Fund Transfer",
+        "Online Trading",
+        "Back Office"
+      ],
+      "after_escape": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      },
+      "focus_after_escape": "BUTTON.uk-button"
+    },
+    "894": {
+      "toggle_visible": true,
+      "initial": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      },
+      "after_pointer_open": {
+        "expanded": "true",
+        "label": "Close mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": true,
+        "modalVisible": true
+      },
+      "nav_links_visible": [
+        "Home",
+        "Products",
+        "About Us",
+        "Contact",
+        "Login",
+        "Quick Links",
+        "KYC",
+        "Complaints",
+        "Open account",
+        "Fund Transfer",
+        "Online Trading",
+        "Back Office"
+      ],
+      "after_escape": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      },
+      "focus_after_escape": "BUTTON.uk-button"
+    },
+    "895": {
+      "toggle_visible": true,
+      "initial": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      },
+      "after_pointer_open": {
+        "expanded": "true",
+        "label": "Close mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": true,
+        "modalVisible": true
+      },
+      "nav_links_visible": [
+        "Home",
+        "Products",
+        "About Us",
+        "Contact",
+        "Login",
+        "Quick Links",
+        "KYC",
+        "Complaints",
+        "Open account",
+        "Fund Transfer",
+        "Online Trading",
+        "Back Office"
+      ],
+      "after_escape": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      },
+      "focus_after_escape": "BUTTON.uk-button"
+    },
+    "960": {
+      "toggle_visible": false,
+      "initial": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      }
+    },
+    "1024": {
+      "toggle_visible": false,
+      "initial": {
+        "expanded": "false",
+        "label": "Open mobile navigation menu",
+        "controls": "mobile-nav-modal",
+        "modalOpen": false,
+        "modalVisible": false
+      }
+    }
+  },
+  "keyboard_menu_open": {
+    "Enter": {
+      "expanded": "true",
+      "label": "Close mobile navigation menu",
+      "controls": "mobile-nav-modal",
+      "modalOpen": true,
+      "modalVisible": true
+    },
+    "Space": {
+      "expanded": "true",
+      "label": "Close mobile navigation menu",
+      "controls": "mobile-nav-modal",
+      "modalOpen": true,
+      "modalVisible": true
+    }
+  },
+  "focus_rings": {
+    ".skip-link": {
+      "tag": "A",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(11, 76, 140)",
+      "boxShadow": "none",
+      "rect": {
+        "w": 220,
+        "h": 43
+      },
+      "visible": true
+    },
+    "a.uk-button-primary": {
+      "tag": "A",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(11, 76, 140)",
+      "boxShadow": "none",
+      "rect": {
+        "w": 106,
+        "h": 28
+      },
+      "visible": true
+    },
+    ".accessibility-menu .fab": {
+      "tag": "BUTTON",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(11, 76, 140)",
+      "boxShadow": "rgba(0, 0, 0, 0.3) 0px 4px 8px 0px",
+      "rect": {
+        "w": 60,
+        "h": 60
+      },
+      "visible": true
+    },
+    ".moving-content-toggle": {
+      "tag": "BUTTON",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(11, 76, 140)",
+      "boxShadow": "none",
+      "rect": {
+        "w": 38,
+        "h": 24
+      },
+      "visible": true
+    },
+    "footer a": {
+      "tag": "A",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(11, 76, 140)",
+      "boxShadow": "none",
+      "rect": {
+        "w": 90,
+        "h": 30
+      },
+      "visible": true
+    },
+    ".in-mobile-nav button[data-uk-toggle]": {
+      "tag": "BUTTON",
+      "outlineStyle": "none",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(85, 85, 85)",
+      "boxShadow": "none",
+      "rect": {
+        "w": 0,
+        "h": 0
+      },
+      "visible": false
+    },
+    "#open-account-form input": {
+      "tag": "INPUT",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(11, 76, 140)",
+      "boxShadow": "none",
+      "rect": {
+        "w": 200,
+        "h": 38
+      },
+      "visible": true
+    },
+    "#open-account-form button[type=submit]": {
+      "tag": "BUTTON",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(11, 76, 140)",
+      "boxShadow": "none",
+      "rect": {
+        "w": 176,
+        "h": 38
+      },
+      "visible": true
+    }
+  },
+  "create_account_empty_submit": {
+    "invalid": [
+      "signup-name",
+      "signup-email",
+      "phone"
+    ],
+    "describedby": [
+      {
+        "id": "signup-name",
+        "d": "signup-name-error"
+      },
+      {
+        "id": "signup-email",
+        "d": "signup-email-error"
+      },
+      {
+        "id": "phone",
+        "d": "phone-error"
+      }
+    ],
+    "errors": [
+      {
+        "id": "signup-name-error",
+        "text": "Please fill out this field.",
+        "live": "polite"
+      },
+      {
+        "id": "signup-email-error",
+        "text": "Please fill out this field.",
+        "live": "polite"
+      },
+      {
+        "id": "phone-error",
+        "text": "Please fill out this field.",
+        "live": "polite"
+      },
+      {
+        "id": "form-status",
+        "text": "Please fill in all required fields correctly.",
+        "live": "polite"
+      }
+    ],
+    "status": "Please fill in all required fields correctly.",
+    "url": "http://localhost:12000/index.html"
+  },
+  "create_account_bad_email": {
+    "invalid": [
+      "signup-email"
+    ],
+    "errors": [
+      {
+        "id": "signup-email-error",
+        "t": "Please include an '@' in the email address. 'not-an-email' is missing an '@'."
+      }
+    ],
+    "status": "Please fill in all required fields correctly."
+  },
+  "create_account_valid": {
+    "invalid": [],
+    "errors": [],
+    "status": "Thank you! We will contact you shortly.",
+    "url": "http://localhost:12000/index.html",
+    "post_requests": []
+  },
+  "contact_empty_submit": {
+    "invalid": [
+      "name",
+      "email",
+      "message"
+    ],
+    "errors": [
+      {
+        "id": "name-error",
+        "t": "Please fill out this field."
+      },
+      {
+        "id": "nameError",
+        "t": "Full name is required."
+      },
+      {
+        "id": "email-error",
+        "t": "Please fill out this field."
+      },
+      {
+        "id": "emailError",
+        "t": "Enter a valid email address."
+      },
+      {
+        "id": "message-error",
+        "t": "Please fill out this field."
+      },
+      {
+        "id": "messageError",
+        "t": "Message must be at least 10 characters."
+      }
+    ],
+    "summary": "\u26a0\ufe0f Please fix the errors before submitting.",
+    "focused": "name",
+    "url": "http://localhost:12000/contact.html"
+  },
+  "contact_invalid_submit": {
+    "invalid": [
+      "email"
+    ],
+    "errors": [
+      {
+        "id": "email-error",
+        "t": "Please include an '@' in the email address. 'bad-email' is missing an "
+      },
+      {
+        "id": "emailError",
+        "t": "Enter a valid email address."
+      },
+      {
+        "id": "messageError",
+        "t": "Message must be at least 10 characters."
+      }
+    ],
+    "summary": "\u26a0\ufe0f Please fix the errors before submitting.",
+    "focused": "email",
+    "url": "http://localhost:12000/contact.html",
+    "post_requests": []
+  },
+  "console": {
+    "index.html": {
+      "pageerrors": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "request_failed": [
+        {
+          "type": "requestfailed",
+          "text": "https://www.google.com/sorry/index?continue=https://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit_index&q=EhD9o-ciCsPMAAFJRMkKAi :: net::ERR_BLOCKED_BY_ORB"
+        }
+      ]
+    },
+    "contact.html": {
+      "pageerrors": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "request_failed": [
+        {
+          "type": "requestfailed",
+          "text": "http://www.google.com/sorry/index?continue=http://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit_contact&q=EhD9o-ciCsPMAAFJRMkKAi :: net::ERR_BLOCKED_BY_ORB"
+        }
+      ]
+    },
+    "signin.html": {
+      "pageerrors": [],
+      "console_errors": [],
+      "request_failed": []
+    },
+    "smart_ODR.html": {
+      "pageerrors": [],
+      "console_errors": [],
+      "request_failed": [
+        {
+          "type": "requestfailed",
+          "text": "https://www.google.com/sorry/index?continue=https://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit&q=EhD9o-ciCsPMAAFJRMkKAiwEGJ6e :: net::ERR_BLOCKED_BY_ORB"
+        }
+      ]
+    },
+    "news.html": {
+      "pageerrors": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+        },
+        {
+          "type": "error",
+          "text": "Refused to display 'https://www.youtube.com/' in a frame because it set 'X-Frame-Options' to 'sameorigin'."
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+        }
+      ],
+      "request_failed": [
+        {
+          "type": "requestfailed",
+          "text": "https://www.youtube.com/watch?v=F3QpgXBtDeo :: net::ERR_BLOCKED_BY_RESPONSE"
+        },
+        {
+          "type": "requestfailed",
+          "text": "https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png :: net::ERR_BLOCKED_BY_ORB"
+        },
+        {
+          "type": "requestfailed",
+          "text": "http://www.google.com/sorry/index?continue=http://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit&q=EhD9o-ciCsPMAAFJRMkKAiwEGKKejN :: net::ERR_BLOCKED_BY_ORB"
+        },
+        {
+          "type": "requestfailed",
+          "text": "https://www.youtube.com/watch?v=F3QpgXBtDeo :: net::ERR_ABORTED"
+        }
+      ]
+    },
+    "products.html": {
+      "pageerrors": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "request_failed": []
+    },
+    "about.html": {
+      "pageerrors": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "request_failed": []
+    },
+    "complaint_new.html": {
+      "pageerrors": [],
+      "console_errors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 403 ()"
+        }
+      ],
+      "request_failed": [
+        {
+          "type": "requestfailed",
+          "text": "https://www.google.com/sorry/index?continue=https://translate.google.com/translate_a/element.js%3Fcb%3DgoogleTranslateElementInit&q=EhD9o-ciCsPMAAFJRMkKAiwEGK6e :: net::ERR_BLOCKED_BY_ORB"
+        }
+      ]
+    }
+  }
+}

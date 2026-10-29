@@ -221,7 +221,13 @@
    ======================================================================== */
 function initMobileNavAccessibility() {
     // Find mobile nav toggles
-    var navToggles = document.querySelectorAll('[class*="hamburger"], [class*="uk-navbar-toggle"], button[class*="toggle"], a[href*="menu"]');
+    // Scoped to the real navigation toggles: a generic [class*="toggle"]
+    // selector also matched unrelated controls (e.g. the pause buttons).
+    var navToggles = document.querySelectorAll(
+        '[class*="hamburger"], [class*="uk-navbar-toggle"], ' +
+        'button[data-uk-toggle][aria-controls*="nav"], ' +
+        'button[aria-controls*="nav"][aria-controls*="modal"]'
+    );
     
     navToggles.forEach(function(toggle) {
         // Add aria attributes

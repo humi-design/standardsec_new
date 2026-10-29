@@ -42,12 +42,12 @@
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
                                             <label for="username" class="sr-only">Username</label>
                                             <span class="uk-form-icon uk-form-icon-flip fas fa-user fa-sm" aria-hidden="true"></span>
-                                            <input aria-required="true" class="uk-input" id="username" value="" type="text" placeholder="Username" autocomplete="username" required aria-required="true">
+                                            <input class="uk-input" id="username" value="" type="text" placeholder="Username" autocomplete="username" required aria-required="true">
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
                                             <label for="password" class="sr-only">Password</label>
                                             <span class="uk-form-icon uk-form-icon-flip fas fa-lock fa-sm" aria-hidden="true"></span>
-                                            <input aria-required="true" class="uk-input" id="password" value="" type="password" placeholder="Password" autocomplete="current-password" required aria-required="true">
+                                            <input class="uk-input" id="password" value="" type="password" placeholder="Password" autocomplete="current-password" required aria-required="true">
                                         </div>
                                         <div class="uk-margin-small uk-width-auto uk-text-small">
                                             <label><input class="uk-checkbox" type="checkbox" id="remember"> Remember me</label>
@@ -99,9 +99,9 @@
         
         <!-- Hidden Panel -->
         <div id="accessibilityPanel_signin" class="accessibility-panel" hidden aria-label="Accessibility options">
-            <button onclick="changeFontSize(1)" aria-label="Increase text size" class="accessibility-btn">A+</button>
-            <button onclick="changeFontSize(-1)" aria-label="Decrease text size" class="accessibility-btn">A-</button>
-            <button onclick="toggleDarkMode()" aria-label="Toggle dark mode" class="accessibility-btn">🌙 Dark Mode</button>
+            <button onclick="changeFontSize(1)" aria-label="A+ Increase text size" class="accessibility-btn">A+</button>
+            <button onclick="changeFontSize(-1)" aria-label="A- Decrease text size" class="accessibility-btn">A-</button>
+            <button onclick="toggleDarkMode()" aria-label="Dark Mode toggle" class="accessibility-btn">🌙 Dark Mode</button>
             <button onclick="readContent()" aria-label="Read page aloud" class="accessibility-btn">🔊 Read</button>
             <a href="accessibility.html" aria-label="View accessibility statement" class="accessibility-link">♿ Accessibility Statement</a>
         </div>
@@ -337,7 +337,7 @@
     </script>
 
     <!-- Google Translate Script -->
-    <div id="google_translate_element_signin" style="display:none;" aria-hidden="true"></div>
+    <div id="google_translate_element_signin_hidden" style="display:none;" aria-hidden="true"></div>
     <script type="text/javascript">
     function googleTranslateElementInit_signin() {
         new google.translate.TranslateElement(

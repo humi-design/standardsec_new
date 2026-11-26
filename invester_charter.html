@@ -49,6 +49,18 @@
     background-color: #11ccff;
   }
   
+  @media (max-width: 767px) {
+    .tabnew {
+      display: flex;
+    }
+
+    .tabnew button {
+      flex: 1 1 50%;
+      padding: 12px 8px;
+      font-size: 15px;
+    }
+  }
+
   /* Style the tab content */
   .tabcontent {
     display: none;
@@ -84,7 +96,6 @@
 
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
->
     
   <header data-uk-sticky="top: 400; cls-active: in-sticky">
 
@@ -413,61 +424,93 @@
                         <!-- Tab navigation -->
                         <div class="tabnew" role="tablist" aria-label="Investor Charter Tabs">
                             <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen" role="tab" aria-selected="true" aria-controls="London">Depository</button>
-                            <button class="tablinks" onclick="openCity(event, 'Paris')" role="tab" aria-selected="false" aria-controls="Paris">Stock Broker</button>
+                            <button class="tablinks" onclick="openCity(event, 'Paris')" id="stockBrokerTab" role="tab" aria-selected="false" aria-controls="Paris">Stock Broker</button>
                         </div>
     
                         <!-- Depository tab -->
                         <div id="London" class="tabcontent" role="tabpanel" aria-labelledby="defaultOpen">
-                            <span onclick="this.parentElement.style.display='none'" class="topright" role="button" aria-label="Close">&times;</span>
+                            <button type="button" onclick="this.parentElement.style.display='none'" class="topright" aria-label="Close Depository tab">&times;</button>
                             <h2 class="uk-h3">Annexure-C (CDSL)</h2>
-                            <div>
-                                <div class="in-help-center">
-                                                    </p>
+                            <div class="uk-card uk-card-small uk-card-default in-help-center">
+                                <a href="pdf1/Investor-Charter-Member-id-86900.doc" class="uk-link-reset" aria-label="Download Annexure C Investor Charter for CDSL member id 86900 (Word document)">
+                                    <div class="uk-card-body">
+                                        <div class="uk-grid uk-grid-small">
+                                            <div class="uk-width-auto@m uk-flex uk-flex-middle">
+                                                <div class="in-icon-wrapper in-margin-remove-left@s uk-margin-left uk-margin-right">
+                                                    <i class="fas fa-book fa-lg" aria-hidden="true"></i>
                                                 </div>
+                                            </div>
+                                            <div class="uk-width-expand@m">
+                                                <h3 class="uk-h4 uk-margin-small-bottom">Annexure C</h3>
+                                                <p class="uk-text-small uk-margin-remove-bottom">Click Here</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-    
-                            <h3>Depository Participant</h3>
-                            <div>
-                                <div class="in-help-center">
-                                                    </p>
+
+                            <h2 class="uk-h3">Depository Participant</h2>
+                            <div class="uk-card uk-card-small uk-card-default in-help-center">
+                                <a href="pdf1/CDSL_Investor_charter.pdf" class="uk-link-reset" aria-label="Download CDSL Depository Participant Investor Charter (PDF)">
+                                    <div class="uk-card-body">
+                                        <div class="uk-grid uk-grid-small">
+                                            <div class="uk-width-auto@m uk-flex uk-flex-middle">
+                                                <div class="in-icon-wrapper in-margin-remove-left@s uk-margin-left uk-margin-right">
+                                                    <i class="fas fa-book fa-lg" aria-hidden="true"></i>
                                                 </div>
+                                            </div>
+                                            <div class="uk-width-expand@m">
+                                                <h3 class="uk-h4 uk-margin-small-bottom">Depository Participant</h3>
+                                                <p class="uk-text-small uk-margin-remove-bottom">Click Here</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
-    
+
                         <!-- Stock Broker tab -->
-                        <div id="Paris" class="tabcontent" role="tabpanel" aria-labelledby="Paris">
-                            <span onclick="this.parentElement.style.display='none'" class="topright" role="button" aria-label="Close">&times;</span>
-                            <h3>Investor Charter </h3>
-                            <div>
-                                <div class="in-help-center">
-                                                    </p>
+                        <div id="Paris" class="tabcontent" role="tabpanel" aria-labelledby="stockBrokerTab">
+                            <button type="button" onclick="this.parentElement.style.display='none'" class="topright" aria-label="Close Stock Broker tab">&times;</button>
+                            <h2 class="uk-h3">Investor Charter</h2>
+                            <div class="uk-card uk-card-small uk-card-default in-help-center">
+                                <a href="pdf1/Investor-Charter-08054.doc" class="uk-link-reset" aria-label="Download Stock Broker Investor Charter for member code 08054 (Word document)">
+                                    <div class="uk-card-body">
+                                        <div class="uk-grid uk-grid-small">
+                                            <div class="uk-width-auto@m uk-flex uk-flex-middle">
+                                                <div class="in-icon-wrapper in-margin-remove-left@s uk-margin-left uk-margin-right">
+                                                    <i class="fas fa-book fa-lg" aria-hidden="true"></i>
                                                 </div>
+                                            </div>
+                                            <div class="uk-width-expand@m">
+                                                <h3 class="uk-h4 uk-margin-small-bottom">Investor Charter</h3>
+                                                <p class="uk-text-small uk-margin-remove-bottom">Click Here</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-    
-                            <h3>Stock Broker</h3>
-                            <div>
-                                <div class="in-help-center">
-                                                    </p>
+
+                            <h2 class="uk-h3">Stock Broker</h2>
+                            <div class="uk-card uk-card-small uk-card-default in-help-center">
+                                <a href="pdf1/Investor Charter-Stock-Broker.pdf" class="uk-link-reset" aria-label="Download Stock Broker Investor Charter (PDF)">
+                                    <div class="uk-card-body">
+                                        <div class="uk-grid uk-grid-small">
+                                            <div class="uk-width-auto@m uk-flex uk-flex-middle">
+                                                <div class="in-icon-wrapper in-margin-remove-left@s uk-margin-left uk-margin-right">
+                                                    <i class="fas fa-book fa-lg" aria-hidden="true"></i>
                                                 </div>
+                                            </div>
+                                            <div class="uk-width-expand@m">
+                                                <h3 class="uk-h4 uk-margin-small-bottom">Stock Broker</h3>
+                                                <p class="uk-text-small uk-margin-remove-bottom">Click Here</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
-    
+
                         <script>
                             function openCity(evt, cityName) {
                                 var i, tabcontent, tablinks;
